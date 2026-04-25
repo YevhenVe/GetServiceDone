@@ -1,0 +1,11 @@
+services:
+  web:
+    build: .
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/app # Mounting the folder with code inside the container
+      - /app/node_modules # So that the container doesn't overwrite its modules with ours
+      - /app/.next # So that the build cache lives its own life
+    environment:
+      - WATCHPACK_POLLING=true # CRITICAL FOR WSL: makes Next.js see changes
