@@ -10,6 +10,7 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   href?: string;
   to?: string;
   variant?: 'primary' | 'secondary' | 'ghost';
+  activeClass?: string;
   children: React.ReactNode;
 }
 
@@ -17,6 +18,7 @@ export default function Button({
   href, 
   to,
   variant = 'primary', 
+  activeClass,
   className = '', 
   children, 
   ...props 
@@ -33,7 +35,16 @@ export default function Button({
       );
     }
     return (
-      <ScrollLink to={to} spy smooth offset={-64} duration={500} className={combinedClassName} style={{cursor: 'pointer'}}>
+      <ScrollLink 
+        to={to} 
+        spy 
+        smooth 
+        offset={-64} 
+        duration={500} 
+        className={combinedClassName} 
+        activeClass={activeClass}
+        style={{cursor: 'pointer'}}
+      >
         {children}
       </ScrollLink>
     );
