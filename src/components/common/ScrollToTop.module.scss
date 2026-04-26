@@ -1,0 +1,29 @@
+.scrollToTop {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid var(--color-border);
+  background-color: rgba(128, 128, 128, 0.1);
+  backdrop-filter: blur(20px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-text);
+  z-index: 99;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease, opacity 0.3s ease;
+  outline: none;
+  padding: 0;
+
+  &:hover {
+    background-color: rgba(128, 128, 128, 0.2);
+    transform: translateY(-5px);
+  }
+
+  svg {
+    transition: transform 0.3s ease;
+  }
+}
