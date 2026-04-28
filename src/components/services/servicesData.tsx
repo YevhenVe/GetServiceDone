@@ -9,6 +9,12 @@ import {
   TowerIcon,
   HvacIcon,
 } from '../../../public/electrical-iconset/electrical_icons';
+import {
+  ApplianceCircleIcon,
+  KitchenIcon,
+  LaundryIcon,
+  ComfortIcon,
+} from '../../../public/appliance-iconset/appliance_icons';
 
 export const servicesData: ServiceCardProps[] = [
   {
@@ -30,18 +36,18 @@ export const servicesData: ServiceCardProps[] = [
     ],
   },
   {
-    title: 'Plumbing',
-    highlightText: 'Work',
-    description: 'Expert plumbing solutions for residential and commercial properties.',
-    mainIcon: <LightningCircleIcon />,
-    imageSrc: '/electrical-iconset/electrical-illustration.jpeg',
-    imageAlt: 'Plumber working',
-    linkHref: '/schedule',
+    title: 'Home',
+    highlightText: 'Appliance',
+    description: 'Expert appliance installation, maintenance, and repair services for residential properties.',
+    mainIcon: <ApplianceCircleIcon />,
+    imageSrc: '/appliance-iconset/appliance-illustration.jpeg',
+    imageAlt: 'Home Appliance',
+    linkHref: '/appliance_work',
     imagePosition: 'left',
     services: [
-      { icon: <HouseIcon />, text: 'Pipe Leak Repair & Replacement' },
-      { icon: <ShieldIcon />, text: 'Water Heater Installation' },
-      { icon: <BatteryIcon />, text: 'Drain Cleaning & Unclogging' },
+      { icon: <KitchenIcon />, text: 'Kitchen Appliance Solutions' },
+      { icon: <LaundryIcon />, text: 'Laundry Room Services' },
+      { icon: <ComfortIcon />, text: 'Water & Comfort Appliances' },
     ],
   },
 ];
