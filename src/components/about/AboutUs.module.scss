@@ -25,14 +25,13 @@
 .text {
   font-size: 1.125rem;
   line-height: 1.7;
-  color: var(--color-text);
-  opacity: 0.8;
+  color: var(--color-text-secondary);
   margin-bottom: 1.5rem;
 }
 
 .brand {
   font-weight: 700;
-  color: #fbbf24;
+  color: var(--color-accent);
 }
 
 .stats {
@@ -52,7 +51,7 @@
 .statNumber {
   font-size: 2.5rem;
   font-weight: 800;
-  color: #fbbf24;
+  color: var(--color-accent);
 }
 
 .statLabel {

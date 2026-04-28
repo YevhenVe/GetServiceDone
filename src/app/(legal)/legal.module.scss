@@ -18,8 +18,7 @@
 
 .updated {
   font-size: 0.9rem;
-  color: var(--color-text);
-  opacity: 0.5;
+  color: var(--color-text-secondary);
   margin-bottom: 3rem;
 }
 
@@ -36,8 +35,7 @@
   p, li {
     font-size: 1.05rem;
     line-height: 1.7;
-    color: var(--color-text);
-    opacity: 0.8;
+    color: var(--color-text-secondary);
   }
 
   ul {
@@ -57,7 +55,7 @@
 .backLink {
   display: inline-block;
   margin-top: 2rem;
-  color: #fbbf24;
+  color: var(--color-accent);
   text-decoration: none;
   font-weight: 600;
 

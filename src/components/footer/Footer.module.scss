@@ -27,15 +27,14 @@
 .logo {
   font-size: 1.5rem;
   font-weight: 800;
-  color: var(--color-text);
+  color: var(--color-accent);
   text-decoration: none;
   display: block;
   margin-bottom: 1rem;
 }
 
 .description {
-  color: var(--color-text);
-  opacity: 0.7;
+  color: var(--color-text-secondary);
   line-height: 1.6;
   max-width: 300px;
 }
@@ -55,22 +54,20 @@
   flex-direction: column;
   gap: 0.75rem;
 
-  li, a {
-    color: var(--color-text);
-    opacity: 0.7;
+  li,
+  a {
+    color: var(--color-text-secondary);
     text-decoration: none;
-    transition: opacity 0.2s ease, color 0.2s ease;
+    transition: color 0.2s ease;
 
     &:hover {
-      opacity: 1;
-      color: #fbbf24;
+      color: var(--color-accent);
     }
   }
 }
 
 .contactInfo {
-  color: var(--color-text);
-  opacity: 0.7;
+  color: var(--color-text-secondary);
   line-height: 1.8;
 }
 
@@ -82,16 +79,36 @@
   gap: 1.5rem;
   align-items: center;
 
-  @media (min-width: 768px) {
-    flex-direction: row;
-    justify-content: space-between;
+  @media (min-width: 1024px) {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    gap: 0;
+  }
+}
+
+.dev {
+  font-size: 0.9rem;
+  color: var(--color-text-secondary);
+
+  a {
+    color: var(--color-accent);
+    text-decoration: none;
+    font-weight: 600;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    justify-self: start;
   }
 }
 
 .copy {
-  color: var(--color-text);
-  opacity: 0.5;
+  color: var(--color-text-secondary);
   font-size: 0.9rem;
+  text-align: center;
 }
 
 .legal {
@@ -99,13 +116,16 @@
   gap: 2rem;
 
   a {
-    color: var(--color-text);
-    opacity: 0.5;
+    color: var(--color-text-secondary);
     text-decoration: none;
     font-size: 0.9rem;
 
     &:hover {
-      opacity: 1;
+      color: var(--color-accent);
     }
+  }
+
+  @media (min-width: 1024px) {
+    justify-self: end;
   }
 }

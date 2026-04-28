@@ -4,8 +4,18 @@
   min-height: calc(100vh - 64px);
   position: relative;
   overflow: hidden;
+}
 
-  background-image: linear-gradient(90deg, var(--color-bg) 0%, rgba(240, 240, 240, 0.9) 40%, rgba(240, 240, 240, 0) 60%), url('/hero-image.jpeg');
+.heroBg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 120%; // Extra height for parallax movement
+  z-index: 1;
+  pointer-events: none;
+
+  background-image: linear-gradient(90deg, var(--color-bg) 0%, rgba(245, 247, 246, 0.9) 40%, rgba(245, 247, 246, 0) 60%), url('/hero-image.jpeg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -30,7 +40,7 @@
 }
 
 .content {
-  max-width: 540px;
+  max-width: 640px;
   width: 100%;
 }
 
@@ -48,14 +58,13 @@
 }
 
 .highlight {
-  color: #fbbf24;
+  color: var(--color-accent);
 }
 
 .description {
   font-size: 1.125rem;
   line-height: 1.6;
-  color: var(--color-text);
-  opacity: 0.8;
+  color: var(--color-text-secondary);
   margin-bottom: 2.5rem;
   max-width: 480px;
 

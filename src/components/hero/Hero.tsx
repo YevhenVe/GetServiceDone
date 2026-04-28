@@ -1,27 +1,63 @@
 'use client';
 
-import Image from 'next/image';
+import { useRef } from 'react';
+import { motion, useScroll, useTransform } from 'framer-motion';
 import { Link as ScrollLink } from 'react-scroll';
 import Button from '@/components/button/Button';
+import TrustBadges from '@/components/trust-badges/TrustBadges';
 import styles from './Hero.module.scss';
 
 export default function Hero() {
+  const targetRef = useRef<HTMLElement>(null);
+  const { scrollYProgress } = useScroll({
+    target: targetRef,
+    offset: ["start start", "end start"]
+  });
+
+  const y = useTransform(scrollYProgress, [0, 1], ["0%", "30%"]);
+  const scale = useTransform(scrollYProgress, [0, 1], [1, 1.1]);
+
   return (
-    <section className={styles.hero} id="hero">
+    <section className={styles.hero} id="hero" ref={targetRef}>
+      {/* Parallax Background */}
+      <motion.div 
+        className={styles.heroBg} 
+        style={{ y, scale }}
+      />
+      
       <div className={styles.left}>
         <div className={styles.content}>
-          <h1 className={styles.title}>
+          <motion.h1 
+            className={styles.title}
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+          >
             Professional<br />
             <span className={styles.highlight}>Home Services</span>
-          </h1>
-          <p className={styles.description}>
+          </motion.h1>
+          
+          <motion.p 
+            className={styles.description}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
+          >
             We provide top-tier home maintenance and repair services. Trust our experts to get the job done right the first time, with quality you can count on.
-          </p>
-          <div className={styles.actions}>
+          </motion.p>
+          
+          <motion.div 
+            className={styles.actions}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
+          >
             <Button href="/schedule">
               Schedule Now
             </Button>
-          </div>
+          </motion.div>
+
+          <TrustBadges />
         </div>
       </div>
       <ScrollLink to="services" spy smooth offset={-64} duration={500} className={styles.scrollDownBtn}>

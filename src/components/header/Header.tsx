@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Link from "next/link";
+import Image from "next/image";
 import { useTheme } from "@/context/ThemeContext";
 import Button from "@/components/button/Button";
 import styles from "./Header.module.scss";
@@ -58,7 +59,16 @@ export default function Header() {
     <>
       <header className={styles.header}>
         <div className={styles.inner}>
-          <Link href="/" className={styles.logo} onClick={closeMenu}>GetServiceDone</Link>
+          <Link href="/" className={styles.logo} onClick={closeMenu}>
+            <Image 
+              src="/logo.svg" 
+              alt="Get Service Done Logo" 
+              width={32} 
+              height={32} 
+              className={styles.logoImage}
+            />
+            <span>Get Service Done</span>
+          </Link>
 
           <nav className={styles.desktopNav}>
             <NavLinks closeMenu={closeMenu} theme={theme} toggleTheme={toggleTheme} />

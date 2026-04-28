@@ -1,0 +1,116 @@
+.card {
+  background-color: var(--color-bg-alt);
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+  margin-bottom: 2rem; // In case they are stacked
+
+  @media (min-width: 1024px) {
+    flex-direction: row;
+  }
+}
+
+.imageLeft {
+  @media (min-width: 1024px) {
+    flex-direction: row-reverse;
+  }
+}
+
+.content {
+  flex: 1;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: 1024px) {
+    padding: 4rem 5rem;
+  }
+}
+
+.iconWrapper {
+  margin-bottom: 1.5rem;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--color-text);
+  margin-bottom: 1rem;
+  line-height: 1.1;
+
+  @media (min-width: 768px) {
+    font-size: 3.5rem;
+  }
+}
+
+.highlight {
+  color: var(--color-accent);
+}
+
+.description {
+  font-size: 1rem;
+  color: var(--color-text-secondary);
+  max-width: 500px;
+  margin-bottom: 2.5rem;
+  line-height: 1.6;
+
+  @media (min-width: 768px) {
+    font-size: 1.125rem;
+  }
+}
+
+.serviceList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin-bottom: 3rem;
+  padding: 0;
+  margin-top: 0;
+}
+
+.serviceItem {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1rem;
+  color: var(--color-text-secondary);
+  font-weight: 500;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid var(--color-border);
+
+  &:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+
+  svg {
+    flex-shrink: 0;
+  }
+
+  @media (min-width: 768px) {
+    font-size: 1.0625rem;
+  }
+}
+
+.action {
+  margin-top: auto;
+  display: flex;
+}
+
+.imageWrapper {
+  flex: 1;
+  position: relative;
+  min-height: 400px;
+
+  @media (min-width: 1024px) {
+    min-height: auto;
+  }
+}
+
+.image {
+  object-fit: cover;
+  object-position: center;
+}

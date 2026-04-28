@@ -19,14 +19,14 @@
 }
 
 .primary {
-  background-color: #fbbf24;
-  color: #111111;
-  box-shadow: 0 4px 14px rgba(251, 191, 36, 0.4);
+  background-color: var(--color-cta);
+  color: var(--color-text);
+  box-shadow: 0 4px 14px rgba(var(--color-cta-shadow-rgb), 0.4);
 
   &:hover {
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(251, 191, 36, 0.6);
-    background-color: #f59e0b;
+    box-shadow: 0 6px 20px rgba(var(--color-cta-shadow-rgb), 0.6);
+    background-color: var(--color-cta-hover);
   }
 }
 
@@ -49,13 +49,15 @@
 
   &:hover {
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(251, 191, 36, 0.6);
-    background-color: #f59e0b;
+    box-shadow: 0 6px 20px rgba(var(--color-shadow-rgb), 0.6);
+    background-color: var(--color-accent-hover);
+    color: #FFFFFF;
   }
 }
+
 .active {
-  background-color: #fbbf24 !important;
-  color: #111111 !important;
-  box-shadow: 0 4px 14px rgba(251, 191, 36, 0.4);
+  background-color: var(--color-accent) !important;
+  color: #FFFFFF !important;
+  box-shadow: 0 4px 14px rgba(var(--color-shadow-rgb), 0.4);
   transform: translateY(-2px);
 }
