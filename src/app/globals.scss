@@ -11,17 +11,25 @@ html {
 }
 
 :root {
-  --color-bg: rgba(240, 240, 240, 1);
-  --color-bg-alt: rgba(255, 255, 255, 1);
-  --color-text: rgba(19, 19, 19, 1);
+  --color-bg: #F5F7F6;
+  --color-bg-alt: #FFFFFF;
+  --color-text: #1F2933;
+  --color-text-secondary: #6B7280;
   --color-border: rgba(229, 229, 229, 1);
-  --header-bg: rgba(240, 240, 240, 0.5);
+  --color-accent: #37A39B;
+  --color-accent-hover: #2B7F78;
+  --color-cta: #E0B300;
+  --color-cta-hover: #C9A000;
+  --color-shadow-rgb: 55, 163, 155;
+  --color-cta-shadow-rgb: 224, 179, 0;
+  --header-bg: rgba(245, 247, 246, 0.5);
 }
 
 [data-theme='dark'] {
   --color-bg: rgba(17, 24, 39, 1);
   --color-bg-alt: rgba(31, 41, 55, 1);
   --color-text: rgba(240, 240, 240, 1);
+  --color-text-secondary: #9CA3AF;
   --color-border: rgba(51, 51, 51, 1);
   --header-bg: rgba(17, 24, 39, 0.5);
 }

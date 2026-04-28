@@ -8,7 +8,7 @@ export default function Footer() {
         <div className={styles.grid}>
           {/* Brand Column */}
           <div className={styles.column}>
-            <Link href="/" className={styles.logo}>GetServiceDone</Link>
+            <Link href="/" className={styles.logo}>Get Service Done</Link>
             <p className={styles.description}>
               Professional home services you can count on. From plumbing to electrical work, we get the job done right.
             </p>
@@ -30,11 +30,11 @@ export default function Footer() {
           <div className={styles.column}>
             <h4 className={styles.heading}>Our Services</h4>
             <ul className={styles.links}>
-              <li>Plumbing</li>
-              <li>Electrical</li>
-              <li>HVAC / AC Repair</li>
-              <li>Handyman</li>
-              <li>Painting</li>
+              <li><Link href="/plumbing_work">Plumbing</Link></li>
+              <li><Link href="/electrical_work">Electrical</Link></li>
+              <li><Link href="/hvac_repair">HVAC / AC Repair</Link></li>
+              <li><Link href="/handyman">Handyman</Link></li>
+              <li><Link href="/painting">Painting</Link></li>
             </ul>
           </div>
 
@@ -50,9 +50,14 @@ export default function Footer() {
         </div>
 
         <div className={styles.bottom}>
+          <div className={styles.dev}>
+            Developed by <a href="https://yevhen-portfolio-page.web.app/" target="_blank" rel="noopener noreferrer">Yevhen V.</a>
+          </div>
+
           <p className={styles.copy} suppressHydrationWarning>
-            &copy; {new Date().getFullYear()} GetServiceDone. All rights reserved.
+            &copy; {new Date().getFullYear()} Get Service Done. All rights reserved.
           </p>
+
           <div className={styles.legal}>
             <Link href="/privacy">Privacy Policy</Link>
             <Link href="/terms">Terms of Service</Link>

@@ -1,7 +1,10 @@
 import styles from './Services.module.scss';
 import Button from '@/components/button/Button';
+import ServiceCard from './ServiceCard';
+import { servicesData } from './servicesData';
 
 export default function Services() {
+
   return (
     <section className={styles.services} id="services">
       <div className={styles.inner}>
@@ -11,10 +14,11 @@ export default function Services() {
             We offer a wide range of professional services to meet all your home maintenance needs.
           </p>
         </div>
-        
-        {/* Cards will go here later */}
+
         <div className={styles.grid}>
-          
+          {servicesData.map((data, index) => (
+            <ServiceCard key={index} {...data} />
+          ))}
         </div>
 
         <div className={styles.cta}>
@@ -26,3 +30,4 @@ export default function Services() {
     </section>
   );
 }
+
