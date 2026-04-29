@@ -5,19 +5,20 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Button from '@/components/button/Button';
 import ServiceCTA from '@/components/common/ServiceCTA/ServiceCTA';
-import styles from './applianceWork.module.scss';
+import styles from './plumbingWork.module.scss';
 import {
-    ApplianceCircleIcon,
-    KitchenIcon,
-    LaundryIcon,
-    ComfortIcon,
+    PlumbingCircleIcon,
+    KitchenBathIcon,
+    HeaterIcon,
+    DrainageIcon,
+    OutdoorIcon,
     ChevronRight,
     ShieldCheckIcon,
     AwardIcon,
     ClockIcon
-} from '../../../public/appliance-iconset/appliance_icons';
+} from '../../../public/plumbing-iconset/plumbing_icons';
 
-export default function ApplianceWorkPage() {
+export default function PlumbingWorkPage() {
     return (
         <main className={styles.page}>
             {/* Hero Section */}
@@ -30,20 +31,20 @@ export default function ApplianceWorkPage() {
                                 <ChevronRight />
                                 <Link href="/#services">Services</Link>
                                 <ChevronRight />
-                                <span>Home Appliance</span>
+                                <span>Plumbing Services</span>
                             </nav>
 
                             <div className={styles.badge}>
-                                <ApplianceCircleIcon />
+                                <PlumbingCircleIcon />
                                 <span className={styles.badgeText}>Our Services</span>
                             </div>
 
                             <h1 className={styles.title}>
-                                Home <span className={styles.highlight}>Appliance</span>
+                                Plumbing <span className={styles.highlight}>Services</span>
                             </h1>
 
                             <p className={styles.description}>
-                                Expert appliance installation, maintenance, and repair services for residential properties.
+                                Professional plumbing solutions from luxury upgrades to emergency repairs and complex infrastructure.
                             </p>
 
                             <div className={styles.actions}>
@@ -57,7 +58,7 @@ export default function ApplianceWorkPage() {
                                     <div className={styles.trustIcon}><ShieldCheckIcon /></div>
                                     <div className={styles.trustText}>
                                         <h4>Licensed & Insured</h4>
-                                        <p>Fully certified technicians</p>
+                                        <p>Expert master plumbers</p>
                                     </div>
                                 </div>
                                 <div className={styles.trustItem}>
@@ -79,8 +80,8 @@ export default function ApplianceWorkPage() {
 
                         <div className={styles.heroImageWrapper}>
                             <Image
-                                src="/appliance-iconset/appliance-illustration.jpeg"
-                                alt="Professional Technician"
+                                src="/plumbing-iconset/plumbing-illustration.jpeg"
+                                alt="Professional Plumbing Services"
                                 width={500}
                                 height={600}
                                 className={styles.heroImage}
@@ -96,38 +97,50 @@ export default function ApplianceWorkPage() {
                 <div className={styles.container}>
                     <div className={styles.sectionHeader}>
                         <h2>What We Offer</h2>
-                        <p>Comprehensive appliance solutions tailored to your specific needs.</p>
+                        <p>Comprehensive plumbing solutions tailored to your specific needs.</p>
                     </div>
 
                     <div className={styles.servicesGrid}>
                         {/* Category 1 */}
                         <div className={styles.serviceCategory}>
-                            <h3><span className={styles.categoryNum}>1</span> <KitchenIcon /> Kitchen Appliance Solutions</h3>
+                            <h3><span className={styles.categoryNum}>1</span> <KitchenBathIcon /> Kitchen & Bath Plumbing</h3>
                             <ul>
-                                <li><strong>Refrigerators & Freezers:</strong> <span>Repair of cooling systems, compressor replacement, ice maker repairs, and water line installations.</span></li>
-                                <li><strong>Dishwashers:</strong> <span>Full mechanical installation, pump/motor repairs, and leak troubleshooting.</span></li>
-                                <li><strong>Ovens, Ranges & Stoves:</strong> <span>Repair of heating elements, igniters, and temperature calibration (Electric and Gas).</span></li>
-                                <li><strong>Microwaves & Vent Hoods:</strong> <span>Professional mounting and repair of built-in/over-the-range units and ventilation motors.</span></li>
-                                <li><strong>Garbage Disposals:</strong> <span>Unjamming, repair, and new installation of heavy-duty disposal units.</span></li>
+                                <li><strong>Faucet & Sink Services:</strong> <span>Installation and repair of designer faucets, high-end kitchen sinks, and bathroom vanities.</span></li>
+                                <li><strong>Toilet Repair & Install:</strong> <span>Professional installation of high-efficiency, dual-flush, or "smart" toilets; fixing leaks, clogs, and running issues.</span></li>
+                                <li><strong>Shower & Tub Upgrades:</strong> <span>Installation of luxury rain-heads, thermostatic mixing valves, and modern tub hardware.</span></li>
+                                <li><strong>Garbage Disposal Plumbing:</strong> <span>Integrating new disposal units with existing drainage systems.</span></li>
                             </ul>
                         </div>
 
                         {/* Category 2 */}
                         <div className={styles.serviceCategory}>
-                            <h3><span className={styles.categoryNum}>2</span> <LaundryIcon /> Laundry Room Services</h3>
+                            <h3><span className={styles.categoryNum}>2</span> <HeaterIcon /> Water Heaters & Specialty Systems</h3>
                             <ul>
-                                <li><strong>Washing Machines:</strong> <span>Repair of drums, pumps, and sensors; leveling and vibration reduction; water hose replacement.</span></li>
-                                <li><strong>Clothes Dryers:</strong> <span>Thermal fuse and heating element replacement, belt repairs, and professional Dryer Vent Cleaning to prevent fires.</span></li>
-                                <li><strong>Stackable Units:</strong> <span>Specialty installation and maintenance for space-saving laundry sets.</span></li>
+                                <li><strong>Standard & Tankless Water Heaters:</strong> <span>Full-service installation and repair of traditional tanks and modern "on-demand" tankless units.</span></li>
+                                <li><strong>Water Filtration & Softeners:</strong> <span>Installation of whole-home filtration systems to protect your appliances and plumbing from Georgia’s hard water.</span></li>
+                                <li><strong>Hot Water Recirculation Pumps:</strong> <span>Adding pumps to ensure you have "instant" hot water at every tap, reducing water waste.</span></li>
                             </ul>
                         </div>
 
                         {/* Category 3 */}
                         <div className={styles.serviceCategory}>
-                            <h3><span className={styles.categoryNum}>3</span> <ComfortIcon /> Water & Comfort Appliances</h3>
+                            <h3><span className={styles.categoryNum}>3</span> <DrainageIcon /> Drainage & Sewer Solutions</h3>
                             <ul>
-                                <li><strong>Electric Water Heaters:</strong> <span>Full system replacement, element repair, and tank flushing for longevity.</span></li>
-                                <li><strong>Water Softeners & Filtration:</strong> <span>Installation and maintenance of whole-home water treatment systems.</span></li>
+                                <li><strong>Drain Cleaning:</strong> <span>Professional clearing of slow or clogged kitchen, bath, and floor drains.</span></li>
+                                <li><strong>Sump Pump Systems:</strong> <span>Installation and maintenance of primary and battery-backup sump pumps for basement protection.</span></li>
+                                <li><strong>Sewage Ejector Pumps:</strong> <span>Repair and replacement of pumps for basement bathrooms or laundry rooms.</span></li>
+                                <li><strong>Leak Detection:</strong> <span>Expert pinpointing of hidden pipe leaks behind walls or under floors.</span></li>
+                            </ul>
+                        </div>
+
+                        {/* Category 4 */}
+                        <div className={styles.serviceCategory}>
+                            <h3><span className={styles.categoryNum}>4</span> <OutdoorIcon /> Infrastructure & Outdoor Plumbing</h3>
+                            <ul>
+                                <li><strong>Pipe Repair & Repiping:</strong> <span>Replacing old, corroded, or leaking copper/PEX piping with modern, durable materials.</span></li>
+                                <li><strong>Outdoor Spigots:</strong> <span>Installation of frost-proof hose bibs and outdoor kitchen plumbing hookups.</span></li>
+                                <li><strong>Main Water Line Repair:</strong> <span>Fixing or replacing the primary water service line from the meter to the home.</span></li>
+                                <li><strong>Gas Line Plumbing:</strong> <span>Installation and repair of gas lines for stoves, dryers, fireplaces, and outdoor grills.</span></li>
                             </ul>
                         </div>
                     </div>
@@ -135,8 +148,8 @@ export default function ApplianceWorkPage() {
             </section>
 
             {/* Bottom CTA Section */}
-            <ServiceCTA 
-                title="Need Appliance Assistance?"
+            <ServiceCTA
+                title="Need Plumbing Assistance?"
                 description="We're ready to help with your next project. Get in touch today!"
             />
         </main>

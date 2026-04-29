@@ -30,11 +30,10 @@ export default function Footer() {
           <div className={styles.column}>
             <h4 className={styles.heading}>Our Services</h4>
             <ul className={styles.links}>
-              <li><Link href="/plumbing_work">Plumbing</Link></li>
               <li><Link href="/electrical_work">Electrical</Link></li>
-              <li><Link href="/hvac_repair">HVAC / AC Repair</Link></li>
-              <li><Link href="/handyman">Handyman</Link></li>
-              <li><Link href="/painting">Painting</Link></li>
+              <li><Link href="/appliance_work">Appliance</Link></li>
+              <li><Link href="/handyman_work">Handyman</Link></li>
+              <li><Link href="/plumbing_work">Plumbing</Link></li>
             </ul>
           </div>
 
@@ -44,7 +43,7 @@ export default function Footer() {
             <p className={styles.contactInfo}>
               123 Service St, Home City, HC 12345<br />
               (555) 012-3456<br />
-              support@getservicedone.com
+              info@getservicedone.com
             </p>
           </div>
         </div>

@@ -15,6 +15,20 @@ import {
   LaundryIcon,
   ComfortIcon,
 } from '../../../public/appliance-iconset/appliance_icons';
+import {
+  HandymanCircleIcon,
+  MountingIcon,
+  CarpentryIcon,
+  RepairIcon,
+  MaintenanceIcon,
+} from '../../../public/handyman-iconset/handyman_icons';
+import {
+  PlumbingCircleIcon,
+  KitchenBathIcon,
+  HeaterIcon,
+  DrainageIcon,
+  OutdoorIcon,
+} from '../../../public/plumbing-iconset/plumbing_icons';
 
 export const servicesData: ServiceCardProps[] = [
   {
@@ -48,6 +62,38 @@ export const servicesData: ServiceCardProps[] = [
       { icon: <KitchenIcon />, text: 'Kitchen Appliance Solutions' },
       { icon: <LaundryIcon />, text: 'Laundry Room Services' },
       { icon: <ComfortIcon />, text: 'Water & Comfort Appliances' },
+    ],
+  },
+  {
+    title: 'Handyman',
+    highlightText: 'Work',
+    description: 'From small repairs to custom installations, we provide professional, reliable solutions for every corner of your home.',
+    mainIcon: <HandymanCircleIcon />,
+    imageSrc: '/handyman-iconset/handyman-illustration.jpeg',
+    imageAlt: 'Handyman and Home Maintenance',
+    linkHref: '/handyman_work',
+    imagePosition: 'right',
+    services: [
+      { icon: <MountingIcon />, text: 'Interior Mounting & Installation' },
+      { icon: <CarpentryIcon />, text: 'Finish Carpentry & Trim' },
+      { icon: <RepairIcon />, text: 'General Home Repairs' },
+      { icon: <MaintenanceIcon />, text: 'Exterior & Seasonal Maintenance' },
+    ],
+  },
+  {
+    title: 'Plumbing',
+    highlightText: 'Services',
+    description: 'Professional plumbing solutions from luxury upgrades to emergency repairs and complex infrastructure.',
+    mainIcon: <PlumbingCircleIcon />,
+    imageSrc: '/plumbing-iconset/plumbing-illustration.jpeg',
+    imageAlt: 'Professional Plumbing Services',
+    linkHref: '/plumbing_work',
+    imagePosition: 'left',
+    services: [
+      { icon: <KitchenBathIcon />, text: 'Kitchen & Bath Plumbing' },
+      { icon: <HeaterIcon />, text: 'Water Heaters & Specialty Systems' },
+      { icon: <DrainageIcon />, text: 'Drainage & Sewer Solutions' },
+      { icon: <OutdoorIcon />, text: 'Infrastructure & Outdoor Plumbing' },
     ],
   },
 ];

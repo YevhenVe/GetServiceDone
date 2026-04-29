@@ -53,7 +53,7 @@ export default function Contacts() {
             </div>
             <div className={styles.infoItem}>
               <h3>Email Us</h3>
-              <p>support@getservicedone.com</p>
+              <p>info@getservicedone.com</p>
             </div>
             <div className={styles.workingHours}>
               <h3>Working Hours</h3>
