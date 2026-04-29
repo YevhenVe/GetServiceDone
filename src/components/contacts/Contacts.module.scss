@@ -45,6 +45,7 @@
   border-radius: 12px;
   border: 1px solid var(--color-border);
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+  min-width: 200px;
 
   :global([data-theme='dark']) & {
     background-color: rgba(31, 41, 55, 1);
@@ -63,7 +64,8 @@
     color: var(--color-text);
   }
 
-  input, textarea {
+  input,
+  textarea {
     padding: 0.75rem 1rem;
     border-radius: 6px;
     border: 1px solid var(--color-border);
@@ -85,7 +87,8 @@
   gap: 2rem;
 }
 
-.infoItem, .workingHours {
+.infoItem,
+.workingHours {
   h3 {
     font-size: 1.25rem;
     margin-bottom: 0.5rem;
