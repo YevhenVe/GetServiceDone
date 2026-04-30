@@ -26,12 +26,17 @@ export default function AboutUs() {
         <div className={styles.content}>
           <h2 className={styles.title}>About Us</h2>
           <p className={styles.text}>
-            At <span className={styles.brand}>GetServiceDone</span>, we believe that every home deserves the best care.
-            Founded with a mission to simplify home maintenance, we've grown into a trusted partner for thousands of homeowners.
+            At <span className={styles.brand}>Get Service Done</span>, we believe your home is your ultimate sanctuary, deserving nothing less than uncompromising perfection.
+            Founded on a relentless pursuit of excellence, we have evolved into the premier authority for elite home maintenance and property transformation.
           </p>
           <p className={styles.text}>
-            Our team consists of certified professionals with years of experience in plumbing, electrical work, HVAC, and general repairs.
-            We pride ourselves on our transparency, reliability, and commitment to quality.
+            Our distinguished roster of certified master technicians brings decades of unparalleled expertise across a comprehensive spectrum of disciplines.
+            From engineering sophisticated electrical infrastructures and luxury plumbing systems to executing flawless home appliance integrations and bespoke handyman craftsmanship, we approach every task with absolute precision.
+          </p>
+          <p className={styles.text}>
+            We transcend standard repairs to deliver true peace of mind.
+            Built on a foundation of rigorous industry certifications, unwavering transparency, and an absolute commitment to quality, GetServiceDone ensures every corner of your home functions flawlessly.
+            We do not just service homes; we elevate your standard of living.
           </p>
           <div className={styles.stats}>
             <div className={styles.statItem}>

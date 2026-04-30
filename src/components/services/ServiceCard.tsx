@@ -20,6 +20,7 @@ export interface ServiceCardProps {
   imageSrc: string;
   imageAlt: string;
   linkHref: string;
+  buttonText?: string;
   imagePosition?: 'left' | 'right';
 }
 
@@ -32,6 +33,7 @@ export default function ServiceCard({
   imageSrc,
   imageAlt,
   linkHref,
+  buttonText,
   imagePosition = 'right',
 }: ServiceCardProps) {
   const cardClassName = `${styles.card} ${imagePosition === 'left' ? styles.imageLeft : ''}`.trim();
@@ -59,7 +61,7 @@ export default function ServiceCard({
         </ul>
         <div className={styles.action}>
           <Button href={linkHref} variant="primary">
-            Learn More
+            {buttonText || 'Learn More'}
           </Button>
         </div>
       </div>
