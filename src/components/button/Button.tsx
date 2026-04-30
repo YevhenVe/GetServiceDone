@@ -2,7 +2,6 @@
 
 import React from 'react';
 import Link from 'next/link';
-import { Link as ScrollLink } from 'react-scroll';
 import { usePathname } from 'next/navigation';
 import styles from './Button.module.scss';
 
@@ -35,18 +34,9 @@ export default function Button({
       );
     }
     return (
-      <ScrollLink 
-        to={to} 
-        spy 
-        smooth 
-        offset={-64} 
-        duration={500} 
-        className={combinedClassName} 
-        activeClass={activeClass}
-        style={{cursor: 'pointer'}}
-      >
+      <a href={`#${to}`} className={combinedClassName}>
         {children}
-      </ScrollLink>
+      </a>
     );
   }
 

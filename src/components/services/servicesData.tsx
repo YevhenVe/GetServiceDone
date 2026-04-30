@@ -39,6 +39,7 @@ export const servicesData: ServiceCardProps[] = [
     imageSrc: '/electrical-iconset/electrical-illustration.jpeg',
     imageAlt: 'Electrician working on electrical panel',
     linkHref: '/electrical_work',
+    buttonText: 'Electrical Services',
     imagePosition: 'right',
     services: [
       { icon: <HouseIcon />, text: 'Residential Electrical Maintenance & Repairs' },
@@ -57,6 +58,7 @@ export const servicesData: ServiceCardProps[] = [
     imageSrc: '/appliance-iconset/appliance-illustration.jpeg',
     imageAlt: 'Home Appliance',
     linkHref: '/appliance_work',
+    buttonText: 'Appliance Repair',
     imagePosition: 'left',
     services: [
       { icon: <KitchenIcon />, text: 'Kitchen Appliance Solutions' },
@@ -72,6 +74,7 @@ export const servicesData: ServiceCardProps[] = [
     imageSrc: '/handyman-iconset/handyman-illustration.jpeg',
     imageAlt: 'Handyman and Home Maintenance',
     linkHref: '/handyman_work',
+    buttonText: 'Handyman Services',
     imagePosition: 'right',
     services: [
       { icon: <MountingIcon />, text: 'Interior Mounting & Installation' },
@@ -88,6 +91,7 @@ export const servicesData: ServiceCardProps[] = [
     imageSrc: '/plumbing-iconset/plumbing-illustration.jpeg',
     imageAlt: 'Professional Plumbing Services',
     linkHref: '/plumbing_work',
+    buttonText: 'Plumbing Services',
     imagePosition: 'left',
     services: [
       { icon: <KitchenBathIcon />, text: 'Kitchen & Bath Plumbing' },

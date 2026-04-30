@@ -2,7 +2,6 @@
 
 import { useRef } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
-import { Link as ScrollLink } from 'react-scroll';
 import Button from '@/components/button/Button';
 import TrustBadges from '@/components/trust-badges/TrustBadges';
 import styles from './Hero.module.scss';
@@ -60,11 +59,11 @@ export default function Hero() {
           <TrustBadges />
         </div>
       </div>
-      <ScrollLink to="services" spy smooth offset={-64} duration={500} className={styles.scrollDownBtn}>
+      <a href="#services" className={styles.scrollDownBtn}>
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
           <polyline points="6 9 12 15 18 9"></polyline>
         </svg>
-      </ScrollLink>
+      </a>
     </section>
   );
 }
