@@ -16,7 +16,7 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "GetServiceDone | Electrical, Plumbing & Handyman Services",
+  title: "Get Service Done | Electrical, Plumbing & Handyman Services",
   description: "Expert home services across Metro Atlanta & GA. We provide certified electrical, plumbing, appliance repair, and handyman solutions. Book an expert today!",
   icons: {
     icon: [
