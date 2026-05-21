@@ -3,6 +3,7 @@ import { Poppins } from "next/font/google";
 import "./globals.scss";
 import Header from "@/components/header/Header";
 import Footer from "@/components/footer/Footer";
+import CookieConsent from "@/components/common/CookieConsent/CookieConsent";
 import { ThemeProvider } from "@/context/ThemeContext";
 
 const poppins = Poppins({
@@ -45,6 +46,7 @@ export default function RootLayout({
           <Header />
           <main>{children}</main>
           <Footer />
+          <CookieConsent />
         </ThemeProvider>
       </body>
     </html>

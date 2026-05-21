@@ -70,10 +70,10 @@ export default function Contacts() {
               )}
               <div className={styles.inputGroup}>
                 <label htmlFor="contact-name">Name</label>
-                <input 
-                  type="text" 
-                  id="contact-name" 
-                  placeholder="Your Name" 
+                <input
+                  type="text"
+                  id="contact-name"
+                  placeholder="Your Name"
                   value={formData.name}
                   onChange={handleChange}
                   required
@@ -82,10 +82,10 @@ export default function Contacts() {
               </div>
               <div className={styles.inputGroup}>
                 <label htmlFor="contact-email">Email</label>
-                <input 
-                  type="email" 
-                  id="contact-email" 
-                  placeholder="Your Email" 
+                <input
+                  type="email"
+                  id="contact-email"
+                  placeholder="Your Email"
                   value={formData.email}
                   onChange={handleChange}
                   required
@@ -94,9 +94,9 @@ export default function Contacts() {
               </div>
               <div className={styles.inputGroup}>
                 <label htmlFor="contact-message">Message</label>
-                <textarea 
-                  id="contact-message" 
-                  rows={5} 
+                <textarea
+                  id="contact-message"
+                  rows={5}
                   placeholder="How can we help?"
                   value={formData.message}
                   onChange={handleChange}
@@ -104,9 +104,9 @@ export default function Contacts() {
                   disabled={status === 'loading'}
                 ></textarea>
               </div>
-              <Button 
-                type="submit" 
-                variant="primary" 
+              <Button
+                type="submit"
+                variant="primary"
                 disabled={status === 'loading'}
               >
                 {status === 'loading' ? 'Sending...' : 'Send Message'}
@@ -121,15 +121,16 @@ export default function Contacts() {
           <div className={styles.info}>
             <div className={styles.infoItem}>
               <h3>Visit Us</h3>
-              <p>123 Service St, Home City, HC 12345</p>
+              <a href="https://www.google.com/maps/dir/?api=1&destination=702+Old+Peachtree+Rd+NW,+Suite+200,+Suwanee,+GA+30024" target="_blank" rel="noopener noreferrer">702 Old Peachtree Rd NW, <br /> Suwanee, GA 30024 <br /> Suite 200</a>
             </div>
             <div className={styles.infoItem}>
               <h3>Call Us</h3>
-              <p>(555) 012-3456</p>
+              <a href="tel:+14703478788">(470) 347-8788</a> <br />
+              <a href="tel:+14704333927">(470) 433-3927</a>
             </div>
             <div className={styles.infoItem}>
               <h3>Email Us</h3>
-              <p>info@getservicedone.com</p>
+              <a href="mailto:info@getservicedone.com">info@getservicedone.com</a>
             </div>
             <div className={styles.workingHours}>
               <h3>Working Hours</h3>

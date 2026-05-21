@@ -1,0 +1,128 @@
+.container {
+  min-height: calc(100vh - 64px - 100px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  text-align: center;
+}
+
+.content {
+  max-width: 560px;
+  animation: fadeInUp 0.6s ease-out;
+}
+
+/* Animated checkmark */
+.iconWrapper {
+  margin-bottom: 2rem;
+}
+
+.checkIcon {
+  width: 80px;
+  height: 80px;
+  color: var(--color-accent);
+}
+
+.checkCircle {
+  stroke-dasharray: 166;
+  stroke-dashoffset: 166;
+  animation: strokeCircle 0.6s ease-out 0.2s forwards;
+}
+
+.checkMark {
+  stroke-dasharray: 48;
+  stroke-dashoffset: 48;
+  animation: strokeCheck 0.4s ease-out 0.7s forwards;
+}
+
+.title {
+  font-size: 2.75rem;
+  font-weight: 800;
+  color: var(--color-text);
+  margin-bottom: 1rem;
+  letter-spacing: -0.5px;
+}
+
+.description {
+  font-size: 1.125rem;
+  color: var(--color-text-secondary);
+  line-height: 1.7;
+  margin-bottom: 2.5rem;
+}
+
+/* Info cards */
+.infoCards {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+.infoCard {
+  flex: 1;
+  padding: 1.25rem 1rem;
+  border-radius: 12px;
+  background-color: var(--color-bg-alt);
+  border: 1px solid var(--color-border);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.infoCard:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(var(--color-shadow-rgb), 0.1);
+}
+
+.infoIcon {
+  font-size: 1.5rem;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.infoText {
+  font-size: 0.9rem;
+  color: var(--color-text-secondary);
+  line-height: 1.5;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes strokeCircle {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes strokeCheck {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+/* Responsive */
+@media (max-width: 560px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  .infoCards {
+    flex-direction: column;
+  }
+
+  .content {
+    padding: 0 0.5rem;
+  }
+}

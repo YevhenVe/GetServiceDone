@@ -63,7 +63,7 @@ export default function TermsOfService() {
           <h2>8. Contact Us</h2>
           <p>
             For questions about these Terms of Service, contact us at{' '}
-            <strong>info@getservicedone.com</strong> or call us at <strong>(555) 012-3456</strong>.
+            <strong>info@getservicedone.com</strong>.
           </p>
         </div>
 
