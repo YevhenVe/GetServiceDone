@@ -32,8 +32,8 @@ export default function Footer() {
             <ul className={styles.links}>
               <li><Link href="/electrical_work">Electrical</Link></li>
               <li><Link href="/appliance_work">Appliance</Link></li>
-              <li><Link href="/handyman_work">Handyman</Link></li>
-              <li><Link href="/plumbing_work">Plumbing</Link></li>
+              {/* <li><Link href="/handyman_work">Handyman</Link></li>
+              <li><Link href="/plumbing_work">Plumbing</Link></li> */}
             </ul>
           </div>
 
@@ -41,8 +41,9 @@ export default function Footer() {
           <div className={styles.column}>
             <h4 className={styles.heading}>Contact Us</h4>
             <p className={styles.contactInfo}>
-              123 Service St, Home City, HC 12345<br />
-              (555) 012-3456<br />
+              702 Old Peachtree Rd NW, Suwanee, GA 30024 Suite 200<br />
+              (470) 433-3927<br />
+              (470) 347-8788<br />
               info@getservicedone.com
             </p>
           </div>

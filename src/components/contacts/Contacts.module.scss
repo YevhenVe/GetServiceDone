@@ -95,9 +95,18 @@
     color: var(--color-accent);
   }
 
-  p {
+  p,
+  a {
     color: var(--color-text-secondary);
     line-height: 1.6;
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+}
+
+.infoItem a {
+  &:hover {
+    color: var(--color-accent);
   }
 }
 

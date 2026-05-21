@@ -32,7 +32,7 @@ const MailIcon = () => (
 export default function ServiceCTA({
     title = "Ready to get it done?",
     description = "Contact us today for a free estimate on your next home project.",
-    phone = "(555) 123-4567",
+    phone = "(470) 433-3927",
     email = "info@getservicedone.com"
 }: ServiceCTAProps) {
     return (

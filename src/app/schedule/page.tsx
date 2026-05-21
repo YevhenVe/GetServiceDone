@@ -1,6 +1,25 @@
+'use client';
+
+import { useEffect } from 'react';
+import { useRouter } from 'next/navigation';
 import styles from './schedule.module.scss';
 
 export default function SchedulePage() {
+  const router = useRouter();
+
+  useEffect(() => {
+    const handleMessage = (event: MessageEvent) => {
+      const data = event.data;
+      if (data?.source !== 'korfield-booking') return;
+      if (data.type === 'submit_success') {
+        router.push('/thank-you');
+      }
+    };
+
+    window.addEventListener('message', handleMessage);
+    return () => window.removeEventListener('message', handleMessage);
+  }, [router]);
+
   return (
     <div className={styles.container}>
       <div className={styles.header}>

@@ -19,14 +19,14 @@ export default function Hero() {
   return (
     <section className={styles.hero} id="hero" ref={targetRef}>
       {/* Parallax Background */}
-      <motion.div 
-        className={styles.heroBg} 
+      <motion.div
+        className={styles.heroBg}
         style={{ y, scale }}
       />
-      
+
       <div className={styles.left}>
         <div className={styles.content}>
-          <motion.h1 
+          <motion.h1
             className={styles.title}
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -35,17 +35,17 @@ export default function Hero() {
             Professional<br />
             <span className={styles.highlight}>Home Services</span>
           </motion.h1>
-          
-          <motion.p 
+
+          <motion.p
             className={styles.description}
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
           >
-            We provide top-tier home maintenance and repair services. Trust our experts to get the job done right the first time, with quality you can count on.
+            Professional residential electrical services you can trust - safe, reliable, and done right the first time.
           </motion.p>
-          
-          <motion.div 
+
+          <motion.div
             className={styles.actions}
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -60,7 +60,7 @@ export default function Hero() {
         </div>
       </div>
       <a href="#services" className={styles.scrollDownBtn}>
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
           <polyline points="6 9 12 15 18 9"></polyline>
         </svg>
       </a>
