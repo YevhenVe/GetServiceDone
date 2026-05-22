@@ -5,6 +5,7 @@ import Header from "@/components/header/Header";
 import Footer from "@/components/footer/Footer";
 import CookieConsent from "@/components/common/CookieConsent/CookieConsent";
 import { ThemeProvider } from "@/context/ThemeContext";
+import { GoogleTagManager } from "@next/third-parties/google";
 
 const poppins = Poppins({
   weight: ["300", "400", "500", "600", "700", "800"],
@@ -41,6 +42,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <GoogleTagManager gtmId="GTM-PNNWC2KP" />
       <body className={poppins.className}>
         <ThemeProvider>
           <Header />
