@@ -46,8 +46,8 @@ export const servicesData: ServiceCardProps[] = [
       { icon: <ShieldIcon />, text: 'Home Security & Safety' },
       { icon: <BatteryIcon />, text: 'EV Charging, RV power & Energy Solutions' },
       { icon: <ChandelierIcon />, text: 'Luxury & Specialty Installations' },
-      { icon: <TowerIcon />, text: 'Utility & Heavy Infrastructure' },
-      { icon: <HvacIcon />, text: 'HVAC (Heating, Ventilation & Air Conditioning)' },
+      // { icon: <TowerIcon />, text: 'Utility & Heavy Infrastructure' },
+      // { icon: <HvacIcon />, text: 'HVAC (Heating, Ventilation & Air Conditioning)' },
     ],
   },
   {

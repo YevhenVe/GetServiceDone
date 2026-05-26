@@ -151,7 +151,7 @@ export default function ElectricalWorkPage() {
                         </div>
 
                         {/* Category 5 */}
-                        <div className={styles.serviceCategory}>
+                        {/* <div className={styles.serviceCategory}>
                             <h3><span className={styles.categoryNum}>5</span> <TowerIcon /> Infrastructure</h3>
                             <ul>
                                 <li><strong>Meter Box Services:</strong> <span>Relocation, repair, and replacement of meter boxes (Overhead and Underground).</span></li>
@@ -159,10 +159,10 @@ export default function ElectricalWorkPage() {
                                 <li><strong>Temporary Power:</strong> <span>Setup of Temporary Power Poles for construction or renovation sites.</span></li>
                                 <li><strong>Panel Upgrades:</strong> <span>Modernizing electrical panels to increase home capacity (100A to 200A+).</span></li>
                             </ul>
-                        </div>
+                        </div> */}
 
                         {/* Category 6 */}
-                        <div className={styles.serviceCategory}>
+                        {/* <div className={styles.serviceCategory}>
                             <h3><span className={styles.categoryNum}>6</span> <HvacIcon /> HVAC Solutions</h3>
                             <ul>
                                 <li><strong>System Replacement:</strong> <span>Installation of high-efficiency AC units, furnaces, and heat pump systems.</span></li>
@@ -171,13 +171,13 @@ export default function ElectricalWorkPage() {
                                 <li><strong>Seasonal Tune-Ups:</strong> <span>Preventive maintenance for Spring (AC) and Fall (Furnace).</span></li>
                                 <li><strong>Air Quality & Humidity:</strong> <span>Whole-home air purifiers, UV lights, and dehumidification systems.</span></li>
                             </ul>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </section>
 
             {/* Bottom CTA Section */}
-            <ServiceCTA 
+            <ServiceCTA
                 title="Need Electrical Assistance?"
                 description="We're ready to help with your next project. Get in touch today!"
             />
