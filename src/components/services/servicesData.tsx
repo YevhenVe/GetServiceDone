@@ -15,13 +15,13 @@ import {
   LaundryIcon,
   ComfortIcon,
 } from '../../../public/appliance-iconset/appliance_icons';
-// import {
-//   HandymanCircleIcon,
-//   MountingIcon,
-//   CarpentryIcon,
-//   RepairIcon,
-//   MaintenanceIcon,
-// } from '../../../public/handyman-iconset/handyman_icons';
+import {
+  HandymanCircleIcon,
+  MountingIcon,
+  CarpentryIcon,
+  RepairIcon,
+  MaintenanceIcon,
+} from '../../../public/handyman-iconset/handyman_icons';
 // import {
 //   PlumbingCircleIcon,
 //   KitchenBathIcon,
@@ -66,23 +66,23 @@ export const servicesData: ServiceCardProps[] = [
       { icon: <ComfortIcon />, text: 'Water & Comfort Appliances' },
     ],
   },
-  // {
-  //   title: 'Handyman',
-  //   highlightText: 'Work',
-  //   description: 'From small repairs to custom installations, we provide professional, reliable solutions for every corner of your home.',
-  //   mainIcon: <HandymanCircleIcon />,
-  //   imageSrc: '/handyman-iconset/handyman-illustration.jpeg',
-  //   imageAlt: 'Handyman and Home Maintenance',
-  //   linkHref: '/handyman_work',
-  //   buttonText: 'Handyman Services',
-  //   imagePosition: 'right',
-  //   services: [
-  //     { icon: <MountingIcon />, text: 'Interior Mounting & Installation' },
-  //     { icon: <CarpentryIcon />, text: 'Finish Carpentry & Trim' },
-  //     { icon: <RepairIcon />, text: 'General Home Repairs' },
-  //     { icon: <MaintenanceIcon />, text: 'Exterior & Seasonal Maintenance' },
-  //   ],
-  // },
+  {
+    title: 'Handyman',
+    highlightText: 'Work',
+    description: 'From small repairs to custom installations, we provide professional, reliable solutions for every corner of your home.',
+    mainIcon: <HandymanCircleIcon />,
+    imageSrc: '/handyman-iconset/handyman-illustration.jpeg',
+    imageAlt: 'Handyman and Home Maintenance',
+    linkHref: '/handyman_work',
+    buttonText: 'Handyman Services',
+    imagePosition: 'right',
+    services: [
+      { icon: <MountingIcon />, text: 'Interior Mounting & Installation' },
+      { icon: <CarpentryIcon />, text: 'Finish Carpentry & Trim' },
+      { icon: <RepairIcon />, text: 'General Home Repairs' },
+      { icon: <MaintenanceIcon />, text: 'Exterior & Seasonal Maintenance' },
+    ],
+  }
   // {
   //   title: 'Plumbing',
   //   highlightText: 'Services',
