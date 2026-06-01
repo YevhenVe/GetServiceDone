@@ -32,10 +32,11 @@ export async function generateMetadata({
     description: t('description'),
     keywords: t('keywords').split(', '),
     alternates: {
-      canonical: '/',
+      canonical: `https://getservicedone.com/${locale}`,
       languages: {
-        en: '/en',
-        es: '/es',
+        'x-default': 'https://getservicedone.com/en',
+        en: 'https://getservicedone.com/en',
+        es: 'https://getservicedone.com/es',
       },
     },
     openGraph: {
