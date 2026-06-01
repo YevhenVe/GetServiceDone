@@ -1,6 +1,8 @@
 {
-  "name": "Your App Name",
-  "short_name": "Your App",
+  "name": "Get Service Done",
+  "short_name": "GSD",
+  "description": "Professional electrical, plumbing, appliance repair, and handyman services in Metro Atlanta & GA.",
+  "start_url": "/",
   "icons": [
     {
       "src": "/android-chrome-192x192.png",
