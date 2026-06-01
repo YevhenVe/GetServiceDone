@@ -24,9 +24,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
                 lastModified: new Date(),
                 changeFrequency: freq,
                 priority: priority,
+                // xhtml:link for Google
+                alternates: {
+                    languages: {
+                        en: `${host}/en${path}`,
+                        es: `${host}/es${path}`,
+                    },
+                },
             });
         });
     });
 
     return sitemapEntries;
-}
+}
