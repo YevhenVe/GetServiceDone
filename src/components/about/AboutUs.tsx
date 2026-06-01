@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { motion, useInView, useMotionValue, useTransform, animate } from 'framer-motion';
 import styles from './AboutUs.module.scss';
 
@@ -9,14 +9,30 @@ function AnimatedNumber({ value, duration = 2, suffix = '' }: { value: number; d
   const inView = useInView(ref, { once: true, margin: "-50px" });
   const count = useMotionValue(0);
   const rounded = useTransform(count, (latest) => Math.round(latest) + suffix);
+  const hasAnimated = useRef(false);
+  const [isClient, setIsClient] = useState(false);
 
   useEffect(() => {
-    if (inView) {
-      animate(count, value, { duration: duration });
-    }
-  }, [count, inView, value, duration]);
+    setIsClient(true);
+  }, []);
 
-  return <motion.span ref={ref}>{rounded}</motion.span>;
+  useEffect(() => {
+    if (isClient && inView && !hasAnimated.current) {
+      hasAnimated.current = true;
+      animate(count, value, { duration });
+    }
+  }, [count, inView, value, duration, isClient]);
+
+  return (
+    <span ref={ref}>
+      {/* Google will see this — real number, visually hidden after hydration */}
+      <span style={{ display: isClient ? 'none' : 'inline' }}>
+        {value}{suffix}
+      </span>
+      {/* users will see this - animation, hidden from SSR */}
+      {isClient && <motion.span>{rounded}</motion.span>}
+    </span>
+  );
 }
 
 export default function AboutUs() {
