@@ -2,7 +2,7 @@
 
 import React from 'react';
 import Image from 'next/image';
-import Link from 'next/link';
+import { Link } from '@/i18n/routing';
 import Button from '@/components/button/Button';
 import ServiceCTA from '@/components/common/ServiceCTA/ServiceCTA';
 import styles from './plumbingWork.module.scss';
@@ -16,7 +16,7 @@ import {
     ShieldCheckIcon,
     AwardIcon,
     ClockIcon
-} from '../../../public/plumbing-iconset/plumbing_icons';
+} from '../../../../public/plumbing-iconset/plumbing_icons';
 
 export default function PlumbingWorkPage() {
     return (

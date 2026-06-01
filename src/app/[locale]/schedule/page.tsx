@@ -1,10 +1,12 @@
 'use client';
 
 import { useEffect } from 'react';
-import { useRouter } from 'next/navigation';
+import { useTranslations } from 'next-intl';
+import { useRouter } from '@/i18n/routing';
 import styles from './schedule.module.scss';
 
 export default function SchedulePage() {
+  const t = useTranslations('Schedule');
   const router = useRouter();
 
   useEffect(() => {
@@ -23,8 +25,8 @@ export default function SchedulePage() {
   return (
     <div className={styles.container}>
       <div className={styles.header}>
-        <h1 className={styles.title}>Schedule a Service</h1>
-        <p className={styles.subtitle}>Fill out the form below and we&apos;ll get back to you as soon as possible to confirm your appointment.</p>
+        <h1 className={styles.title}>{t('title')}</h1>
+        <p className={styles.subtitle}>{t('subtitle')}</p>
       </div>
 
       <div className={styles.iframeWrapper}>

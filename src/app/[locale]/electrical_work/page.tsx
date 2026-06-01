@@ -1,8 +1,8 @@
-'use client';
-
-import React from 'react';
+import { getTranslations } from 'next-intl/server';
+import { Metadata } from 'next';
 import Image from 'next/image';
-import Link from 'next/link';
+import { useTranslations } from 'next-intl';
+import { Link } from '@/i18n/routing';
 import Button from '@/components/button/Button';
 import ServiceCTA from '@/components/common/ServiceCTA/ServiceCTA';
 import styles from './electricalWork.module.scss';
@@ -18,9 +18,32 @@ import {
     ShieldCheckIcon,
     AwardIcon,
     ClockIcon
-} from '../../../public/electrical-iconset/electrical_icons';
+} from '../../../../public/electrical-iconset/electrical_icons';
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'Metadata.electrical' });
+
+  return {
+    title: t('title'),
+    description: t('description'),
+    alternates: {
+      canonical: '/electrical_work',
+      languages: {
+        en: '/en/electrical_work',
+        es: '/es/electrical_work',
+      },
+    },
+  };
+}
 
 export default function ElectricalWorkPage() {
+    const t = useTranslations('ElectricalWork');
+
     return (
         <main className={styles.page}>
             {/* Hero Section */}
@@ -29,29 +52,29 @@ export default function ElectricalWorkPage() {
                     <div className={styles.heroContent}>
                         <div className={styles.heroText}>
                             <nav className={styles.breadcrumbs}>
-                                <Link href="/">Home</Link>
+                                <Link href="/">{t('breadcrumbs').split(' ')[0]}</Link>
                                 <ChevronRight />
                                 <Link href="/#services">Services</Link>
                                 <ChevronRight />
-                                <span>Electrical Work</span>
+                                <span>{t('breadcrumbs')}</span>
                             </nav>
 
                             <div className={styles.badge}>
                                 <LightningCircleIcon />
-                                <span className={styles.badgeText}>Our Services</span>
+                                <span className={styles.badgeText}>{t('badge')}</span>
                             </div>
 
                             <h1 className={styles.title}>
-                                Electrical <span className={styles.highlight}>Work</span>
+                                {t('title_1')} <span className={styles.highlight}>{t('title_highlight')}</span>
                             </h1>
 
                             <p className={styles.description}>
-                                Safe, reliable, and professional electrical services for your home, business, and beyond.
+                                {t('description')}
                             </p>
 
                             <div className={styles.actions}>
                                 <Button href="/schedule" variant="primary">
-                                    Schedule Now <ChevronRight />
+                                    {t('schedule')} <ChevronRight />
                                 </Button>
                             </div>
 
@@ -59,22 +82,22 @@ export default function ElectricalWorkPage() {
                                 <div className={styles.trustItem}>
                                     <div className={styles.trustIcon}><ShieldCheckIcon /></div>
                                     <div className={styles.trustText}>
-                                        <h4>Licensed & Insured</h4>
-                                        <p>Fully certified electricians</p>
+                                        <h4>{t('trust_1_title')}</h4>
+                                        <p>{t('trust_1_desc')}</p>
                                     </div>
                                 </div>
                                 <div className={styles.trustItem}>
                                     <div className={styles.trustIcon}><AwardIcon /></div>
                                     <div className={styles.trustText}>
-                                        <h4>Quality Guaranteed</h4>
-                                        <p>Work backed by warranty</p>
+                                        <h4>{t('trust_2_title')}</h4>
+                                        <p>{t('trust_2_desc')}</p>
                                     </div>
                                 </div>
                                 <div className={styles.trustItem}>
                                     <div className={styles.trustIcon}><ClockIcon /></div>
                                     <div className={styles.trustText}>
-                                        <h4>24/7 Support</h4>
-                                        <p>We're here when you need us</p>
+                                        <h4>{t('trust_3_title')}</h4>
+                                        <p>{t('trust_3_desc')}</p>
                                     </div>
                                 </div>
                             </div>
@@ -98,55 +121,55 @@ export default function ElectricalWorkPage() {
             <section className={styles.mainContent}>
                 <div className={styles.container}>
                     <div className={styles.sectionHeader}>
-                        <h2>What We Offer</h2>
-                        <p>Comprehensive electrical solutions tailored to your specific needs.</p>
+                        <h2>{t('main_title')}</h2>
+                        <p>{t('main_desc')}</p>
                     </div>
 
                     <div className={styles.servicesGrid}>
                         {/* Category 1 */}
                         <div className={styles.serviceCategory}>
-                            <h3><span className={styles.categoryNum}>1</span> <HouseIcon /> Residential Maintenance</h3>
+                            <h3><span className={styles.categoryNum}>1</span> <HouseIcon /> {t('cat_1_title')}</h3>
                             <ul>
-                                <li><strong>Outlet & Switch Upgrades:</strong> <span>Replacing old plugs with modern units, including integrated USB/USB-C ports.</span></li>
-                                <li><strong>Safety Devices:</strong> <span>Installation of GFCI and AFCI protection for kitchens, bathrooms, and outdoor areas.</span></li>
-                                <li><strong>Smart Lighting Controls:</strong> <span>Installation of dimmers, motion sensors, timer smart controls, and 3-way/4-way switch configurations.</span></li>
-                                <li><strong>Ventilation:</strong> <span>Installation and replacement of bathroom exhaust fans and kitchen vents.</span></li>
-                                <li><strong>Electrical Troubleshooting:</strong> <span>Expert diagnostics for flickering lights, dead outlets, and tripped breakers.</span></li>
+                                <li>{t.rich('cat_1_item_1', { strong: (c) => <strong>{c}</strong>, span: (c) => <span>{c}</span> })}</li>
+                                <li>{t.rich('cat_1_item_2', { strong: (c) => <strong>{c}</strong>, span: (c) => <span>{c}</span> })}</li>
+                                <li>{t.rich('cat_1_item_3', { strong: (c) => <strong>{c}</strong>, span: (c) => <span>{c}</span> })}</li>
+                                <li>{t.rich('cat_1_item_4', { strong: (c) => <strong>{c}</strong>, span: (c) => <span>{c}</span> })}</li>
+                                <li>{t.rich('cat_1_item_5', { strong: (c) => <strong>{c}</strong>, span: (c) => <span>{c}</span> })}</li>
                             </ul>
                         </div>
 
                         {/* Category 2 */}
                         <div className={styles.serviceCategory}>
-                            <h3><span className={styles.categoryNum}>2</span> <ShieldIcon /> Security & Safety</h3>
+                            <h3><span className={styles.categoryNum}>2</span> <ShieldIcon /> {t('cat_2_title')}</h3>
                             <ul>
-                                <li><strong>Security Cameras & Doorbells:</strong> <span>Professional installation of Ring, Google Nest, Arlo, and floodlight camera systems.</span></li>
-                                <li><strong>Smoke & Carbon Monoxide Detectors:</strong> <span>Installation and hard-wiring of synchronized safety sensors.</span></li>
-                                <li><strong>Whole-Home Surge Protection:</strong> <span>Shielding your electronics and appliances from power surges.</span></li>
-                                <li><strong>Smart Home Energy Monitoring:</strong> <span>Installation of AI-driven monitors (like Sense or Emporia). See exactly how much electricity your home is using via smartphone.</span></li>
+                                <li>{t.rich('cat_2_item_1', { strong: (c) => <strong>{c}</strong>, span: (c) => <span>{c}</span> })}</li>
+                                <li>{t.rich('cat_2_item_2', { strong: (c) => <strong>{c}</strong>, span: (c) => <span>{c}</span> })}</li>
+                                <li>{t.rich('cat_2_item_3', { strong: (c) => <strong>{c}</strong>, span: (c) => <span>{c}</span> })}</li>
+                                <li>{t.rich('cat_2_item_4', { strong: (c) => <strong>{c}</strong>, span: (c) => <span>{c}</span> })}</li>
                             </ul>
                         </div>
 
                         {/* Category 3 */}
                         <div className={styles.serviceCategory}>
-                            <h3><span className={styles.categoryNum}>3</span> <BatteryIcon /> EV & Energy Solutions</h3>
+                            <h3><span className={styles.categoryNum}>3</span> <BatteryIcon /> {t('cat_3_title')}</h3>
                             <ul>
-                                <li><strong>EV Charger Installation:</strong> <span>Professional Level 2 charging stations for Tesla, Rivian, Ford, and all major brands.</span></li>
-                                <li><strong>Dedicated 240V Circuits:</strong> <span>High-voltage wiring for chargers, appliances, and heavy equipment.</span></li>
-                                <li><strong>Home Backup Generators:</strong> <span>Installation of electric generators and manual/automatic transfer switches.</span></li>
-                                <li><strong>Electric Water Heaters:</strong> <span>Full power connection.</span></li>
-                                <li><strong>RV Power Outlets:</strong> <span>Installation of dedicated 30-Amp and 50-Amp NEMA receptacles for your RV or camper.</span></li>
+                                <li>{t.rich('cat_3_item_1', { strong: (c) => <strong>{c}</strong>, span: (c) => <span>{c}</span> })}</li>
+                                <li>{t.rich('cat_3_item_2', { strong: (c) => <strong>{c}</strong>, span: (c) => <span>{c}</span> })}</li>
+                                <li>{t.rich('cat_3_item_3', { strong: (c) => <strong>{c}</strong>, span: (c) => <span>{c}</span> })}</li>
+                                <li>{t.rich('cat_3_item_4', { strong: (c) => <strong>{c}</strong>, span: (c) => <span>{c}</span> })}</li>
+                                <li>{t.rich('cat_3_item_5', { strong: (c) => <strong>{c}</strong>, span: (c) => <span>{c}</span> })}</li>
                             </ul>
                         </div>
 
                         {/* Category 4 */}
                         <div className={styles.serviceCategory}>
-                            <h3><span className={styles.categoryNum}>4</span> <ChandelierIcon /> Luxury Installations</h3>
+                            <h3><span className={styles.categoryNum}>4</span> <ChandelierIcon /> {t('cat_4_title')}</h3>
                             <ul>
-                                <li><strong>Wellness & Spa Power:</strong> <span>Dedicated electrical connections for Saunas, Hot Tubs, and swim spas.</span></li>
-                                <li><strong>Comfort Heating:</strong> <span>Professional wiring for Electric Floor Heaters and luxury Towel Warmers.</span></li>
-                                <li><strong>Kitchen Ambiance:</strong> <span>Custom Under-cabinet LED lighting installation and replacement.</span></li>
-                                <li><strong>Architectural Lighting:</strong> <span>Modern LED Cove, Toe-kick, and Staircase illumination.</span></li>
-                                <li><strong>Art & Feature Lighting:</strong> <span>Gallery-quality lighting for artwork and architectural features.</span></li>
+                                <li>{t.rich('cat_4_item_1', { strong: (c) => <strong>{c}</strong>, span: (c) => <span>{c}</span> })}</li>
+                                <li>{t.rich('cat_4_item_2', { strong: (c) => <strong>{c}</strong>, span: (c) => <span>{c}</span> })}</li>
+                                <li>{t.rich('cat_4_item_3', { strong: (c) => <strong>{c}</strong>, span: (c) => <span>{c}</span> })}</li>
+                                <li>{t.rich('cat_4_item_4', { strong: (c) => <strong>{c}</strong>, span: (c) => <span>{c}</span> })}</li>
+                                <li>{t.rich('cat_4_item_5', { strong: (c) => <strong>{c}</strong>, span: (c) => <span>{c}</span> })}</li>
                             </ul>
                         </div>
 
