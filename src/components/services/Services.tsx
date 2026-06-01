@@ -1,17 +1,21 @@
 import styles from './Services.module.scss';
 import Button from '@/components/button/Button';
 import ServiceCard from './ServiceCard';
-import { servicesData } from './servicesData';
+import { getServicesData } from './servicesData';
+import { useTranslations } from 'next-intl';
 
 export default function Services() {
+  const t = useTranslations('Services');
+  const tData = useTranslations('ServicesData');
+  const servicesData = getServicesData(tData);
 
   return (
     <section className={styles.services} id="services">
       <div className={styles.inner}>
         <div className={styles.header}>
-          <h2 className={styles.title}>Our Services</h2>
+          <h2 className={styles.title}>{t('title')}</h2>
           <p className={styles.subtitle}>
-            We offer a wide range of professional services to meet all your home maintenance needs.
+            {t('subtitle')}
           </p>
         </div>
 
@@ -23,7 +27,7 @@ export default function Services() {
 
         <div className={styles.cta}>
           <Button href="/schedule">
-            Schedule Now
+            {t('schedule')}
           </Button>
         </div>
       </div>

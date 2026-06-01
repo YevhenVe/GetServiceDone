@@ -4,9 +4,11 @@ import { useRef } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import Button from '@/components/button/Button';
 import TrustBadges from '@/components/trust-badges/TrustBadges';
+import { useTranslations } from 'next-intl';
 import styles from './Hero.module.scss';
 
 export default function Hero() {
+  const t = useTranslations('Hero');
   const targetRef = useRef<HTMLElement>(null);
   const { scrollYProgress } = useScroll({
     target: targetRef,
@@ -32,8 +34,8 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
           >
-            Professional<br />
-            <span className={styles.highlight}>Home Services</span>
+            {t('title_1')}<br />
+            <span className={styles.highlight}>{t('title_highlight')}</span>
           </motion.h1>
 
           <motion.p
@@ -42,7 +44,7 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
           >
-            Professional residential electrical services you can trust - safe, reliable, and done right the first time.
+            {t('description')}
           </motion.p>
 
           <motion.div
@@ -52,7 +54,7 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
           >
             <Button href="/schedule">
-              Schedule Now
+              {t('schedule_now')}
             </Button>
           </motion.div>
 

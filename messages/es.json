@@ -1,0 +1,245 @@
+{
+  "Hero": {
+    "title_1": "Servicios para el hogar",
+    "title_highlight": "Profesionales",
+    "description": "Servicios elÃ©ctricos residenciales profesionales en los que puede confiar: seguros, confiables y bien hechos a la primera.",
+    "schedule_now": "Programar Ahora"
+  },
+  "Navigation": {
+    "home": "Inicio",
+    "services": "Servicios",
+    "about_us": "Sobre Nosotros",
+    "contacts": "Contactos",
+    "schedule": "Programar Ahora"
+  },
+  "Footer": {
+    "description": "Servicios profesionales en los que puede confiar. Desde plomerÃ­a hasta electricidad, hacemos el trabajo bien hecho.",
+    "quick_links": "Enlaces RÃ¡pidos",
+    "our_services": "Nuestros Servicios",
+    "electrical": "Electricidad",
+    "appliance": "ElectrodomÃ©sticos",
+    "handyman": "Mantenimiento",
+    "contact_us": "ContÃ¡ctenos",
+    "developed_by": "Desarrollado por",
+    "rights_reserved": "Get Service Done. Todos los derechos reservados.",
+    "privacy": "PolÃ­tica de Privacidad",
+    "terms": "TÃ©rminos de Servicio"
+  },
+  "AboutUs": {
+    "title": "Sobre Nosotros",
+    "p1": "En Get Service Done, creemos que su hogar es su santuario, y merece nada menos que una perfecciÃ³n absoluta. Fundados en una bÃºsqueda incansable de la excelencia, nos hemos convertido en la principal autoridad para el mantenimiento del hogar y la transformaciÃ³n de propiedades.",
+    "p2": "Nuestros tÃ©cnicos certificados aportan dÃ©cadas de experiencia en una amplia gama de disciplinas. Desde infraestructuras elÃ©ctricas complejas y plomerÃ­a de lujo hasta la integraciÃ³n impecable de electrodomÃ©sticos, abordamos cada tarea con total precisiÃ³n.",
+    "p3": "Vamos mÃ¡s allÃ¡ de las reparaciones estÃ¡ndar para brindar verdadera tranquilidad. Respaldados por certificaciones de la industria, transparencia y un compromiso absoluto con la calidad, garantizamos que su hogar funcione perfectamente. No solo reparamos hogares; elevamos su nivel de vida.",
+    "exp": "AÃ±os de Experiencia",
+    "clients": "Clientes Felices",
+    "support": "Soporte"
+  },
+  "Services": {
+    "title": "Nuestros Servicios",
+    "subtitle": "Ofrecemos una amplia gama de servicios profesionales para satisfacer todas sus necesidades de mantenimiento.",
+    "schedule": "Programar Ahora"
+  },
+  "ServiceCTA": {
+    "title": "Â¿Listo para empezar?",
+    "description": "ContÃ¡ctenos hoy para un presupuesto gratuito en su prÃ³ximo proyecto.",
+    "call_us": "LlÃ¡menos",
+    "email_us": "EnvÃ­enos un correo",
+    "schedule": "Programar Ahora"
+  },
+  "CookieConsent": {
+    "title": "Consentimiento de Cookies",
+    "description": "Usamos cookies para mejorar su experiencia, analizar el trÃ¡fico y apoyar nuestros esfuerzos de marketing. Al continuar navegando, acepta nuestra ",
+    "decline": "Rechazar",
+    "accept": "Aceptar"
+  },
+  "ServicesData": {
+    "electrical": {
+      "title": "Trabajos",
+      "highlightText": "ElÃ©ctricos",
+      "description": "Servicios elÃ©ctricos seguros, confiables y profesionales para su hogar, negocio y mÃ¡s allÃ¡.",
+      "buttonText": "Servicios ElÃ©ctricos",
+      "items": {
+        "0": "Mantenimiento y Reparaciones ElÃ©ctricas Residenciales",
+        "1": "Seguridad y ProtecciÃ³n del Hogar",
+        "2": "Carga de VE, EnergÃ­a para RV y Soluciones EnergÃ©ticas",
+        "3": "Instalaciones de Lujo y Especiales"
+      }
+    },
+    "appliance": {
+      "title": "ElectrodomÃ©sticos",
+      "highlightText": "del Hogar",
+      "description": "Servicios expertos de instalaciÃ³n, mantenimiento y reparaciÃ³n de electrodomÃ©sticos para propiedades residenciales.",
+      "buttonText": "ReparaciÃ³n de ElectrodomÃ©sticos",
+      "items": {
+        "0": "Soluciones de ElectrodomÃ©sticos de Cocina",
+        "1": "Servicios para el Cuarto de Lavado",
+        "2": "ElectrodomÃ©sticos de Agua y Confort"
+      }
+    },
+    "handyman": {
+      "title": "Trabajos de",
+      "highlightText": "Mantenimiento",
+      "description": "Desde pequeÃ±as reparaciones hasta instalaciones personalizadas, ofrecemos soluciones profesionales y confiables para cada rincÃ³n de su hogar.",
+      "buttonText": "Servicios de Mantenimiento",
+      "items": {
+        "0": "Montaje e InstalaciÃ³n Interior",
+        "1": "CarpinterÃ­a Fina y Molduras",
+        "2": "Reparaciones Generales del Hogar",
+        "3": "Mantenimiento Exterior y Estacional"
+      }
+    }
+  },
+  "ElectricalWork": {
+    "breadcrumbs": "Trabajos ElÃ©ctricos",
+    "badge": "Nuestros Servicios",
+    "title_1": "Trabajos",
+    "title_highlight": "ElÃ©ctricos",
+    "description": "Servicios elÃ©ctricos seguros, confiables y profesionales para su hogar, negocio y mÃ¡s allÃ¡.",
+    "schedule": "Programar Ahora",
+    "trust_1_title": "Licenciados y Asegurados",
+    "trust_1_desc": "Electricistas totalmente certificados",
+    "trust_2_title": "Calidad Garantizada",
+    "trust_2_desc": "Trabajo respaldado por garantÃ­a",
+    "trust_3_title": "Soporte 24/7",
+    "trust_3_desc": "Estamos aquÃ­ cuando nos necesite",
+    "main_title": "Lo Que Ofrecemos",
+    "main_desc": "Soluciones elÃ©ctricas integrales adaptadas a sus necesidades especÃ­ficas.",
+    "cat_1_title": "Mantenimiento Residencial",
+    "cat_1_item_1": "<strong>Actualizaciones de Tomas y Botones:</strong> <span>Reemplazo de enchufes antiguos por unidades modernas, incluidos puertos USB/USB-C integrados.</span>",
+    "cat_1_item_2": "<strong>Dispositivos de Seguridad:</strong> <span>InstalaciÃ³n de protecciÃ³n GFCI y AFCI para cocinas, baÃ±os y Ã¡reas al aire libre.</span>",
+    "cat_1_item_3": "<strong>Controles de IluminaciÃ³n Inteligentes:</strong> <span>InstalaciÃ³n de atenuadores, sensores de movimiento, controles inteligentes de temporizador y configuraciones de interruptores de 3 y 4 vÃ­as.</span>",
+    "cat_1_item_4": "<strong>VentilaciÃ³n:</strong> <span>InstalaciÃ³n y reemplazo de ventiladores de escape de baÃ±o y conductos de cocina.</span>",
+    "cat_1_item_5": "<strong>ResoluciÃ³n de Problemas ElÃ©ctricos:</strong> <span>DiagnÃ³sticos expertos de luces parpadeantes, enchufes inactivos y disyuntores disparados.</span>",
+    "cat_2_title": "Seguridad y ProtecciÃ³n",
+    "cat_2_item_1": "<strong>CÃ¡maras de Seguridad y Timbres:</strong> <span>InstalaciÃ³n profesional de Ring, Google Nest, Arlo y sistemas de cÃ¡maras reflectores.</span>",
+    "cat_2_item_2": "<strong>Detectores de Humo y MonÃ³xido de Carbono:</strong> <span>InstalaciÃ³n y cableado de sensores de seguridad sincronizados.</span>",
+    "cat_2_item_3": "<strong>ProtecciÃ³n contra Sobretensiones para Todo el Hogar:</strong> <span>Protegiendo sus electrÃ³nicos y electrodomÃ©sticos de picos de energÃ­a.</span>",
+    "cat_2_item_4": "<strong>Monitoreo Inteligente de EnergÃ­a en el Hogar:</strong> <span>InstalaciÃ³n de monitores impulsados por IA (como Sense o Emporia). Vea exactamente cuÃ¡nta electricidad usa su hogar a travÃ©s de su telÃ©fono inteligente.</span>",
+    "cat_3_title": "VE y Soluciones de EnergÃ­a",
+    "cat_3_item_1": "<strong>InstalaciÃ³n de Cargadores para VE:</strong> <span>Estaciones de carga profesionales de Nivel 2 para Tesla, Rivian, Ford y todas las marcas principales.</span>",
+    "cat_3_item_2": "<strong>Circuitos Dedicados de 240V:</strong> <span>Cableado de alto voltaje para cargadores, electrodomÃ©sticos y equipos pesados.</span>",
+    "cat_3_item_3": "<strong>Generadores de Respaldo para el Hogar:</strong> <span>InstalaciÃ³n de generadores elÃ©ctricos e interruptores de transferencia manuales/automÃ¡ticos.</span>",
+    "cat_3_item_4": "<strong>Calentadores de Agua ElÃ©ctricos:</strong> <span>ConexiÃ³n de energÃ­a completa.</span>",
+    "cat_3_item_5": "<strong>Tomas de EnergÃ­a para RV:</strong> <span>InstalaciÃ³n de receptÃ¡culos dedicados de 30 amperios y 50 amperios NEMA para su RV o autocaravana.</span>",
+    "cat_4_title": "Instalaciones de Lujo",
+    "cat_4_item_1": "<strong>Poder para Bienestar y Spa:</strong> <span>Conexiones elÃ©ctricas dedicadas para saunas, jacuzzis y spas de nataciÃ³n.</span>",
+    "cat_4_item_2": "<strong>CalefacciÃ³n de Confort:</strong> <span>Cableado profesional para calentadores de piso elÃ©ctricos y calentadores de toallas de lujo.</span>",
+    "cat_4_item_3": "<strong>Ambiente de Cocina:</strong> <span>InstalaciÃ³n y reemplazo personalizados de iluminaciÃ³n LED debajo de los gabinetes.</span>",
+    "cat_4_item_4": "<strong>IluminaciÃ³n ArquitectÃ³nica:</strong> <span>IluminaciÃ³n moderna LED Cove, Toe-kick y de escaleras.</span>",
+    "cat_4_item_5": "<strong>IluminaciÃ³n de Arte y CaracterÃ­sticas:</strong> <span>IluminaciÃ³n de calidad de galerÃ­a para obras de arte y caracterÃ­sticas arquitectÃ³nicas.</span>"
+  },
+  "ApplianceWork": {
+    "breadcrumbs": "ElectrodomÃ©sticos",
+    "badge": "Nuestros Servicios",
+    "title_1": "ElectrodomÃ©sticos",
+    "title_highlight": "del Hogar",
+    "description": "Servicios expertos de instalaciÃ³n, mantenimiento y reparaciÃ³n de electrodomÃ©sticos para propiedades residenciales.",
+    "schedule": "Programar Ahora",
+    "trust_1_title": "Licenciados y Asegurados",
+    "trust_1_desc": "TÃ©cnicos totalmente certificados",
+    "trust_2_title": "Calidad Garantizada",
+    "trust_2_desc": "Trabajo respaldado por garantÃ­a",
+    "trust_3_title": "Soporte 24/7",
+    "trust_3_desc": "Estamos aquÃ­ cuando nos necesite",
+    "main_title": "Lo Que Ofrecemos",
+    "main_desc": "Soluciones integrales de electrodomÃ©sticos adaptadas a sus necesidades especÃ­ficas.",
+    "cat_1_title": "Soluciones de ElectrodomÃ©sticos de Cocina",
+    "cat_1_item_1": "<strong>Refrigeradores y Congeladores:</strong> <span>ReparaciÃ³n de sistemas de enfriamiento, reemplazo de compresores, reparaciones de mÃ¡quinas de hielo e instalaciones de tuberÃ­as de agua.</span>",
+    "cat_1_item_2": "<strong>Lavavajillas:</strong> <span>InstalaciÃ³n mecÃ¡nica completa, reparaciones de bombas/motores y soluciÃ³n de problemas de fugas.</span>",
+    "cat_1_item_3": "<strong>Hornos, Estufas y Cocinas:</strong> <span>ReparaciÃ³n de elementos calefactores, encendedores y calibraciÃ³n de temperatura (elÃ©ctrica y de gas).</span>",
+    "cat_1_item_4": "<strong>Microondas y Campanas Extractoras:</strong> <span>Montaje y reparaciÃ³n profesional de unidades integradas/sobre la estufa y motores de ventilaciÃ³n.</span>",
+    "cat_1_item_5": "<strong>Trituradores de Basura:</strong> <span>Desatascos, reparaciÃ³n y nueva instalaciÃ³n de unidades de trituraciÃ³n de trabajo pesado.</span>",
+    "cat_2_title": "Servicios para el Cuarto de Lavado",
+    "cat_2_item_1": "<strong>Lavadoras:</strong> <span>ReparaciÃ³n de tambores, bombas y sensores; nivelaciÃ³n y reducciÃ³n de vibraciones; reemplazo de mangueras de agua.</span>",
+    "cat_2_item_2": "<strong>Secadoras de Ropa:</strong> <span>Reemplazo de fusibles tÃ©rmicos y elementos calefactores, reparaciones de correas y limpieza profesional de conductos de secadoras para prevenir incendios.</span>",
+    "cat_2_item_3": "<strong>Unidades Apilables:</strong> <span>InstalaciÃ³n especializada y mantenimiento para conjuntos de lavanderÃ­a que ahorran espacio.</span>",
+    "cat_3_title": "ElectrodomÃ©sticos de Agua y Confort",
+    "cat_3_item_1": "<strong>Calentadores de Agua ElÃ©ctricos:</strong> <span>Reemplazo completo del sistema, reparaciÃ³n de elementos y lavado del tanque para mayor longevidad.</span>",
+    "cat_3_item_2": "<strong>Ablandadores de Agua y FiltraciÃ³n:</strong> <span>InstalaciÃ³n y mantenimiento de sistemas de tratamiento de agua para todo el hogar.</span>"
+  },
+  "HandymanWork": {
+    "breadcrumbs": "Mantenimiento y ReparaciÃ³n",
+    "badge": "Nuestros Servicios",
+    "title_1": "Trabajos de",
+    "title_highlight": "Mantenimiento",
+    "description": "Desde pequeÃ±as reparaciones hasta instalaciones personalizadas, ofrecemos soluciones profesionales y confiables para cada rincÃ³n de su hogar.",
+    "schedule": "Programar Ahora",
+    "trust_1_title": "Licenciados y Asegurados",
+    "trust_1_desc": "Servicio seguro y profesional",
+    "trust_2_title": "Calidad Garantizada",
+    "trust_2_desc": "AtenciÃ³n a cada detalle",
+    "trust_3_title": "RÃ¡pido y Confiable",
+    "trust_3_desc": "HaciÃ©ndolo bien de inmediato",
+    "main_title": "Soluciones Expertas para el Hogar",
+    "main_desc": "Servicios integrales de mantenimiento para mantener su hogar en perfectas condiciones.",
+    "cat_1_title": "Montaje e InstalaciÃ³n Interior",
+    "cat_1_item_1": "<strong>Montaje de TV en Pared:</strong> <span>Montaje seguro de todos los tamaÃ±os de pantalla con gestiÃ³n de cables oculta en la pared.</span>",
+    "cat_1_item_2": "<strong>Colgado de Arte y Espejos:</strong> <span>NivelaciÃ³n y montaje profesional de espejos pesados, paredes de galerÃ­a y arte a gran escala.</span>",
+    "cat_1_item_3": "<strong>EstanterÃ­as y OrganizaciÃ³n:</strong> <span>InstalaciÃ³n de sistemas de armarios personalizados, estantes flotantes y estantes de almacenamiento en garajes.</span>",
+    "cat_1_item_4": "<strong>Tratamientos de Ventanas:</strong> <span>Montaje de persianas, cortinas, estores y cubiertas de ventanas automatizadas inteligentes.</span>",
+    "cat_2_title": "CarpinterÃ­a Fina y Molduras",
+    "cat_2_item_1": "<strong>Molduras de Corona y ZÃ³calos:</strong> <span>ReparaciÃ³n e instalaciÃ³n de molduras interiores y decorativas.</span>",
+    "cat_2_item_2": "<strong>Herrajes de Puertas:</strong> <span>Reemplazo de manijas, cerrojos, cerraduras inteligentes y bisagras de puertas.</span>",
+    "cat_2_item_3": "<strong>Herrajes de Gabinetes:</strong> <span>ActualizaciÃ³n de perillas y tiradores de cocina y baÃ±o para un aspecto moderno.</span>",
+    "cat_2_item_4": "<strong>Paredes Decorativas:</strong> <span>InstalaciÃ³n de paredes caracterÃ­sticas de shiplap, revestimiento de madera o listones de madera.</span>",
+    "cat_3_title": "Reparaciones Generales del Hogar",
+    "cat_3_item_1": "<strong>ReparaciÃ³n de Paneles de Yeso:</strong> <span>Parcheado profesional, lijado y coincidencia de texturas para agujeros y Ã¡reas daÃ±adas por el agua.</span>",
+    "cat_3_item_2": "<strong>ReparaciÃ³n de Terrazas y Cercas:</strong> <span>Reemplazo de tablas podridas, ajuste de barandillas y ajustes de herrajes de puertas.</span>",
+    "cat_3_item_3": "<strong>Calafateo y Sellado:</strong> <span>RenovaciÃ³n de sellos alrededor de baÃ±eras, duchas y ventanas para prevenir daÃ±os por humedad.</span>",
+    "cat_3_item_4": "<strong>Burletes:</strong> <span>InstalaciÃ³n de burletes y sellos de puertas para mejorar la eficiencia energÃ©tica del hogar.</span>",
+    "cat_4_title": "Mantenimiento Exterior y Estacional",
+    "cat_4_item_1": "<strong>Limpieza y ReparaciÃ³n de Canalones:</strong> <span>Limpieza de escombros y garantÃ­a de que los bajantes estÃ©n correctamente desviados.</span>",
+    "cat_4_item_2": "<strong>Lavado a PresiÃ³n:</strong> <span>Limpieza profunda de entradas de vehÃ­culos, aceras, terrazas y revestimientos.</span>",
+    "cat_4_item_3": "<strong>Seguridad y Accesibilidad:</strong> <span>InstalaciÃ³n de barras de apoyo, pasamanos y puertas o herrajes a prueba de niÃ±os.</span>",
+    "cat_4_item_4": "<strong>Instalación de Buzones:</strong> <span>Colocación de postes nuevos y montaje de buzones modernos.</span>"
+  },
+  "Contacts": {
+    "title": "Contáctenos",
+    "subtitle": "¿Tiene alguna pregunta o necesita un presupuesto? Contáctenos hoy.",
+    "success": "¡Gracias! Su mensaje ha sido enviado con éxito.",
+    "error_default": "Ocurrió un error al enviar su mensaje.",
+    "name_label": "Nombre",
+    "name_placeholder": "Su Nombre",
+    "email_label": "Correo",
+    "email_placeholder": "Su Correo",
+    "message_label": "Mensaje",
+    "message_placeholder": "¿En qué podemos ayudarle?",
+    "btn_sending": "Enviando...",
+    "btn_send": "Enviar Mensaje",
+    "visit_us": "Visítenos",
+    "call_us": "Llámenos",
+    "email_us": "Envíenos un correo",
+    "working_hours": "Horario de Trabajo",
+    "mon_fri": "Lun - Vie: 8:00 AM - 6:00 PM",
+    "sat": "Sáb: 9:00 AM - 4:00 PM",
+    "sun": "Dom: Solo Emergencias"
+  },
+  "Schedule": {
+    "title": "Programe un Servicio",
+    "subtitle": "Complete el siguiente formulario y nos pondremos en contacto con usted lo antes posible para confirmar su cita."
+  },
+  "Metadata": {
+    "layout": {
+      "title": "Get Service Done | Servicios Eléctricos, de Plomería y de Mantenimiento",
+      "description": "Servicios expertos para el hogar en Metro Atlanta y GA. Ofrecemos soluciones certificadas en electricidad, plomería, reparación de electrodomésticos y mantenimiento. ¡Reserve un experto hoy!",
+      "keywords": "servicios para el hogar, servicios eléctricos, plomería, mantenimiento, reparación de electrodomésticos, Buford, Sugar Hill, Suwanee, Lawrenceville, Duluth, Norcross, Cumming, Forsyth County, Alpharetta, Johns Creek, Milton, Roswell, Sandy Springs, Dunwoody, Cobb County, Smyrna, Marietta, East Cobb, instalación de cargador de vehículos eléctricos, cargador EV",
+      "openGraph_siteName": "Get Service Done Inc",
+      "schema_serviceType_1": "Servicios Eléctricos",
+      "schema_serviceType_2": "Reparación de Electrodomésticos",
+      "schema_serviceType_3": "Servicios de Mantenimiento",
+      "schema_serviceType_4": "Instalación de Cargadores de Vehículos Eléctricos"
+    },
+    "electrical": {
+      "title": "Servicios Eléctricos | Get Service Done",
+      "description": "Servicios eléctricos profesionales, incluyendo instalación de cargadores para vehículos eléctricos, actualización de paneles e iluminación en Metro Atlanta."
+    },
+    "appliance": {
+      "title": "Reparación de Electrodomésticos | Get Service Done",
+      "description": "Reparación experta de electrodomésticos, incluyendo lavadoras, secadoras, refrigeradores y más en Metro Atlanta."
+    },
+    "handyman": {
+      "title": "Servicios de Mantenimiento | Get Service Done",
+      "description": "Servicios de mantenimiento confiables, que incluyen montaje de televisores, ensamblaje de muebles y reparaciones del hogar en Metro Atlanta."
+    }
+  }
+}

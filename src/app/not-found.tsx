@@ -1,22 +1,16 @@
-import Link from 'next/link';
-import Button from '@/components/button/Button';
-import styles from './not-found.module.scss';
+import {notFound} from 'next/navigation';
 
-export default function NotFound() {
+export default function GlobalNotFound() {
+  // This renders when a route like /unknown-locale is visited
   return (
-    <div className={styles.container}>
-      <div className={styles.content}>
-        <h1 className={styles.errorCode}>404</h1>
-        <h2 className={styles.title}>Oops! Page Not Found</h2>
-        <p className={styles.description}>
-          The page you are looking for might have been removed, had its name changed, or is temporarily unavailable.
-        </p>
-        <div className={styles.actions}>
-          <Button href="/" variant="primary">
-            Back to Home
-          </Button>
+    <html lang="en">
+      <body>
+        <div style={{ padding: '2rem', textAlign: 'center', fontFamily: 'sans-serif' }}>
+          <h1>404 - Page Not Found</h1>
+          <p>The page you are looking for does not exist.</p>
+          <a href="/en" style={{ color: 'blue', textDecoration: 'underline' }}>Go to Home</a>
         </div>
-      </div>
-    </div>
+      </body>
+    </html>
   );
 }

@@ -1,0 +1,245 @@
+{
+  "Hero": {
+    "title_1": "Professional",
+    "title_highlight": "Home Services",
+    "description": "Professional residential electrical services you can trust - safe, reliable, and done right the first time.",
+    "schedule_now": "Schedule Now"
+  },
+  "Navigation": {
+    "home": "Home",
+    "services": "Services",
+    "about_us": "About Us",
+    "contacts": "Contacts",
+    "schedule": "Schedule Now"
+  },
+  "Footer": {
+    "description": "Professional home services you can count on. From plumbing to electrical work, we get the job done right.",
+    "quick_links": "Quick Links",
+    "our_services": "Our Services",
+    "electrical": "Electrical",
+    "appliance": "Appliance",
+    "handyman": "Handyman",
+    "contact_us": "Contact Us",
+    "developed_by": "Developed by",
+    "rights_reserved": "Get Service Done. All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service"
+  },
+  "AboutUs": {
+    "title": "About Us",
+    "p1": "At Get Service Done, we believe your home is your ultimate sanctuary, deserving nothing less than uncompromising perfection. Founded on a relentless pursuit of excellence, we have evolved into the premier authority for elite home maintenance and property transformation.",
+    "p2": "Our distinguished roster of certified master technicians brings decades of unparalleled expertise across a comprehensive spectrum of disciplines. From engineering sophisticated electrical infrastructures and luxury plumbing systems to executing flawless home appliance integrations and bespoke handyman craftsmanship, we approach every task with absolute precision.",
+    "p3": "We transcend standard repairs to deliver true peace of mind. Built on a foundation of rigorous industry certifications, unwavering transparency, and an absolute commitment to quality, GetServiceDone ensures every corner of your home functions flawlessly. We do not just service homes; we elevate your standard of living.",
+    "exp": "Years Experience",
+    "clients": "Happy Clients",
+    "support": "Support"
+  },
+  "Services": {
+    "title": "Our Services",
+    "subtitle": "We offer a wide range of professional services to meet all your home maintenance needs.",
+    "schedule": "Schedule Now"
+  },
+  "ServiceCTA": {
+    "title": "Ready to get it done?",
+    "description": "Contact us today for a free estimate on your next home project.",
+    "call_us": "Call Us",
+    "email_us": "Email Us",
+    "schedule": "Schedule Now"
+  },
+  "CookieConsent": {
+    "title": "Cookie Consent",
+    "description": "We use cookies to enhance your experience, analyze site traffic, and support our marketing efforts. By continuing to browse, you agree to our ",
+    "decline": "Decline",
+    "accept": "Accept"
+  },
+  "ServicesData": {
+    "electrical": {
+      "title": "Electrical",
+      "highlightText": "Work",
+      "description": "Safe, reliable, and professional electrical services for your home, business, and beyond.",
+      "buttonText": "Electrical Services",
+      "items": {
+        "0": "Residential Electrical Maintenance & Repairs",
+        "1": "Home Security & Safety",
+        "2": "EV Charging, RV power & Energy Solutions",
+        "3": "Luxury & Specialty Installations"
+      }
+    },
+    "appliance": {
+      "title": "Home",
+      "highlightText": "Appliance",
+      "description": "Expert appliance installation, maintenance, and repair services for residential properties.",
+      "buttonText": "Appliance Repair",
+      "items": {
+        "0": "Kitchen Appliance Solutions",
+        "1": "Laundry Room Services",
+        "2": "Water & Comfort Appliances"
+      }
+    },
+    "handyman": {
+      "title": "Handyman",
+      "highlightText": "Work",
+      "description": "From small repairs to custom installations, we provide professional, reliable solutions for every corner of your home.",
+      "buttonText": "Handyman Services",
+      "items": {
+        "0": "Interior Mounting & Installation",
+        "1": "Finish Carpentry & Trim",
+        "2": "General Home Repairs",
+        "3": "Exterior & Seasonal Maintenance"
+      }
+    }
+  },
+  "ElectricalWork": {
+    "breadcrumbs": "Electrical Work",
+    "badge": "Our Services",
+    "title_1": "Electrical",
+    "title_highlight": "Work",
+    "description": "Safe, reliable, and professional electrical services for your home, business, and beyond.",
+    "schedule": "Schedule Now",
+    "trust_1_title": "Licensed & Insured",
+    "trust_1_desc": "Fully certified electricians",
+    "trust_2_title": "Quality Guaranteed",
+    "trust_2_desc": "Work backed by warranty",
+    "trust_3_title": "24/7 Support",
+    "trust_3_desc": "We're here when you need us",
+    "main_title": "What We Offer",
+    "main_desc": "Comprehensive electrical solutions tailored to your specific needs.",
+    "cat_1_title": "Residential Maintenance",
+    "cat_1_item_1": "<strong>Outlet & Switch Upgrades:</strong> <span>Replacing old plugs with modern units, including integrated USB/USB-C ports.</span>",
+    "cat_1_item_2": "<strong>Safety Devices:</strong> <span>Installation of GFCI and AFCI protection for kitchens, bathrooms, and outdoor areas.</span>",
+    "cat_1_item_3": "<strong>Smart Lighting Controls:</strong> <span>Installation of dimmers, motion sensors, timer smart controls, and 3-way/4-way switch configurations.</span>",
+    "cat_1_item_4": "<strong>Ventilation:</strong> <span>Installation and replacement of bathroom exhaust fans and kitchen vents.</span>",
+    "cat_1_item_5": "<strong>Electrical Troubleshooting:</strong> <span>Expert diagnostics for flickering lights, dead outlets, and tripped breakers.</span>",
+    "cat_2_title": "Security & Safety",
+    "cat_2_item_1": "<strong>Security Cameras & Doorbells:</strong> <span>Professional installation of Ring, Google Nest, Arlo, and floodlight camera systems.</span>",
+    "cat_2_item_2": "<strong>Smoke & Carbon Monoxide Detectors:</strong> <span>Installation and hard-wiring of synchronized safety sensors.</span>",
+    "cat_2_item_3": "<strong>Whole-Home Surge Protection:</strong> <span>Shielding your electronics and appliances from power surges.</span>",
+    "cat_2_item_4": "<strong>Smart Home Energy Monitoring:</strong> <span>Installation of AI-driven monitors (like Sense or Emporia). See exactly how much electricity your home is using via smartphone.</span>",
+    "cat_3_title": "EV & Energy Solutions",
+    "cat_3_item_1": "<strong>EV Charger Installation:</strong> <span>Professional Level 2 charging stations for Tesla, Rivian, Ford, and all major brands.</span>",
+    "cat_3_item_2": "<strong>Dedicated 240V Circuits:</strong> <span>High-voltage wiring for chargers, appliances, and heavy equipment.</span>",
+    "cat_3_item_3": "<strong>Home Backup Generators:</strong> <span>Installation of electric generators and manual/automatic transfer switches.</span>",
+    "cat_3_item_4": "<strong>Electric Water Heaters:</strong> <span>Full power connection.</span>",
+    "cat_3_item_5": "<strong>RV Power Outlets:</strong> <span>Installation of dedicated 30-Amp and 50-Amp NEMA receptacles for your RV or camper.</span>",
+    "cat_4_title": "Luxury Installations",
+    "cat_4_item_1": "<strong>Wellness & Spa Power:</strong> <span>Dedicated electrical connections for Saunas, Hot Tubs, and swim spas.</span>",
+    "cat_4_item_2": "<strong>Comfort Heating:</strong> <span>Professional wiring for Electric Floor Heaters and luxury Towel Warmers.</span>",
+    "cat_4_item_3": "<strong>Kitchen Ambiance:</strong> <span>Custom Under-cabinet LED lighting installation and replacement.</span>",
+    "cat_4_item_4": "<strong>Architectural Lighting:</strong> <span>Modern LED Cove, Toe-kick, and Staircase illumination.</span>",
+    "cat_4_item_5": "<strong>Art & Feature Lighting:</strong> <span>Gallery-quality lighting for artwork and architectural features.</span>"
+  },
+  "ApplianceWork": {
+    "breadcrumbs": "Home Appliance",
+    "badge": "Our Services",
+    "title_1": "Home",
+    "title_highlight": "Appliance",
+    "description": "Expert appliance installation, maintenance, and repair services for residential properties.",
+    "schedule": "Schedule Now",
+    "trust_1_title": "Licensed & Insured",
+    "trust_1_desc": "Fully certified technicians",
+    "trust_2_title": "Quality Guaranteed",
+    "trust_2_desc": "Work backed by warranty",
+    "trust_3_title": "24/7 Support",
+    "trust_3_desc": "We're here when you need us",
+    "main_title": "What We Offer",
+    "main_desc": "Comprehensive appliance solutions tailored to your specific needs.",
+    "cat_1_title": "Kitchen Appliance Solutions",
+    "cat_1_item_1": "<strong>Refrigerators & Freezers:</strong> <span>Repair of cooling systems, compressor replacement, ice maker repairs, and water line installations.</span>",
+    "cat_1_item_2": "<strong>Dishwashers:</strong> <span>Full mechanical installation, pump/motor repairs, and leak troubleshooting.</span>",
+    "cat_1_item_3": "<strong>Ovens, Ranges & Stoves:</strong> <span>Repair of heating elements, igniters, and temperature calibration (Electric and Gas).</span>",
+    "cat_1_item_4": "<strong>Microwaves & Vent Hoods:</strong> <span>Professional mounting and repair of built-in/over-the-range units and ventilation motors.</span>",
+    "cat_1_item_5": "<strong>Garbage Disposals:</strong> <span>Unjamming, repair, and new installation of heavy-duty disposal units.</span>",
+    "cat_2_title": "Laundry Room Services",
+    "cat_2_item_1": "<strong>Washing Machines:</strong> <span>Repair of drums, pumps, and sensors; leveling and vibration reduction; water hose replacement.</span>",
+    "cat_2_item_2": "<strong>Clothes Dryers:</strong> <span>Thermal fuse and heating element replacement, belt repairs, and professional Dryer Vent Cleaning to prevent fires.</span>",
+    "cat_2_item_3": "<strong>Stackable Units:</strong> <span>Specialty installation and maintenance for space-saving laundry sets.</span>",
+    "cat_3_title": "Water & Comfort Appliances",
+    "cat_3_item_1": "<strong>Electric Water Heaters:</strong> <span>Full system replacement, element repair, and tank flushing for longevity.</span>",
+    "cat_3_item_2": "<strong>Water Softeners & Filtration:</strong> <span>Installation and maintenance of whole-home water treatment systems.</span>"
+  },
+  "HandymanWork": {
+    "breadcrumbs": "Handyman & Maintenance",
+    "badge": "Our Services",
+    "title_1": "Handyman &",
+    "title_highlight": "Home Maintenance",
+    "description": "From small repairs to custom installations, we provide professional, reliable solutions for every corner of your home.",
+    "schedule": "Schedule Now",
+    "trust_1_title": "Licensed & Insured",
+    "trust_1_desc": "Safe and professional service",
+    "trust_2_title": "Quality Guaranteed",
+    "trust_2_desc": "Attention to every detail",
+    "trust_3_title": "Fast & Reliable",
+    "trust_3_desc": "Getting it done right away",
+    "main_title": "Expert Home Solutions",
+    "main_desc": "Comprehensive handyman services to keep your home in perfect condition.",
+    "cat_1_title": "Interior Mounting & Installation",
+    "cat_1_item_1": "<strong>TV Wall Mounting:</strong> <span>Secure mounting of all screen sizes with hidden in-wall cable management.</span>",
+    "cat_1_item_2": "<strong>Art & Mirror Hanging:</strong> <span>Professional leveling and mounting of heavy mirrors, gallery walls, and large-scale art.</span>",
+    "cat_1_item_3": "<strong>Shelving & Organization:</strong> <span>Installation of custom closet systems, floating shelves, and garage storage racks.</span>",
+    "cat_1_item_4": "<strong>Window Treatments:</strong> <span>Mounting of blinds, curtains, shades, and smart-automated window coverings.</span>",
+    "cat_2_title": "Finish Carpentry & Trim",
+    "cat_2_item_1": "<strong>Crown Molding & Baseboards:</strong> <span>Repair and installation of interior trim and decorative molding.</span>",
+    "cat_2_item_2": "<strong>Door Hardware:</strong> <span>Replacing handles, deadbolts, smart locks, and door hinges.</span>",
+    "cat_2_item_3": "<strong>Cabinet Hardware:</strong> <span>Upgrading kitchen and bath knobs and pulls for a modern look.</span>",
+    "cat_2_item_4": "<strong>Accent Walls:</strong> <span>Installation of shiplap, wainscoting, or wood-slat feature walls.</span>",
+    "cat_3_title": "General Home Repairs",
+    "cat_3_item_1": "<strong>Drywall Repair:</strong> <span>Professional patching, sanding, and texture matching for holes and water-damaged areas.</span>",
+    "cat_3_item_2": "<strong>Deck & Fence Repair:</strong> <span>Replacing rotted boards, tightening railings, and gate hardware adjustments.</span>",
+    "cat_3_item_3": "<strong>Caulking & Sealing:</strong> <span>Refreshing seals around tubs, showers, and windows to prevent moisture damage.</span>",
+    "cat_3_item_4": "<strong>Weather Stripping:</strong> <span>Installing door sweeps and seals to improve home energy efficiency.</span>",
+    "cat_4_title": "Exterior & Seasonal Maintenance",
+    "cat_4_item_1": "<strong>Gutter Cleaning & Repair:</strong> <span>Clearing debris and ensuring downspouts are properly diverted.</span>",
+    "cat_4_item_2": "<strong>Pressure Washing:</strong> <span>Deep cleaning of driveways, sidewalks, decks, and siding.</span>",
+    "cat_4_item_3": "<strong>Safety & Accessibility:</strong> <span>Installation of grab bars, handrails, and child-proofing gates or hardware.</span>",
+    "cat_4_item_4": "<strong>Mailbox Installation:</strong> <span>Setting new posts and mounting modern mailboxes.</span>"
+  },
+  "Contacts": {
+    "title": "Contact Us",
+    "subtitle": "Have a question or need a quote? Reach out to us today.",
+    "success": "Thank you! Your message has been sent successfully.",
+    "error_default": "An error occurred while sending your message.",
+    "name_label": "Name",
+    "name_placeholder": "Your Name",
+    "email_label": "Email",
+    "email_placeholder": "Your Email",
+    "message_label": "Message",
+    "message_placeholder": "How can we help?",
+    "btn_sending": "Sending...",
+    "btn_send": "Send Message",
+    "visit_us": "Visit Us",
+    "call_us": "Call Us",
+    "email_us": "Email Us",
+    "working_hours": "Working Hours",
+    "mon_fri": "Mon - Fri: 8:00 AM - 6:00 PM",
+    "sat": "Sat: 9:00 AM - 4:00 PM",
+    "sun": "Sun: Emergency Only"
+  },
+  "Schedule": {
+    "title": "Schedule a Service",
+    "subtitle": "Fill out the form below and we'll get back to you as soon as possible to confirm your appointment."
+  },
+  "Metadata": {
+    "layout": {
+      "title": "Get Service Done | Electrical, Plumbing & Handyman Services",
+      "description": "Expert home services across Metro Atlanta & GA. We provide certified electrical, plumbing, appliance repair, and handyman solutions. Book an expert today!",
+      "keywords": "home services, electrical services, plumbing, handyman, appliance repair, Buford, Sugar Hill, Suwanee, Lawrenceville, Duluth, Norcross, Cumming, Forsyth County, Alpharetta, Johns Creek, Milton, Roswell, Sandy Springs, Dunwoody, Cobb County, Smyrna, Marietta, East Cobb, EV charger installation, EV charger",
+      "openGraph_siteName": "Get Service Done Inc",
+      "schema_serviceType_1": "Electrical Services",
+      "schema_serviceType_2": "Appliance Repair",
+      "schema_serviceType_3": "Handyman Services",
+      "schema_serviceType_4": "EV Charger Installation"
+    },
+    "electrical": {
+      "title": "Electrical Services | Get Service Done",
+      "description": "Professional electrical services including EV charger installation, panel upgrades, and lighting in Metro Atlanta."
+    },
+    "appliance": {
+      "title": "Appliance Repair Services | Get Service Done",
+      "description": "Expert appliance repair for washers, dryers, refrigerators, and more in Metro Atlanta."
+    },
+    "handyman": {
+      "title": "Handyman Services | Get Service Done",
+      "description": "Reliable handyman services including TV mounting, furniture assembly, and home repairs in Metro Atlanta."
+    }
+  }
+}

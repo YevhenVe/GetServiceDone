@@ -1,6 +1,7 @@
 import React from 'react';
-import Link from 'next/link';
+import { Link } from '@/i18n/routing';
 import Button from '@/components/button/Button';
+import { useTranslations } from 'next-intl';
 import styles from './ServiceCTA.module.scss';
 
 interface ServiceCTAProps {
@@ -35,27 +36,33 @@ export default function ServiceCTA({
     phone = "(470) 433-3927",
     email = "info@getservicedone.com"
 }: ServiceCTAProps) {
+    const t = useTranslations('ServiceCTA');
+    
+    // Use translations if props are not provided
+    const displayTitle = title === "Ready to get it done?" ? t('title') : title;
+    const displayDesc = description === "Contact us today for a free estimate on your next home project." ? t('description') : description;
+
     return (
         <section className={styles.bottomCta}>
             <div className={styles.container}>
                 <div className={styles.ctaCard}>
                     <div className={styles.ctaText}>
-                        <h2>{title}</h2>
-                        <p>{description}</p>
+                        <h2>{displayTitle}</h2>
+                        <p>{displayDesc}</p>
                     </div>
 
                     <div className={styles.ctaInfo}>
                         <div className={styles.infoItem}>
                             <div className={styles.infoIcon}><PhoneIcon /></div>
                             <div className={styles.infoLabel}>
-                                <span>Call Us</span>
+                                <span>{t('call_us')}</span>
                                 <span>{phone}</span>
                             </div>
                         </div>
                         <div className={styles.infoItem}>
                             <div className={styles.infoIcon}><MailIcon /></div>
                             <div className={styles.infoLabel}>
-                                <span>Email Us</span>
+                                <span>{t('email_us')}</span>
                                 <span>{email}</span>
                             </div>
                         </div>
@@ -63,7 +70,7 @@ export default function ServiceCTA({
 
                     <div className={styles.ctaAction}>
                         <Button href="/schedule" variant="primary">
-                            Schedule Now <ChevronRight />
+                            {t('schedule')} <ChevronRight />
                         </Button>
                     </div>
                 </div>

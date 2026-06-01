@@ -1,8 +1,8 @@
-'use client';
-
-import React from 'react';
+import { getTranslations } from 'next-intl/server';
+import { Metadata } from 'next';
 import Image from 'next/image';
-import Link from 'next/link';
+import { useTranslations } from 'next-intl';
+import { Link } from '@/i18n/routing';
 import Button from '@/components/button/Button';
 import ServiceCTA from '@/components/common/ServiceCTA/ServiceCTA';
 import styles from './handymanWork.module.scss';
@@ -16,9 +16,32 @@ import {
     ShieldCheckIcon,
     AwardIcon,
     ClockIcon
-} from '../../../public/handyman-iconset/handyman_icons';
+} from '../../../../public/handyman-iconset/handyman_icons';
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'Metadata.handyman' });
+
+  return {
+    title: t('title'),
+    description: t('description'),
+    alternates: {
+      canonical: '/handyman_work',
+      languages: {
+        en: '/en/handyman_work',
+        es: '/es/handyman_work',
+      },
+    },
+  };
+}
 
 export default function HandymanWorkPage() {
+    const t = useTranslations('HandymanWork');
+
     return (
         <main className={styles.page}>
             {/* Hero Section */}
@@ -27,29 +50,29 @@ export default function HandymanWorkPage() {
                     <div className={styles.heroContent}>
                         <div className={styles.heroText}>
                             <nav className={styles.breadcrumbs}>
-                                <Link href="/">Home</Link>
+                                <Link href="/">{t('breadcrumbs').split(' ')[0]}</Link>
                                 <ChevronRight />
                                 <Link href="/#services">Services</Link>
                                 <ChevronRight />
-                                <span>Handyman & Maintenance</span>
+                                <span>{t('breadcrumbs')}</span>
                             </nav>
 
                             <div className={styles.badge}>
                                 <HandymanCircleIcon />
-                                <span className={styles.badgeText}>Our Services</span>
+                                <span className={styles.badgeText}>{t('badge')}</span>
                             </div>
 
                             <h1 className={styles.title}>
-                                Handyman & <span className={styles.highlight}>Home Maintenance</span>
+                                {t('title_1')} <span className={styles.highlight}>{t('title_highlight')}</span>
                             </h1>
 
                             <p className={styles.description}>
-                                From small repairs to custom installations, we provide professional, reliable solutions for every corner of your home.
+                                {t('description')}
                             </p>
 
                             <div className={styles.actions}>
                                 <Button href="/schedule" variant="primary">
-                                    Schedule Now <ChevronRight />
+                                    {t('schedule')} <ChevronRight />
                                 </Button>
                             </div>
 
@@ -57,22 +80,22 @@ export default function HandymanWorkPage() {
                                 <div className={styles.trustItem}>
                                     <div className={styles.trustIcon}><ShieldCheckIcon /></div>
                                     <div className={styles.trustText}>
-                                        <h4>Licensed & Insured</h4>
-                                        <p>Safe and professional service</p>
+                                        <h4>{t('trust_1_title')}</h4>
+                                        <p>{t('trust_1_desc')}</p>
                                     </div>
                                 </div>
                                 <div className={styles.trustItem}>
                                     <div className={styles.trustIcon}><AwardIcon /></div>
                                     <div className={styles.trustText}>
-                                        <h4>Quality Guaranteed</h4>
-                                        <p>Attention to every detail</p>
+                                        <h4>{t('trust_2_title')}</h4>
+                                        <p>{t('trust_2_desc')}</p>
                                     </div>
                                 </div>
                                 <div className={styles.trustItem}>
                                     <div className={styles.trustIcon}><ClockIcon /></div>
                                     <div className={styles.trustText}>
-                                        <h4>Fast & Reliable</h4>
-                                        <p>Getting it done right away</p>
+                                        <h4>{t('trust_3_title')}</h4>
+                                        <p>{t('trust_3_desc')}</p>
                                     </div>
                                 </div>
                             </div>
@@ -96,52 +119,52 @@ export default function HandymanWorkPage() {
             <section className={styles.mainContent}>
                 <div className={styles.container}>
                     <div className={styles.sectionHeader}>
-                        <h2>Expert Home Solutions</h2>
-                        <p>Comprehensive handyman services to keep your home in perfect condition.</p>
+                        <h2>{t('main_title')}</h2>
+                        <p>{t('main_desc')}</p>
                     </div>
 
                     <div className={styles.servicesGrid}>
                         {/* Category 1 */}
                         <div className={styles.serviceCategory}>
-                            <h3><span className={styles.categoryNum}>1</span> <MountingIcon /> Interior Mounting & Installation</h3>
+                            <h3><span className={styles.categoryNum}>1</span> <MountingIcon /> {t('cat_1_title')}</h3>
                             <ul>
-                                <li><strong>TV Wall Mounting:</strong> <span>Secure mounting of all screen sizes with hidden in-wall cable management.</span></li>
-                                <li><strong>Art & Mirror Hanging:</strong> <span>Professional leveling and mounting of heavy mirrors, gallery walls, and large-scale art.</span></li>
-                                <li><strong>Shelving & Organization:</strong> <span>Installation of custom closet systems, floating shelves, and garage storage racks.</span></li>
-                                <li><strong>Window Treatments:</strong> <span>Mounting of blinds, curtains, shades, and smart-automated window coverings.</span></li>
+                                <li>{t.rich('cat_1_item_1', { strong: (c) => <strong>{c}</strong>, span: (c) => <span>{c}</span> })}</li>
+                                <li>{t.rich('cat_1_item_2', { strong: (c) => <strong>{c}</strong>, span: (c) => <span>{c}</span> })}</li>
+                                <li>{t.rich('cat_1_item_3', { strong: (c) => <strong>{c}</strong>, span: (c) => <span>{c}</span> })}</li>
+                                <li>{t.rich('cat_1_item_4', { strong: (c) => <strong>{c}</strong>, span: (c) => <span>{c}</span> })}</li>
                             </ul>
                         </div>
 
                         {/* Category 2 */}
                         <div className={styles.serviceCategory}>
-                            <h3><span className={styles.categoryNum}>2</span> <CarpentryIcon /> Finish Carpentry & Trim</h3>
+                            <h3><span className={styles.categoryNum}>2</span> <CarpentryIcon /> {t('cat_2_title')}</h3>
                             <ul>
-                                <li><strong>Crown Molding & Baseboards:</strong> <span>Repair and installation of interior trim and decorative molding.</span></li>
-                                <li><strong>Door Hardware:</strong> <span>Replacing handles, deadbolts, smart locks, and door hinges.</span></li>
-                                <li><strong>Cabinet Hardware:</strong> <span>Upgrading kitchen and bath knobs and pulls for a modern look.</span></li>
-                                <li><strong>Accent Walls:</strong> <span>Installation of shiplap, wainscoting, or wood-slat feature walls.</span></li>
+                                <li>{t.rich('cat_2_item_1', { strong: (c) => <strong>{c}</strong>, span: (c) => <span>{c}</span> })}</li>
+                                <li>{t.rich('cat_2_item_2', { strong: (c) => <strong>{c}</strong>, span: (c) => <span>{c}</span> })}</li>
+                                <li>{t.rich('cat_2_item_3', { strong: (c) => <strong>{c}</strong>, span: (c) => <span>{c}</span> })}</li>
+                                <li>{t.rich('cat_2_item_4', { strong: (c) => <strong>{c}</strong>, span: (c) => <span>{c}</span> })}</li>
                             </ul>
                         </div>
 
                         {/* Category 3 */}
                         <div className={styles.serviceCategory}>
-                            <h3><span className={styles.categoryNum}>3</span> <RepairIcon /> General Home Repairs</h3>
+                            <h3><span className={styles.categoryNum}>3</span> <RepairIcon /> {t('cat_3_title')}</h3>
                             <ul>
-                                <li><strong>Drywall Repair:</strong> <span>Professional patching, sanding, and texture matching for holes and water-damaged areas.</span></li>
-                                <li><strong>Deck & Fence Repair:</strong> <span>Replacing rotted boards, tightening railings, and gate hardware adjustments.</span></li>
-                                <li><strong>Caulking & Sealing:</strong> <span>Refreshing seals around tubs, showers, and windows to prevent moisture damage.</span></li>
-                                <li><strong>Weather Stripping:</strong> <span>Installing door sweeps and seals to improve home energy efficiency.</span></li>
+                                <li>{t.rich('cat_3_item_1', { strong: (c) => <strong>{c}</strong>, span: (c) => <span>{c}</span> })}</li>
+                                <li>{t.rich('cat_3_item_2', { strong: (c) => <strong>{c}</strong>, span: (c) => <span>{c}</span> })}</li>
+                                <li>{t.rich('cat_3_item_3', { strong: (c) => <strong>{c}</strong>, span: (c) => <span>{c}</span> })}</li>
+                                <li>{t.rich('cat_3_item_4', { strong: (c) => <strong>{c}</strong>, span: (c) => <span>{c}</span> })}</li>
                             </ul>
                         </div>
 
                         {/* Category 4 */}
                         <div className={styles.serviceCategory}>
-                            <h3><span className={styles.categoryNum}>4</span> <MaintenanceIcon /> Exterior & Seasonal Maintenance</h3>
+                            <h3><span className={styles.categoryNum}>4</span> <MaintenanceIcon /> {t('cat_4_title')}</h3>
                             <ul>
-                                <li><strong>Gutter Cleaning & Repair:</strong> <span>Clearing debris and ensuring downspouts are properly diverted.</span></li>
-                                <li><strong>Pressure Washing:</strong> <span>Deep cleaning of driveways, sidewalks, decks, and siding.</span></li>
-                                <li><strong>Safety & Accessibility:</strong> <span>Installation of grab bars, handrails, and child-proofing gates or hardware.</span></li>
-                                <li><strong>Mailbox Installation:</strong> <span>Setting new posts and mounting modern mailboxes.</span></li>
+                                <li>{t.rich('cat_4_item_1', { strong: (c) => <strong>{c}</strong>, span: (c) => <span>{c}</span> })}</li>
+                                <li>{t.rich('cat_4_item_2', { strong: (c) => <strong>{c}</strong>, span: (c) => <span>{c}</span> })}</li>
+                                <li>{t.rich('cat_4_item_3', { strong: (c) => <strong>{c}</strong>, span: (c) => <span>{c}</span> })}</li>
+                                <li>{t.rich('cat_4_item_4', { strong: (c) => <strong>{c}</strong>, span: (c) => <span>{c}</span> })}</li>
                             </ul>
                         </div>
                     </div>

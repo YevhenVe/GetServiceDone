@@ -1,13 +1,15 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import Link from 'next/link';
+import { Link } from '@/i18n/routing';
 import { motion, AnimatePresence } from 'framer-motion';
 import Button from '@/components/button/Button';
+import { useTranslations } from 'next-intl';
 import styles from './CookieConsent.module.scss';
 
 export default function CookieConsent() {
   const [isVisible, setIsVisible] = useState(false);
+  const t = useTranslations('CookieConsent');
 
   useEffect(() => {
     // Check if the user has already made a choice
@@ -59,9 +61,9 @@ export default function CookieConsent() {
                 </svg>
               </div>
               <div className={styles.textContainer}>
-                <h4 className={styles.title}>Cookie Consent</h4>
+                <h4 className={styles.title}>{t('title')}</h4>
                 <p className={styles.description}>
-                  We use cookies to enhance your experience, analyze site traffic, and support our marketing efforts. By continuing to browse, you agree to our{' '}
+                  {t('description')}
                   <Link href="/privacy" className={styles.link}>
                     Privacy Policy
                   </Link>
@@ -71,10 +73,10 @@ export default function CookieConsent() {
             </div>
             <div className={styles.actions}>
               <button onClick={handleDecline} className={styles.declineBtn}>
-                Decline
+                {t('decline')}
               </button>
               <Button onClick={handleAccept} variant="primary" className={styles.acceptBtn}>
-                Accept
+                {t('accept')}
               </Button>
             </div>
           </div>
