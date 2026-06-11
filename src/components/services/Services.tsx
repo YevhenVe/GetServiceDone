@@ -21,7 +21,7 @@ export default function Services() {
 
         <div className={styles.grid}>
           {servicesData.map((data, index) => (
-            <ServiceCard key={index} {...data} />
+            <ServiceCard key={index} {...data} index={index} />
           ))}
         </div>
 

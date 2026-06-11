@@ -22,6 +22,7 @@ export interface ServiceCardProps {
   linkHref: string;
   buttonText?: string;
   imagePosition?: 'left' | 'right';
+  index?: number;
 }
 
 export default function ServiceCard({
@@ -35,6 +36,7 @@ export default function ServiceCard({
   linkHref,
   buttonText,
   imagePosition = 'right',
+  index = 0,
 }: ServiceCardProps) {
   const cardClassName = `${styles.card} ${imagePosition === 'left' ? styles.imageLeft : ''}`.trim();
 
@@ -43,8 +45,8 @@ export default function ServiceCard({
       className={cardClassName}
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: false, margin: "-100px" }}
-      transition={{ duration: 0.6, ease: "easeOut" }}
+      viewport={{ once: true, margin: "-100px" }}
+      transition={{ duration: 0.6, delay: index * 0.15, ease: "easeOut" }}
     >
       <div className={styles.content}>
         {mainIcon && <div className={styles.iconWrapper}>{mainIcon}</div>}
