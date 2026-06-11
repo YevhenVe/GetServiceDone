@@ -92,7 +92,7 @@ export default async function RootLayout({
   const t = await getTranslations({ locale, namespace: 'Metadata.layout' });
 
   return (
-    <html lang={locale} suppressHydrationWarning>
+    <html lang={locale} data-theme="dark" suppressHydrationWarning>
       <head>
         <script
           type="application/ld+json"

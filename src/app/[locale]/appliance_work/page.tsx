@@ -18,24 +18,24 @@ import {
 } from '../../../../public/appliance-iconset/appliance_icons';
 
 export async function generateMetadata({
-  params,
+    params,
 }: {
-  params: Promise<{ locale: string }>;
+    params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
-  const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: 'Metadata.appliance' });
+    const { locale } = await params;
+    const t = await getTranslations({ locale, namespace: 'Metadata.appliance' });
 
-  return {
-    title: t('title'),
-    description: t('description'),
-    alternates: {
-      canonical: '/appliance_work',
-      languages: {
-        en: '/en/appliance_work',
-        es: '/es/appliance_work',
-      },
-    },
-  };
+    return {
+        title: t('title'),
+        description: t('description'),
+        alternates: {
+            canonical: '/appliance_work',
+            languages: {
+                en: '/en/appliance_work',
+                es: '/es/appliance_work',
+            },
+        },
+    };
 }
 
 export default function ApplianceWorkPage() {
@@ -158,7 +158,7 @@ export default function ApplianceWorkPage() {
             </section>
 
             {/* Bottom CTA Section */}
-            <ServiceCTA 
+            <ServiceCTA
                 title="Need Appliance Assistance?"
                 description="We're ready to help with your next project. Get in touch today!"
             />
