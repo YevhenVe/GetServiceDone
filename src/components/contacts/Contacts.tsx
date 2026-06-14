@@ -127,8 +127,9 @@ export default function Contacts() {
             </div>
             <div className={styles.infoItem}>
               <h3>{t('call_us')}</h3>
-              <a href="tel:+14703478788">(470) 347-8788</a> <br />
-              <a href="tel:+14704333927">(470) 433-3927</a>
+              <a href="tel:+14704333927">(470) 433-3927</a> <br />
+              <a href="tel:+14703791446">(470) 379-1446</a> <br />
+              <a href="tel:+14703478788">(470) 347-8788</a>
             </div>
             <div className={styles.infoItem}>
               <h3>{t('email_us')}</h3>
