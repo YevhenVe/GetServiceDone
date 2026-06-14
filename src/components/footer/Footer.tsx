@@ -47,6 +47,7 @@ export default function Footer() {
             <p className={styles.contactInfo}>
               702 Old Peachtree Rd NW, Suwanee, GA 30024 Suite 200<br />
               (470) 433-3927<br />
+              (470) 379-1446<br />
               (470) 347-8788<br />
               info@getservicedone.com
             </p>
