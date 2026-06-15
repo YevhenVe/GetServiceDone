@@ -16,6 +16,7 @@
     "description": "Professional home services you can count on. From plumbing to electrical work, we get the job done right.",
     "quick_links": "Quick Links",
     "our_services": "Our Services",
+    "business_hours": "Business Hours",
     "electrical": "Electrical",
     "appliance": "Appliance",
     "handyman": "Handyman",
@@ -23,7 +24,12 @@
     "developed_by": "Developed by",
     "rights_reserved": "Get Service Done. All rights reserved.",
     "privacy": "Privacy Policy",
-    "terms": "Terms of Service"
+    "terms": "Terms of Service",
+    "sitemap": "Sitemap",
+    "mon_fri": "Mon – Fri: 8:00 AM – 5:00 PM",
+    "sat": "Sat: 8:00 AM – 4:00 PM",
+    "sun": "Sun: Closed",
+    "emergency": "24/7 Emergency Response"
   },
   "AboutUs": {
     "title": "About Us",
@@ -218,6 +224,15 @@
     "title": "Schedule a Service",
     "subtitle": "Fill out the form below and we'll get back to you as soon as possible to confirm your appointment."
   },
+  "Sitemap": {
+    "title": "Sitemap",
+    "subtitle": "Browse our website structure and find the pages you need.",
+    "main_pages": "Main Pages",
+    "services": "Services",
+    "legal": "Legal",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service"
+  },
   "Metadata": {
     "layout": {
       "title": "Get Service Done | Electrical, Plumbing & Handyman Services",
@@ -240,6 +255,14 @@
     "handyman": {
       "title": "Handyman Services | Get Service Done",
       "description": "Reliable handyman services including TV mounting, furniture assembly, and home repairs in Metro Atlanta."
+    },
+    "contacts": {
+      "title": "Contact Us | Get Service Done",
+      "description": "Get in touch with Get Service Done. Contact us for quotes, scheduling, and inquiries about our home services in Metro Atlanta."
+    },
+    "sitemap": {
+      "title": "Sitemap | Get Service Done",
+      "description": "Explore the complete structure of Get Service Done website. Find all pages and services available."
     }
   }
 }
