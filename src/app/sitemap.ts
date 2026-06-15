@@ -10,6 +10,8 @@ const routes = [
     { path: '/handyman_work', changeFrequency: 'monthly' as const, priority: 0.8 },
     { path: '/plumbing_work', changeFrequency: 'monthly' as const, priority: 0.8 },
     { path: '/schedule', changeFrequency: 'monthly' as const, priority: 0.7 },
+    { path: '/contacts', changeFrequency: 'monthly' as const, priority: 0.7 },
+    { path: '/sitemap', changeFrequency: 'monthly' as const, priority: 0.5 },
     { path: '/privacy', changeFrequency: 'yearly' as const, priority: 0.3 },
     { path: '/terms', changeFrequency: 'yearly' as const, priority: 0.3 },
 ]

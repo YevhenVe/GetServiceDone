@@ -16,6 +16,7 @@
     "description": "Servicios profesionales en los que puede confiar. Desde plomerÃ­a hasta electricidad, hacemos el trabajo bien hecho.",
     "quick_links": "Enlaces RÃ¡pidos",
     "our_services": "Nuestros Servicios",
+    "business_hours": "Horario de Atención",
     "electrical": "Electricidad",
     "appliance": "ElectrodomÃ©sticos",
     "handyman": "Mantenimiento",
@@ -23,7 +24,12 @@
     "developed_by": "Desarrollado por",
     "rights_reserved": "Get Service Done. Todos los derechos reservados.",
     "privacy": "PolÃ­tica de Privacidad",
-    "terms": "TÃ©rminos de Servicio"
+    "terms": "TÃ©rminos de Servicio",
+    "sitemap": "Mapa del Sitio",
+    "mon_fri": "Lun – Vie: 8:00 AM – 5:00 PM",
+    "sat": "Sáb: 8:00 AM – 4:00 PM",
+    "sun": "Dom: Cerrado",
+    "emergency": "Respuesta de Emergencia 24/7"
   },
   "AboutUs": {
     "title": "Sobre Nosotros",
@@ -218,6 +224,15 @@
     "title": "Programe un Servicio",
     "subtitle": "Complete el siguiente formulario y nos pondremos en contacto con usted lo antes posible para confirmar su cita."
   },
+  "Sitemap": {
+    "title": "Mapa del Sitio",
+    "subtitle": "Explore la estructura de nuestro sitio web y encuentre las páginas que necesita.",
+    "main_pages": "Páginas Principales",
+    "services": "Servicios",
+    "legal": "Legal",
+    "privacy": "Política de Privacidad",
+    "terms": "Términos de Servicio"
+  },
   "Metadata": {
     "layout": {
       "title": "Get Service Done | Servicios Eléctricos, de Plomería y de Mantenimiento",
@@ -240,6 +255,14 @@
     "handyman": {
       "title": "Servicios de Mantenimiento | Get Service Done",
       "description": "Servicios de mantenimiento confiables, que incluyen montaje de televisores, ensamblaje de muebles y reparaciones del hogar en Metro Atlanta."
+    },
+    "contacts": {
+      "title": "Contáctenos | Get Service Done",
+      "description": "Póngase en contacto con Get Service Done. Contáctenos para cotizaciones, programación e consultas sobre nuestros servicios para el hogar en Metro Atlanta."
+    },
+    "sitemap": {
+      "title": "Mapa del Sitio | Get Service Done",
+      "description": "Explore la estructura completa del sitio web de Get Service Done. Encuentre todas las páginas y servicios disponibles."
     }
   }
 }

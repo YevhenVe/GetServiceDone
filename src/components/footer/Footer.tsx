@@ -25,7 +25,7 @@ export default function Footer() {
               <li><Link href="/">{tNav('home')}</Link></li>
               <li><Link href="/#services">{tNav('services')}</Link></li>
               <li><Link href="/#about-us">{tNav('about_us')}</Link></li>
-              <li><Link href="/#contacts">{tNav('contacts')}</Link></li>
+              <li><Link href="/contacts">{tNav('contacts')}</Link></li>
               <li><Link href="/schedule">{tNav('schedule')}</Link></li>
             </ul>
           </div>
@@ -41,16 +41,15 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Contact Info */}
+          {/* Business Hours */}
           <div className={styles.column}>
-            <h4 className={styles.heading}>{t('contact_us')}</h4>
-            <p className={styles.contactInfo}>
-              702 Old Peachtree Rd NW, Suwanee, GA 30024 Suite 200<br />
-              (470) 433-3927<br />
-              (470) 379-1446<br />
-              (470) 347-8788<br />
-              info@getservicedone.com
-            </p>
+            <h4 className={styles.heading}>{t('business_hours')}</h4>
+            <div className={styles.hours}>
+              <p>{t('mon_fri')}</p>
+              <p>{t('sat')}</p>
+              <p>{t('sun')}</p>
+              <p className={styles.emergency}>{t('emergency')}</p>
+            </div>
           </div>
         </div>
 
@@ -66,6 +65,7 @@ export default function Footer() {
           <div className={styles.legal}>
             <Link href="/privacy">{t('privacy')}</Link>
             <Link href="/terms">{t('terms')}</Link>
+            <Link href="/sitemap">{t('sitemap')}</Link>
           </div>
         </div>
       </div>
