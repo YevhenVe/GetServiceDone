@@ -42,7 +42,7 @@ export default function SitemapPage() {
             <h2 className={styles.sectionTitle}>{t('main_pages')}</h2>
             <ul className={styles.list}>
               <li><Link href="/">{tNav('home')}</Link></li>
-              <li><Link href="/#services">{tNav('services')}</Link></li>
+              <li><Link href="/services">{tNav('services')}</Link></li>
               <li><Link href="/#about-us">{tNav('about_us')}</Link></li>
               <li><Link href="/contacts">{tNav('contacts')}</Link></li>
               <li><Link href="/schedule">{tNav('schedule')}</Link></li>

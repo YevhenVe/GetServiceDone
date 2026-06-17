@@ -23,7 +23,7 @@ export default function Footer() {
             <h4 className={styles.heading}>{t('quick_links')}</h4>
             <ul className={styles.links}>
               <li><Link href="/">{tNav('home')}</Link></li>
-              <li><Link href="/#services">{tNav('services')}</Link></li>
+              <li><Link href="/services">{tNav('services')}</Link></li>
               <li><Link href="/#about-us">{tNav('about_us')}</Link></li>
               <li><Link href="/contacts">{tNav('contacts')}</Link></li>
               <li><Link href="/schedule">{tNav('schedule')}</Link></li>
@@ -50,6 +50,7 @@ export default function Footer() {
               <p>{t('sun')}</p>
               <p className={styles.emergency}>{t('emergency')}</p>
             </div>
+            
           </div>
         </div>
 
