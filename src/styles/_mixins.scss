@@ -1,0 +1,13 @@
+@mixin link-muted {
+  color: var(--color-text-secondary);
+  text-decoration: none;
+  transition: color 0.2s ease;
+
+  &:visited {
+    color: var(--color-text-secondary);
+  }
+
+  &:hover {
+    color: var(--color-accent);
+  }
+}

@@ -1,3 +1,5 @@
+@use '../../../styles/mixins' as *;
+
 .page {
   background-color: var(--color-bg);
   color: var(--color-text);
@@ -11,6 +13,19 @@
   background-color: var(--color-bg-alt);
   border-radius: 0 0 40px 40px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  border-bottom: 1px solid var(--color-border);
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120px;
+    height: 4px;
+    background: linear-gradient(90deg, var(--color-accent), var(--color-accent-hover));
+    border-radius: 2px 2px 0 0;
+  }
 
   @media (min-width: 1024px) {
     padding: 6rem 4rem;
@@ -45,6 +60,10 @@
   font-size: 0.9rem;
   color: var(--color-text-secondary);
   margin-bottom: 2.5rem;
+
+  a {
+    @include link-muted;
+  }
 
   span:last-child {
     color: var(--color-text);
