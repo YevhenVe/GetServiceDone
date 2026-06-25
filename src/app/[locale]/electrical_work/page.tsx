@@ -12,6 +12,7 @@ import {
     ShieldIcon,
     BatteryIcon,
     ChandelierIcon,
+    SmartHomeIcon,
     TowerIcon,
     HvacIcon,
     ChevronRight,
@@ -174,15 +175,16 @@ export default function ElectricalWorkPage() {
                         </div>
 
                         {/* Category 5 */}
-                        {/* <div className={styles.serviceCategory}>
-                            <h3><span className={styles.categoryNum}>5</span> <TowerIcon /> Infrastructure</h3>
+                        <div className={styles.serviceCategory}>
+                            <h3><span className={styles.categoryNum}>5</span> <SmartHomeIcon /> {t('cat_5_title')}</h3>
                             <ul>
-                                <li><strong>Meter Box Services:</strong> <span>Relocation, repair, and replacement of meter boxes (Overhead and Underground).</span></li>
-                                <li><strong>Service Connections:</strong> <span>Reinstalling and securing overhead mast connections.</span></li>
-                                <li><strong>Temporary Power:</strong> <span>Setup of Temporary Power Poles for construction or renovation sites.</span></li>
-                                <li><strong>Panel Upgrades:</strong> <span>Modernizing electrical panels to increase home capacity (100A to 200A+).</span></li>
+                                <li>{t.rich('cat_5_item_1', { strong: (c) => <strong>{c}</strong>, span: (c) => <span>{c}</span> })}</li>
+                                <li>{t.rich('cat_5_item_2', { strong: (c) => <strong>{c}</strong>, span: (c) => <span>{c}</span> })}</li>
+                                <li>{t.rich('cat_5_item_3', { strong: (c) => <strong>{c}</strong>, span: (c) => <span>{c}</span> })}</li>
+                                <li>{t.rich('cat_5_item_4', { strong: (c) => <strong>{c}</strong>, span: (c) => <span>{c}</span> })}</li>
+                                <li>{t.rich('cat_5_item_5', { strong: (c) => <strong>{c}</strong>, span: (c) => <span>{c}</span> })}</li>
                             </ul>
-                        </div> */}
+                        </div>
 
                         {/* Category 6 */}
                         {/* <div className={styles.serviceCategory}>

@@ -6,15 +6,10 @@ import {
   ShieldIcon,
   BatteryIcon,
   ChandelierIcon,
-  TowerIcon,
-  HvacIcon,
+  SmartHomeIcon,
+  // TowerIcon,
+  // HvacIcon,
 } from '../../../public/electrical-iconset/electrical_icons';
-import {
-  ApplianceCircleIcon,
-  KitchenIcon,
-  LaundryIcon,
-  ComfortIcon,
-} from '../../../public/appliance-iconset/appliance_icons';
 import {
   HandymanCircleIcon,
   MountingIcon,
@@ -29,6 +24,12 @@ import {
 //   DrainageIcon,
 //   OutdoorIcon,
 // } from '../../../public/plumbing-iconset/plumbing_icons';
+// import {
+//   ApplianceCircleIcon,
+//   KitchenIcon,
+//   LaundryIcon,
+//   ComfortIcon,
+// } from '../../../public/appliance-iconset/appliance_icons';
 
 export const getServicesData = (t: any): ServiceCardProps[] => [
   {
@@ -46,22 +47,7 @@ export const getServicesData = (t: any): ServiceCardProps[] => [
       { icon: <ShieldIcon />, text: t('electrical.items.1') },
       { icon: <BatteryIcon />, text: t('electrical.items.2') },
       { icon: <ChandelierIcon />, text: t('electrical.items.3') },
-    ],
-  },
-  {
-    title: t('appliance.title'),
-    highlightText: t('appliance.highlightText'),
-    description: t('appliance.description'),
-    mainIcon: <ApplianceCircleIcon />,
-    imageSrc: '/appliance-iconset/appliance-illustration.jpeg',
-    imageAlt: 'Home Appliance',
-    linkHref: '/appliance_work',
-    buttonText: t('appliance.buttonText'),
-    imagePosition: 'left',
-    services: [
-      { icon: <KitchenIcon />, text: t('appliance.items.0') },
-      { icon: <LaundryIcon />, text: t('appliance.items.1') },
-      { icon: <ComfortIcon />, text: t('appliance.items.2') },
+      { icon: <SmartHomeIcon />, text: t('electrical.items.4') },
     ],
   },
   {
@@ -80,5 +66,21 @@ export const getServicesData = (t: any): ServiceCardProps[] => [
       { icon: <RepairIcon />, text: t('handyman.items.2') },
       { icon: <MaintenanceIcon />, text: t('handyman.items.3') },
     ],
-  }
+  },
+    // {
+  //   title: t('appliance.title'),
+  //   highlightText: t('appliance.highlightText'),
+  //   description: t('appliance.description'),
+  //   mainIcon: <ApplianceCircleIcon />,
+  //   imageSrc: '/appliance-iconset/appliance-illustration.jpeg',
+  //   imageAlt: 'Home Appliance',
+  //   linkHref: '/appliance_work',
+  //   buttonText: t('appliance.buttonText'),
+  //   imagePosition: 'left',
+  //   services: [
+  //     { icon: <KitchenIcon />, text: t('appliance.items.0') },
+  //     { icon: <LaundryIcon />, text: t('appliance.items.1') },
+  //     { icon: <ComfortIcon />, text: t('appliance.items.2') },
+  //   ],
+  // }
 ];

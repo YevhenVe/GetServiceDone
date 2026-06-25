@@ -73,7 +73,7 @@ export default function ServiceCard({
           alt={imageAlt}
           fill
           className={styles.image}
-          sizes="(max-width: 1024px) 100vw, 50vw"
+          // sizes="(max-width: 1024px) 100vw, 50vw"
         />
       </div>
     </motion.div>

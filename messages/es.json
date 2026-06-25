@@ -2,7 +2,7 @@
   "Hero": {
     "title_1": "Servicios para el hogar",
     "title_highlight": "Profesionales",
-    "description": "Servicios elÃ©ctricos residenciales profesionales en los que puede confiar: seguros, confiables y bien hechos a la primera.",
+    "description": "Servicios elÃ©ctricos y de mantenimiento profesionales en los que puede confiar: seguros, confiables y con calidad garantizada para su hogar y negocio.",
     "schedule_now": "Programar Ahora"
   },
   "Navigation": {
@@ -65,10 +65,11 @@
       "description": "Servicios elÃ©ctricos seguros, confiables y profesionales para su hogar, negocio y mÃ¡s allÃ¡.",
       "buttonText": "Servicios ElÃ©ctricos",
       "items": {
-        "0": "Mantenimiento y Reparaciones ElÃ©ctricas Residenciales",
+        "0": "Mantenimiento y Reparaciones ElÃ©ctricas Residenciales y Comerciales",
         "1": "Seguridad y ProtecciÃ³n del Hogar",
         "2": "Carga de VE, EnergÃ­a para RV y Soluciones EnergÃ©ticas",
-        "3": "Instalaciones de Lujo y Especiales"
+        "3": "Instalaciones de Lujo y Especiales",
+        "4": "Instalación y Automatización de Hogar Inteligente"
       }
     },
     "appliance": {
@@ -110,7 +111,7 @@
     "trust_3_desc": "Estamos aquÃ­ cuando nos necesite",
     "main_title": "Lo Que Ofrecemos",
     "main_desc": "Soluciones elÃ©ctricas integrales adaptadas a sus necesidades especÃ­ficas.",
-    "cat_1_title": "Mantenimiento Residencial",
+    "cat_1_title": "Mantenimiento Residencial y Comercial",
     "cat_1_item_1": "<strong>Actualizaciones de Tomas y Botones:</strong> <span>Reemplazo de enchufes antiguos por unidades modernas, incluidos puertos USB/USB-C integrados.</span>",
     "cat_1_item_2": "<strong>Dispositivos de Seguridad:</strong> <span>InstalaciÃ³n de protecciÃ³n GFCI y AFCI para cocinas, baÃ±os y Ã¡reas al aire libre.</span>",
     "cat_1_item_3": "<strong>Controles de IluminaciÃ³n Inteligentes:</strong> <span>InstalaciÃ³n de atenuadores, sensores de movimiento, controles inteligentes de temporizador y configuraciones de interruptores de 3 y 4 vÃ­as.</span>",
@@ -132,7 +133,13 @@
     "cat_4_item_2": "<strong>CalefacciÃ³n de Confort:</strong> <span>Cableado profesional para calentadores de piso elÃ©ctricos y calentadores de toallas de lujo.</span>",
     "cat_4_item_3": "<strong>Ambiente de Cocina:</strong> <span>InstalaciÃ³n y reemplazo personalizados de iluminaciÃ³n LED debajo de los gabinetes.</span>",
     "cat_4_item_4": "<strong>IluminaciÃ³n ArquitectÃ³nica:</strong> <span>IluminaciÃ³n moderna LED Cove, Toe-kick y de escaleras.</span>",
-    "cat_4_item_5": "<strong>IluminaciÃ³n de Arte y CaracterÃ­sticas:</strong> <span>IluminaciÃ³n de calidad de galerÃ­a para obras de arte y caracterÃ­sticas arquitectÃ³nicas.</span>"
+    "cat_4_item_5": "<strong>IluminaciÃ³n de Arte y CaracterÃ­sticas:</strong> <span>IluminaciÃ³n de calidad de galerÃ­a para obras de arte y caracterÃ­sticas arquitectÃ³nicas.</span>",
+    "cat_5_title": "InstalaciÃ³n y AutomatizaciÃ³n de Hogar Inteligente",
+    "cat_5_item_1": "<strong>Termostatos Inteligentes:</strong> <span>InstalaciÃ³n y configuraciÃ³n de Nest, Ecobee y otros termostatos inteligentes para ahorro de energÃ­a y control remoto del clima.</span>",
+    "cat_5_item_2": "<strong>Sistemas de IluminaciÃ³n Inteligente:</strong> <span>Control de iluminaciÃ³n inteligente inalÃ¡mbrico y cableado, incluyendo Lutron, Philips Hue y automatizaciÃ³n para todo el hogar.</span>",
+    "cat_5_item_3": "<strong>Centros de Voz y AutomatizaciÃ³n:</strong> <span>IntegraciÃ³n de Amazon Alexa, Google Home y Apple HomeKit con dispositivos conectados en todo su hogar.</span>",
+    "cat_5_item_4": "<strong>Persianas y Cortinas Motorizadas:</strong> <span>InstalaciÃ³n de tratamientos inteligentes para ventanas con programaciÃ³n, control por voz y operaciÃ³n remota.</span>",
+    "cat_5_item_5": "<strong>AutomatizaciÃ³n Integral del Hogar:</strong> <span>Sistemas inteligentes diseÃ±ados a medida que integran seguridad, iluminaciÃ³n, clima y entretenimiento en una experiencia perfecta.</span>"
   },
   "ApplianceWork": {
     "breadcrumbs": "ElectrodomÃ©sticos",
