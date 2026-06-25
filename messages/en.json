@@ -2,7 +2,7 @@
   "Hero": {
     "title_1": "Professional",
     "title_highlight": "Home Services",
-    "description": "Professional residential electrical services you can trust - safe, reliable, and done right the first time.",
+    "description": "Professional Electrical & Handyman Services. Licensed specialists providing safe, reliable, and guaranteed quality for your home and business.",
     "schedule_now": "Schedule Now"
   },
   "Navigation": {
@@ -65,10 +65,11 @@
       "description": "Safe, reliable, and professional electrical services for your home, business, and beyond.",
       "buttonText": "Electrical Services",
       "items": {
-        "0": "Residential Electrical Maintenance & Repairs",
+        "0": "Residential & Commercial Electrical Maintenance & Repairs",
         "1": "Home Security & Safety",
         "2": "EV Charging, RV power & Energy Solutions",
-        "3": "Luxury & Specialty Installations"
+        "3": "Luxury & Specialty Installations",
+        "4": "Smart Home Installation & Automation"
       }
     },
     "appliance": {
@@ -110,7 +111,7 @@
     "trust_3_desc": "We're here when you need us",
     "main_title": "What We Offer",
     "main_desc": "Comprehensive electrical solutions tailored to your specific needs.",
-    "cat_1_title": "Residential Maintenance",
+    "cat_1_title": "Residential & Commercial Maintenance",
     "cat_1_item_1": "<strong>Outlet & Switch Upgrades:</strong> <span>Replacing old plugs with modern units, including integrated USB/USB-C ports.</span>",
     "cat_1_item_2": "<strong>Safety Devices:</strong> <span>Installation of GFCI and AFCI protection for kitchens, bathrooms, and outdoor areas.</span>",
     "cat_1_item_3": "<strong>Smart Lighting Controls:</strong> <span>Installation of dimmers, motion sensors, timer smart controls, and 3-way/4-way switch configurations.</span>",
@@ -132,7 +133,13 @@
     "cat_4_item_2": "<strong>Comfort Heating:</strong> <span>Professional wiring for Electric Floor Heaters and luxury Towel Warmers.</span>",
     "cat_4_item_3": "<strong>Kitchen Ambiance:</strong> <span>Custom Under-cabinet LED lighting installation and replacement.</span>",
     "cat_4_item_4": "<strong>Architectural Lighting:</strong> <span>Modern LED Cove, Toe-kick, and Staircase illumination.</span>",
-    "cat_4_item_5": "<strong>Art & Feature Lighting:</strong> <span>Gallery-quality lighting for artwork and architectural features.</span>"
+    "cat_4_item_5": "<strong>Art & Feature Lighting:</strong> <span>Gallery-quality lighting for artwork and architectural features.</span>",
+    "cat_5_title": "Smart Home Installation & Automation",
+    "cat_5_item_1": "<strong>Smart Thermostats:</strong> <span>Installation and configuration of Nest, Ecobee, and other smart thermostats for energy savings and remote climate control.</span>",
+    "cat_5_item_2": "<strong>Smart Lighting Systems:</strong> <span>Wireless and wired smart lighting control including Lutron, Philips Hue, and whole-home automation.</span>",
+    "cat_5_item_3": "<strong>Voice & Automation Hubs:</strong> <span>Integration of Amazon Alexa, Google Home, and Apple HomeKit with connected devices throughout your home.</span>",
+    "cat_5_item_4": "<strong>Motorized Blinds & Shades:</strong> <span>Installation of smart window treatments with scheduling, voice control, and remote operation.</span>",
+    "cat_5_item_5": "<strong>Whole-Home Automation:</strong> <span>Custom-designed smart home systems integrating security, lighting, climate, and entertainment into one seamless experience.</span>"
   },
   "ApplianceWork": {
     "breadcrumbs": "Home Appliance",
