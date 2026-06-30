@@ -69,7 +69,8 @@
         "1": "Home Security & Safety",
         "2": "EV Charging, RV power & Energy Solutions",
         "3": "Luxury & Specialty Installations",
-        "4": "Smart Home Installation & Automation"
+        "4": "Smart Home Installation & Automation",
+        "5": "HVAC Installation & Maintenance"
       }
     },
     "appliance": {
@@ -139,7 +140,13 @@
     "cat_5_item_2": "<strong>Smart Lighting Systems:</strong> <span>Wireless and wired smart lighting control including Lutron, Philips Hue, and whole-home automation.</span>",
     "cat_5_item_3": "<strong>Voice & Automation Hubs:</strong> <span>Integration of Amazon Alexa, Google Home, and Apple HomeKit with connected devices throughout your home.</span>",
     "cat_5_item_4": "<strong>Motorized Blinds & Shades:</strong> <span>Installation of smart window treatments with scheduling, voice control, and remote operation.</span>",
-    "cat_5_item_5": "<strong>Whole-Home Automation:</strong> <span>Custom-designed smart home systems integrating security, lighting, climate, and entertainment into one seamless experience.</span>"
+    "cat_5_item_5": "<strong>Whole-Home Automation:</strong> <span>Custom-designed smart home systems integrating security, lighting, climate, and entertainment into one seamless experience.</span>",
+    "cat_7_title": "HVAC Installation & Repair",
+    "cat_7_item_1": "<strong>System Replacement:</strong> <span>Installation of high-efficiency AC units, furnaces, and heat pump systems.</span>",
+    "cat_7_item_2": "<strong>Emergency Repairs:</strong> <span>Rapid diagnostics and repair for all major HVAC brands.</span>",
+    "cat_7_item_3": "<strong>Ductless Mini-Splits:</strong> <span>Targeted cooling/heating for garages, home offices, and additions.</span>",
+    "cat_7_item_4": "<strong>Seasonal Tune-Ups:</strong> <span>Preventive maintenance for Spring (AC) and Fall (Furnace).</span>",
+    "cat_7_item_5": "<strong>Air Quality & Humidity:</strong> <span>Whole-home air purifiers, UV lights, and dehumidification systems.</span>"
   },
   "ApplianceWork": {
     "breadcrumbs": "Home Appliance",

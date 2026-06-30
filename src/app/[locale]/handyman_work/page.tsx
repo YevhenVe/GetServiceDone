@@ -3,6 +3,7 @@ import { Metadata } from 'next';
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/routing';
+import { createCounter } from '@/utils/counter';
 import Button from '@/components/button/Button';
 import ServiceCTA from '@/components/common/ServiceCTA/ServiceCTA';
 import styles from './handymanWork.module.scss';
@@ -41,6 +42,7 @@ export async function generateMetadata({
 
 export default function HandymanWorkPage() {
     const t = useTranslations('HandymanWork');
+    const { next } = createCounter();
 
     return (
         <main className={styles.page}>
@@ -126,7 +128,7 @@ export default function HandymanWorkPage() {
                     <div className={styles.servicesGrid}>
                         {/* Category 1 */}
                         <div className={styles.serviceCategory}>
-                            <h3><span className={styles.categoryNum}>1</span> <MountingIcon /> {t('cat_1_title')}</h3>
+                            <h3><span className={styles.categoryNum}>{next()}</span> <MountingIcon /> {t('cat_1_title')}</h3>
                             <ul>
                                 <li>{t.rich('cat_1_item_1', { strong: (c) => <strong>{c}</strong>, span: (c) => <span>{c}</span> })}</li>
                                 <li>{t.rich('cat_1_item_2', { strong: (c) => <strong>{c}</strong>, span: (c) => <span>{c}</span> })}</li>
@@ -137,7 +139,7 @@ export default function HandymanWorkPage() {
 
                         {/* Category 2 */}
                         <div className={styles.serviceCategory}>
-                            <h3><span className={styles.categoryNum}>2</span> <CarpentryIcon /> {t('cat_2_title')}</h3>
+                            <h3><span className={styles.categoryNum}>{next()}</span> <CarpentryIcon /> {t('cat_2_title')}</h3>
                             <ul>
                                 <li>{t.rich('cat_2_item_1', { strong: (c) => <strong>{c}</strong>, span: (c) => <span>{c}</span> })}</li>
                                 <li>{t.rich('cat_2_item_2', { strong: (c) => <strong>{c}</strong>, span: (c) => <span>{c}</span> })}</li>
@@ -148,7 +150,7 @@ export default function HandymanWorkPage() {
 
                         {/* Category 3 */}
                         <div className={styles.serviceCategory}>
-                            <h3><span className={styles.categoryNum}>3</span> <RepairIcon /> {t('cat_3_title')}</h3>
+                            <h3><span className={styles.categoryNum}>{next()}</span> <RepairIcon /> {t('cat_3_title')}</h3>
                             <ul>
                                 <li>{t.rich('cat_3_item_1', { strong: (c) => <strong>{c}</strong>, span: (c) => <span>{c}</span> })}</li>
                                 <li>{t.rich('cat_3_item_2', { strong: (c) => <strong>{c}</strong>, span: (c) => <span>{c}</span> })}</li>
@@ -159,7 +161,7 @@ export default function HandymanWorkPage() {
 
                         {/* Category 4 */}
                         <div className={styles.serviceCategory}>
-                            <h3><span className={styles.categoryNum}>4</span> <MaintenanceIcon /> {t('cat_4_title')}</h3>
+                            <h3><span className={styles.categoryNum}>{next()}</span> <MaintenanceIcon /> {t('cat_4_title')}</h3>
                             <ul>
                                 <li>{t.rich('cat_4_item_1', { strong: (c) => <strong>{c}</strong>, span: (c) => <span>{c}</span> })}</li>
                                 <li>{t.rich('cat_4_item_2', { strong: (c) => <strong>{c}</strong>, span: (c) => <span>{c}</span> })}</li>
