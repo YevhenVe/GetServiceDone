@@ -35,8 +35,8 @@ export default function Footer() {
             <h4 className={styles.heading}>{t('our_services')}</h4>
             <ul className={styles.links}>
               <li><Link href="/electrical_work">{t('electrical')}</Link></li>
-              <li><Link href="/appliance_work">{t('appliance')}</Link></li>
               <li><Link href="/handyman_work">{t('handyman')}</Link></li>
+              {/* <li><Link href="/appliance_work">{t('appliance')}</Link></li> */}
               {/* <li><Link href="/plumbing_work">Plumbing</Link></li> */}
             </ul>
           </div>

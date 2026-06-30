@@ -69,7 +69,8 @@
         "1": "Seguridad y ProtecciÃ³n del Hogar",
         "2": "Carga de VE, EnergÃ­a para RV y Soluciones EnergÃ©ticas",
         "3": "Instalaciones de Lujo y Especiales",
-        "4": "Instalación y Automatización de Hogar Inteligente"
+        "4": "Instalación y Automatización de Hogar Inteligente",
+        "5": "Instalación y Reparación de HVAC"
       }
     },
     "appliance": {
@@ -139,7 +140,13 @@
     "cat_5_item_2": "<strong>Sistemas de IluminaciÃ³n Inteligente:</strong> <span>Control de iluminaciÃ³n inteligente inalÃ¡mbrico y cableado, incluyendo Lutron, Philips Hue y automatizaciÃ³n para todo el hogar.</span>",
     "cat_5_item_3": "<strong>Centros de Voz y AutomatizaciÃ³n:</strong> <span>IntegraciÃ³n de Amazon Alexa, Google Home y Apple HomeKit con dispositivos conectados en todo su hogar.</span>",
     "cat_5_item_4": "<strong>Persianas y Cortinas Motorizadas:</strong> <span>InstalaciÃ³n de tratamientos inteligentes para ventanas con programaciÃ³n, control por voz y operaciÃ³n remota.</span>",
-    "cat_5_item_5": "<strong>AutomatizaciÃ³n Integral del Hogar:</strong> <span>Sistemas inteligentes diseÃ±ados a medida que integran seguridad, iluminaciÃ³n, clima y entretenimiento en una experiencia perfecta.</span>"
+    "cat_5_item_5": "<strong>AutomatizaciÃ³n Integral del Hogar:</strong> <span>Sistemas inteligentes diseÃ±ados a medida que integran seguridad, iluminaciÃ³n, clima y entretenimiento en una experiencia perfecta.</span>",
+    "cat_7_title": "InstalaciÃ³n y ReparaciÃ³n de HVAC",
+    "cat_7_item_1": "<strong>Reemplazo de Sistema:</strong> <span>InstalaciÃ³n de unidades de CA de alta eficiencia, hornos y sistemas de bomba de calor.</span>",
+    "cat_7_item_2": "<strong>Reparaciones de Emergencia:</strong> <span>DiagnÃ³stico y reparaciÃ³n rÃ¡pida para todas las marcas principales de HVAC.</span>",
+    "cat_7_item_3": "<strong>Mini-Splits Sin Conductos:</strong> <span>Enfriamiento/calefacciÃ³n dirigida para garajes, oficinas en casa y ampliaciones.</span>",
+    "cat_7_item_4": "<strong>Puestas a Punto Estacionales:</strong> <span>Mantenimiento preventivo para Primavera (CA) y OtoÃ±o (CalefacciÃ³n).</span>",
+    "cat_7_item_5": "<strong>Calidad del Aire y Humedad:</strong> <span>Purificadores de aire para toda la casa, luces UV y sistemas de deshumidificaciÃ³n.</span>"
   },
   "ApplianceWork": {
     "breadcrumbs": "ElectrodomÃ©sticos",

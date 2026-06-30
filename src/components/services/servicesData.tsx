@@ -7,6 +7,7 @@ import {
   BatteryIcon,
   ChandelierIcon,
   SmartHomeIcon,
+  HvacIcon,
   // TowerIcon,
   // HvacIcon,
 } from '../../../public/electrical-iconset/electrical_icons';
@@ -48,6 +49,7 @@ export const getServicesData = (t: any): ServiceCardProps[] => [
       { icon: <BatteryIcon />, text: t('electrical.items.2') },
       { icon: <ChandelierIcon />, text: t('electrical.items.3') },
       { icon: <SmartHomeIcon />, text: t('electrical.items.4') },
+      { icon: <HvacIcon />, text: t('electrical.items.5') },
     ],
   },
   {
