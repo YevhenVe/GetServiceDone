@@ -54,8 +54,8 @@ export default function SitemapPage() {
             <h2 className={styles.sectionTitle}>{t('services')}</h2>
             <ul className={styles.list}>
               <li><Link href="/electrical_work">{tServices('electrical.title')} {tServices('electrical.highlightText')}</Link></li>
-              <li><Link href="/appliance_work">{tServices('appliance.title')} {tServices('appliance.highlightText')}</Link></li>
               <li><Link href="/handyman_work">{tServices('handyman.title')} {tServices('handyman.highlightText')}</Link></li>
+              {/* <li><Link href="/appliance_work">{tServices('appliance.title')} {tServices('appliance.highlightText')}</Link></li> */}
             </ul>
           </section>
 
