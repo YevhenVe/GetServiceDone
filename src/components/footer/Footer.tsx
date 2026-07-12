@@ -56,7 +56,7 @@ export default function Footer() {
 
         <div className={styles.bottom}>
           <div className={styles.dev}>
-            {t('developed_by')} <a href="https://yevhen-portfolio-page.web.app/" target="_blank" rel="noopener noreferrer">Yevhen V.</a>
+            {t('developed_by')} <a href="https://rascaldevlabs.com" target="_blank" rel="noopener noreferrer">Rascal Dev Labs LLC</a>
           </div>
 
           <p className={styles.copy} suppressHydrationWarning>
