@@ -103,3 +103,97 @@ export const SmartHomeIcon = () => (
     <circle cx="12" cy="9" r="1" />
   </svg>
 );
+
+export const SmartHomeCircleIcon = () => (
+  <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="20" cy="20" r="20" fill="var(--color-accent)" />
+    
+    {/* Wi-Fi Arcs above roof */}
+    <path 
+      d="M14 9C15.8 7.2 24.2 7.2 26 9" 
+      stroke="#f1f1f1" 
+      strokeWidth="1.6" 
+      strokeLinecap="round" 
+    />
+    <path 
+      d="M15.8 11.2C17.2 9.8 22.8 9.8 24.2 11.2" 
+      stroke="#f1f1f1" 
+      strokeWidth="1.6" 
+      strokeLinecap="round" 
+    />
+    <path 
+      d="M17.6 13.4C18.4 12.6 21.6 12.6 22.4 13.4" 
+      stroke="#f1f1f1" 
+      strokeWidth="1.6" 
+      strokeLinecap="round" 
+    />
+
+    {/* House Roof */}
+    <path 
+      d="M11 21.5L20 15L29 21.5" 
+      stroke="#f1f1f1" 
+      strokeWidth="1.7" 
+      strokeLinecap="round" 
+      strokeLinejoin="round" 
+    />
+
+    {/* House Body / Walls & Floor */}
+    <path 
+      d="M13 20.5V31H27V20.5" 
+      stroke="#f1f1f1" 
+      strokeWidth="1.7" 
+      strokeLinecap="round" 
+      strokeLinejoin="round" 
+    />
+
+    {/* Center Circuit: vertical line */}
+    <path 
+      d="M20 20V31" 
+      stroke="#f1f1f1" 
+      strokeWidth="1.6" 
+      strokeLinecap="round" 
+    />
+    <circle 
+      cx="20" 
+      cy="20" 
+      r="1.7" 
+      fill="var(--color-accent)" 
+      stroke="#f1f1f1" 
+      strokeWidth="1.6" 
+    />
+
+    {/* Left Circuit: diagonal stem + circle */}
+    <path 
+      d="M16 23.5L17.8 25.5V31" 
+      stroke="#f1f1f1" 
+      strokeWidth="1.6" 
+      strokeLinecap="round" 
+      strokeLinejoin="round" 
+    />
+    <circle 
+      cx="16" 
+      cy="23.5" 
+      r="1.7" 
+      fill="var(--color-accent)" 
+      stroke="#f1f1f1" 
+      strokeWidth="1.6" 
+    />
+
+    {/* Right Circuit: diagonal stem + circle */}
+    <path 
+      d="M24 23.5L22.2 25.5V31" 
+      stroke="#f1f1f1" 
+      strokeWidth="1.6" 
+      strokeLinecap="round" 
+      strokeLinejoin="round" 
+    />
+    <circle 
+      cx="24" 
+      cy="23.5" 
+      r="1.7" 
+      fill="var(--color-accent)" 
+      stroke="#f1f1f1" 
+      strokeWidth="1.6" 
+    />
+  </svg>
+);

@@ -45,6 +45,7 @@ export async function generateMetadata({
 
 export default function ElectricalWorkPage() {
     const t = useTranslations('ElectricalWork');
+    const tBreadcrumbs = useTranslations('Breadcrumbs');
     const { next } = createCounter();
 
     return (
@@ -55,9 +56,9 @@ export default function ElectricalWorkPage() {
                     <div className={styles.heroContent}>
                         <div className={styles.heroText}>
                             <nav className={styles.breadcrumbs}>
-                                <Link href="/">{t('breadcrumbs').split(' ')[0]}</Link>
+                                <Link href="/">{tBreadcrumbs('home')}</Link>
                                 <ChevronRight />
-                                <Link href="/#services">Services</Link>
+                                <Link href="/#services">{tBreadcrumbs('services')}</Link>
                                 <ChevronRight />
                                 <span>{t('breadcrumbs')}</span>
                             </nav>
@@ -141,17 +142,6 @@ export default function ElectricalWorkPage() {
                             </ul>
                         </div>
 
-                        {/* Category 2 */}
-                        <div className={styles.serviceCategory}>
-                            <h3><span className={styles.categoryNum}>{next()}</span> <ShieldIcon /> {t('cat_2_title')}</h3>
-                            <ul>
-                                <li>{t.rich('cat_2_item_1', { strong: (c) => <strong>{c}</strong>, span: (c) => <span>{c}</span> })}</li>
-                                <li>{t.rich('cat_2_item_2', { strong: (c) => <strong>{c}</strong>, span: (c) => <span>{c}</span> })}</li>
-                                <li>{t.rich('cat_2_item_3', { strong: (c) => <strong>{c}</strong>, span: (c) => <span>{c}</span> })}</li>
-                                <li>{t.rich('cat_2_item_4', { strong: (c) => <strong>{c}</strong>, span: (c) => <span>{c}</span> })}</li>
-                            </ul>
-                        </div>
-
                         {/* Category 3 */}
                         <div className={styles.serviceCategory}>
                             <h3><span className={styles.categoryNum}>{next()}</span> <BatteryIcon /> {t('cat_3_title')}</h3>
@@ -161,30 +151,6 @@ export default function ElectricalWorkPage() {
                                 <li>{t.rich('cat_3_item_3', { strong: (c) => <strong>{c}</strong>, span: (c) => <span>{c}</span> })}</li>
                                 <li>{t.rich('cat_3_item_4', { strong: (c) => <strong>{c}</strong>, span: (c) => <span>{c}</span> })}</li>
                                 <li>{t.rich('cat_3_item_5', { strong: (c) => <strong>{c}</strong>, span: (c) => <span>{c}</span> })}</li>
-                            </ul>
-                        </div>
-
-                        {/* Category 4 */}
-                        <div className={styles.serviceCategory}>
-                            <h3><span className={styles.categoryNum}>{next()}</span> <ChandelierIcon /> {t('cat_4_title')}</h3>
-                            <ul>
-                                <li>{t.rich('cat_4_item_1', { strong: (c) => <strong>{c}</strong>, span: (c) => <span>{c}</span> })}</li>
-                                <li>{t.rich('cat_4_item_2', { strong: (c) => <strong>{c}</strong>, span: (c) => <span>{c}</span> })}</li>
-                                <li>{t.rich('cat_4_item_3', { strong: (c) => <strong>{c}</strong>, span: (c) => <span>{c}</span> })}</li>
-                                <li>{t.rich('cat_4_item_4', { strong: (c) => <strong>{c}</strong>, span: (c) => <span>{c}</span> })}</li>
-                                <li>{t.rich('cat_4_item_5', { strong: (c) => <strong>{c}</strong>, span: (c) => <span>{c}</span> })}</li>
-                            </ul>
-                        </div>
-
-                        {/* Category 5 */}
-                        <div className={styles.serviceCategory}>
-                            <h3><span className={styles.categoryNum}>{next()}</span> <SmartHomeIcon /> {t('cat_5_title')}</h3>
-                            <ul>
-                                <li>{t.rich('cat_5_item_1', { strong: (c) => <strong>{c}</strong>, span: (c) => <span>{c}</span> })}</li>
-                                <li>{t.rich('cat_5_item_2', { strong: (c) => <strong>{c}</strong>, span: (c) => <span>{c}</span> })}</li>
-                                <li>{t.rich('cat_5_item_3', { strong: (c) => <strong>{c}</strong>, span: (c) => <span>{c}</span> })}</li>
-                                <li>{t.rich('cat_5_item_4', { strong: (c) => <strong>{c}</strong>, span: (c) => <span>{c}</span> })}</li>
-                                <li>{t.rich('cat_5_item_5', { strong: (c) => <strong>{c}</strong>, span: (c) => <span>{c}</span> })}</li>
                             </ul>
                         </div>
 

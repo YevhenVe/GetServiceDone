@@ -8,7 +8,7 @@ const routes = [
     { path: '/electrical_work', changeFrequency: 'monthly' as const, priority: 0.8 },
     { path: '/appliance_work', changeFrequency: 'monthly' as const, priority: 0.8 },
     { path: '/handyman_work', changeFrequency: 'monthly' as const, priority: 0.8 },
-    { path: '/plumbing_work', changeFrequency: 'monthly' as const, priority: 0.8 },
+    { path: '/smart_home', changeFrequency: 'monthly' as const, priority: 0.8 },
     { path: '/schedule', changeFrequency: 'monthly' as const, priority: 0.7 },
     { path: '/contacts', changeFrequency: 'monthly' as const, priority: 0.7 },
     { path: '/sitemap', changeFrequency: 'monthly' as const, priority: 0.5 },

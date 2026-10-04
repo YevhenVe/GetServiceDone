@@ -1,0 +1,54 @@
+.slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 1000ms ease;
+  overflow: hidden;
+}
+
+.slideActive {
+  opacity: 1;
+}
+
+.image {
+  object-fit: cover;
+}
+
+.kenburns {
+  animation: kenburns 6000ms ease-out forwards;
+}
+
+.gradientOverlay {
+  position: absolute;
+  inset: 0;
+
+  background-image: linear-gradient(90deg, var(--color-bg) 0%, rgba(245, 247, 246, 0.7) 30%, rgba(245, 247, 246, 0) 50%);
+
+  :global([data-theme='dark']) & {
+    background-image: linear-gradient(90deg, rgba(17, 24, 39, 1) 0%, rgba(17, 24, 39, 0.9) 40%, rgba(17, 24, 39, 0.1) 60%);
+  }
+
+  @media (max-width: 720px) {
+    background-image: linear-gradient(90deg, var(--color-bg) 0%, rgba(245, 247, 246, 0.925) 30%, rgba(245, 247, 246, 0) 150%);
+
+    :global([data-theme='dark']) & {
+      background-image: linear-gradient(90deg, rgba(17, 24, 39, 1) 0%, rgba(17, 24, 39, 0.9) 40%, rgba(17, 24, 39, 0.1) 160%);
+    }
+  }
+}
+
+@keyframes kenburns {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(1.08);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .kenburns {
+    animation: none;
+  }
+}

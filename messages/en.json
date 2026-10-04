@@ -2,7 +2,7 @@
   "Hero": {
     "title_1": "Professional",
     "title_highlight": "Home Services",
-    "description": "Professional Electrical & Handyman Services. Licensed specialists providing safe, reliable, and guaranteed quality for your home and business.",
+    "description": "Electrical, Smart Home & Handyman Services. One licensed team for safe power, smart tech, and quality repairs for your home and business.",
     "schedule_now": "Schedule Now"
   },
   "Navigation": {
@@ -12,23 +12,28 @@
     "contacts": "Contacts",
     "schedule": "Schedule Now"
   },
+  "Breadcrumbs": {
+    "home": "Home",
+    "services": "Services"
+  },
   "Footer": {
-    "description": "Professional home services you can count on. From plumbing to electrical work, we get the job done right.",
+    "description": "Electrical, Smart Home & Handyman Services. One licensed team for safe power, smart tech, and quality repairs for your home and business.",
     "quick_links": "Quick Links",
     "our_services": "Our Services",
     "business_hours": "Business Hours",
     "electrical": "Electrical",
     "appliance": "Appliance",
     "handyman": "Handyman",
+    "smarthome": "Smart Home",
     "contact_us": "Contact Us",
     "developed_by": "Developed by",
     "rights_reserved": "Get Service Done. All rights reserved.",
     "privacy": "Privacy Policy",
     "terms": "Terms of Service",
     "sitemap": "Sitemap",
-    "mon_fri": "Mon – Fri: 8:00 AM – 5:00 PM",
-    "sat": "Sat: 8:00 AM – 4:00 PM",
-    "sun": "Sun: Closed",
+    "mon_fri": "Mon – Fri: 8:00 AM – 6:00 PM",
+    "sat": "Sat: 9:00 AM – 4:00 PM",
+    "sun": "Sun: Emergency Only",
     "emergency": "24/7 Emergency Response"
   },
   "AboutUs": {
@@ -63,7 +68,7 @@
       "title": "Electrical",
       "highlightText": "Work",
       "description": "Safe, reliable, and professional electrical services for your home, business, and beyond.",
-      "buttonText": "Electrical Services",
+      "buttonText": "Read More",
       "items": {
         "0": "Residential & Commercial Electrical Maintenance & Repairs",
         "1": "Home Security & Safety",
@@ -77,7 +82,7 @@
       "title": "Home",
       "highlightText": "Appliance",
       "description": "Expert appliance installation, maintenance, and repair services for residential properties.",
-      "buttonText": "Appliance Repair",
+      "buttonText": "Read More",
       "items": {
         "0": "Kitchen Appliance Solutions",
         "1": "Laundry Room Services",
@@ -88,12 +93,24 @@
       "title": "Handyman",
       "highlightText": "Work",
       "description": "From small repairs to custom installations, we provide professional, reliable solutions for every corner of your home.",
-      "buttonText": "Handyman Services",
+      "buttonText": "Read More",
       "items": {
         "0": "Interior Mounting & Installation",
         "1": "Finish Carpentry & Trim",
         "2": "General Home Repairs",
         "3": "Exterior & Seasonal Maintenance"
+      }
+    },
+    "smart_home": {
+      "title": "Smart Home &",
+      "highlightText": "Low Voltage",
+      "description": "Custom smart home solutions and professional low voltage installations for modern living.",
+      "buttonText": "Read More",
+      "items": {
+        "0": "Smart Essentials",
+        "1": "Connected Home",
+        "2": "Luxury Living",
+        "3": "Estate Living"
       }
     }
   },
@@ -281,6 +298,48 @@
     "sitemap": {
       "title": "Sitemap | Get Service Done",
       "description": "Explore the complete structure of Get Service Done website. Find all pages and services available."
+    },
+    "smart_home": {
+      "title": "Smart Home & Low Voltage | Get Service Done",
+      "description": "Professional smart home automation, Wi-Fi networks, low voltage wiring, and audio-video solutions in Metro Atlanta."
     }
+  },
+  "SmartHome": {
+    "breadcrumbs": "Smart Home & Low Voltage",
+    "badge": "Our Services",
+    "title_1": "Smart Home &",
+    "title_highlight": "Low Voltage",
+    "description": "Professional network foundations, home automation, and low voltage solutions tailored to your lifestyle.",
+    "schedule": "Schedule Now",
+    "trust_1_title": "Licensed & Insured",
+    "trust_1_desc": "Certified low voltage technicians",
+    "trust_2_title": "Quality Guaranteed",
+    "trust_2_desc": "Attention to every detail",
+    "trust_3_title": "Fast & Reliable",
+    "trust_3_desc": "Getting it done right away",
+    "main_title": "What We Offer",
+    "main_desc": "From essential connectivity to bespoke automation systems.",
+    "cat_1_title": "Smart Essentials",
+    "cat_1_desc": "A straightforward foundation for homeowners who want dependable connectivity and everyday convenience.",
+    "cat_1_item_1": "Professional network foundation and Wi-Fi setup.",
+    "cat_1_item_2": "Video doorbell, smart lock and connected thermostats.",
+    "cat_1_item_3": "Lighting control in selected key rooms.",
+    "cat_1_item_4": "Smartphone setup and two custom scenes: Away and Good Night.",
+    "cat_1_item_5": "Hands-on homeowner training.",
+    "cat_2_title": "Connected Home",
+    "cat_2_desc": "A coordinated system built around a central automation controller for broader integration and camera coverage.",
+    "cat_2_item_1": "Centralized control of compatible security, lighting, climate and access devices.",
+    "cat_2_item_2": "Professional Power over Ethernet network and dedicated equipment rack.",
+    "cat_2_item_3": "Exterior cameras with local video storage.",
+    "cat_2_item_4": "Expanded lighting control and four custom lifestyle scenes.",
+    "cat_2_item_5": "One year of standard support; coverage to be defined in the project scope.",
+    "cat_3_title": "Luxury Living",
+    "cat_3_desc": "A premium automation platform with extended lighting control, multi-zone architectural audio, smart remotes or touchscreens, exterior cameras with local recording, and multi-zone climate control.",
+    "cat_3_item_1": "Custom lifestyle scenes and dedicated support are planned around the selected system. Support scope and service terms are confirmed in the project proposal.",
+    "cat_4_title": "Estate Living",
+    "cat_4_desc": "Our highest-tier option is a bespoke automation solution designed around the property, its layout and the homeowner's routines. Custom scenes and schedules coordinate the selected systems across agreed areas of the estate.",
+    "cat_4_item_1": "System architecture, equipment, control interfaces, areas served and support requirements are defined through a dedicated design and scope process.",
+    "cta_title": "Ready for a Smarter Home?",
+    "cta_desc": "Contact us today to design the perfect system for your lifestyle."
   }
 }
