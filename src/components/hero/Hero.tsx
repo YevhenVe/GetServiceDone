@@ -1,6 +1,6 @@
 'use client';
 
-import { useRef, useState } from 'react';
+import { useRef } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import Button from '@/components/button/Button';
 import TrustBadges from '@/components/trust-badges/TrustBadges';
@@ -11,7 +11,6 @@ import styles from './Hero.module.scss';
 export default function Hero() {
   const t = useTranslations('Hero');
   const targetRef = useRef<HTMLElement>(null);
-  const [isBackgroundPaused, setIsBackgroundPaused] = useState(false);
   const { scrollYProgress } = useScroll({
     target: targetRef,
     offset: ["start start", "end start"]
@@ -25,15 +24,13 @@ export default function Hero() {
       className={styles.hero}
       id="hero"
       ref={targetRef}
-      onMouseEnter={() => setIsBackgroundPaused(true)}
-      onMouseLeave={() => setIsBackgroundPaused(false)}
     >
       {/* Parallax Background Carousel */}
       <motion.div
         className={styles.heroBg}
         style={{ y, scale }}
       >
-        <HeroBackground paused={isBackgroundPaused} />
+        <HeroBackground />
       </motion.div>
 
       <div className={styles.left}>

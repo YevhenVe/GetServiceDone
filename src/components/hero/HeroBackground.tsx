@@ -3,33 +3,12 @@
 import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import styles from './HeroBackground.module.scss';
+import { HERO_BACKGROUNDS, SLIDE_INTERVAL_MS } from './hero-carousel.config';
 
-// List of actual background files present in public/hero-carousel-assets/
-const HERO_BACKGROUNDS = [
-  '/hero-carousel-assets/bg1.jpg',
-  '/hero-carousel-assets/bg2.jpg',
-  '/hero-carousel-assets/bg3.jpg',
-  '/hero-carousel-assets/bg4.jpg',
-  '/hero-carousel-assets/bg5.jpg',
-  '/hero-carousel-assets/bg6.jpg',
-  '/hero-carousel-assets/bg7.jpg',
-];
-
-const SLIDE_INTERVAL_MS = 6000;
-
-interface HeroBackgroundProps {
-  paused?: boolean;
-}
-
-export default function HeroBackground({ paused = false }: HeroBackgroundProps) {
+export default function HeroBackground() {
   const [activeIndex, setActiveIndex] = useState(0);
 
   useEffect(() => {
-    // Don't autoplay while the user is hovering the hero.
-    if (paused) {
-      return;
-    }
-
     // Respect the user's reduced-motion preference: never autoplay.
     if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
       return;
@@ -40,7 +19,7 @@ export default function HeroBackground({ paused = false }: HeroBackgroundProps) 
     }, SLIDE_INTERVAL_MS);
 
     return () => clearInterval(interval);
-  }, [paused]);
+  }, []);
 
   return (
     <>
@@ -58,7 +37,7 @@ export default function HeroBackground({ paused = false }: HeroBackgroundProps) 
               alt=""
               fill
               sizes="100vw"
-              priority={index === 0}
+              priority
               className={`${styles.image}${active ? ` ${styles.kenburns}` : ''}`}
             />
           </div>
