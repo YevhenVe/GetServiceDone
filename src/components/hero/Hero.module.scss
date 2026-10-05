@@ -14,24 +14,6 @@
   height: 120%; // Extra height for parallax movement
   z-index: 1;
   pointer-events: none;
-
-  background-image: linear-gradient(90deg, var(--color-bg) 0%, rgba(245, 247, 246, 0.7) 30%, rgba(245, 247, 246, 0) 50%), url('/hero-image.jpeg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-
-  :global([data-theme='dark']) & {
-    background-image: linear-gradient(90deg, rgba(17, 24, 39, 1) 0%, rgba(17, 24, 39, 0.9) 40%, rgba(17, 24, 39, 0.1) 60%), url('/hero-image.jpeg');
-  }
-
-  @media (max-width: 720px) {
-    :global([data-theme='dark']) & {
-      background-image: linear-gradient(90deg, rgba(17, 24, 39, 1) 0%, rgba(17, 24, 39, 0.9) 40%, rgba(17, 24, 39, 0.1) 160%), url('/hero-image.jpeg');
-    }
-
-    background-image: linear-gradient(90deg, var(--color-bg) 0%, rgba(245, 247, 246, 0.925) 30%, rgba(245, 247, 246, 0) 150%),
-    url('/hero-image.jpeg');
-  }
 }
 
 .left {

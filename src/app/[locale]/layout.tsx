@@ -48,7 +48,7 @@ export async function generateMetadata({
       description: t('description'),
       images: [
         {
-          url: '/hero-image.jpeg',
+          url: '/hero-carousel-assets/bg1.jpg',
           width: 1200,
           height: 630,
           alt: 'Get Service Done — Professional Home Services in Metro Atlanta',
@@ -59,7 +59,7 @@ export async function generateMetadata({
       card: 'summary_large_image',
       title: t('title'),
       description: t('description'),
-      images: ['/hero-image.jpeg'],
+      images: ['/hero-carousel-assets/bg1.jpg'],
     },
     icons: {
       icon: [

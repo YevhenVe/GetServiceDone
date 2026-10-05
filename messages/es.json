@@ -2,7 +2,7 @@
   "Hero": {
     "title_1": "Servicios para el hogar",
     "title_highlight": "Profesionales",
-    "description": "Servicios elÃ©ctricos y de mantenimiento profesionales en los que puede confiar: seguros, confiables y con calidad garantizada para su hogar y negocio.",
+    "description": "Servicios eléctricos, de hogar inteligente y de mantenimiento general. Un equipo con licencia para garantizar energía segura, tecnología inteligente y reparaciones de calidad para su hogar y negocio.",
     "schedule_now": "Programar Ahora"
   },
   "Navigation": {
@@ -12,22 +12,27 @@
     "contacts": "Contactos",
     "schedule": "Programar Ahora"
   },
+  "Breadcrumbs": {
+    "home": "Hogar",
+    "services": "Servicios"
+  },
   "Footer": {
-    "description": "Servicios profesionales en los que puede confiar. Desde plomerÃ­a hasta electricidad, hacemos el trabajo bien hecho.",
+    "description": "Servicios eléctricos, de hogar inteligente y de mantenimiento general. Un equipo con licencia para garantizar energía segura, tecnología inteligente y reparaciones de calidad para su hogar y negocio.",
     "quick_links": "Enlaces RÃ¡pidos",
     "our_services": "Nuestros Servicios",
     "business_hours": "Horario de Atención",
     "electrical": "Electricidad",
     "appliance": "ElectrodomÃ©sticos",
     "handyman": "Mantenimiento",
+    "smarthome": "Hogar Inteligente",
     "contact_us": "ContÃ¡ctenos",
     "developed_by": "Desarrollado por",
     "rights_reserved": "Get Service Done. Todos los derechos reservados.",
     "privacy": "PolÃ­tica de Privacidad",
     "terms": "TÃ©rminos de Servicio",
     "sitemap": "Mapa del Sitio",
-    "mon_fri": "Lun – Vie: 8:00 AM – 5:00 PM",
-    "sat": "Sáb: 8:00 AM – 4:00 PM",
+    "mon_fri": "Lun – Vie: 8:00 AM – 6:00 PM",
+    "sat": "Sáb: 9:00 AM – 4:00 PM",
     "sun": "Dom: Cerrado",
     "emergency": "Respuesta de Emergencia 24/7"
   },
@@ -63,7 +68,7 @@
       "title": "Trabajos",
       "highlightText": "ElÃ©ctricos",
       "description": "Servicios elÃ©ctricos seguros, confiables y profesionales para su hogar, negocio y mÃ¡s allÃ¡.",
-      "buttonText": "Servicios ElÃ©ctricos",
+      "buttonText": "Leer más",
       "items": {
         "0": "Mantenimiento y Reparaciones ElÃ©ctricas Residenciales y Comerciales",
         "1": "Seguridad y ProtecciÃ³n del Hogar",
@@ -77,7 +82,7 @@
       "title": "ElectrodomÃ©sticos",
       "highlightText": "del Hogar",
       "description": "Servicios expertos de instalaciÃ³n, mantenimiento y reparaciÃ³n de electrodomÃ©sticos para propiedades residenciales.",
-      "buttonText": "ReparaciÃ³n de ElectrodomÃ©sticos",
+      "buttonText": "Leer más",
       "items": {
         "0": "Soluciones de ElectrodomÃ©sticos de Cocina",
         "1": "Servicios para el Cuarto de Lavado",
@@ -88,12 +93,24 @@
       "title": "Trabajos de",
       "highlightText": "Mantenimiento",
       "description": "Desde pequeÃ±as reparaciones hasta instalaciones personalizadas, ofrecemos soluciones profesionales y confiables para cada rincÃ³n de su hogar.",
-      "buttonText": "Servicios de Mantenimiento",
+      "buttonText": "Leer más",
       "items": {
         "0": "Montaje e InstalaciÃ³n Interior",
         "1": "CarpinterÃ­a Fina y Molduras",
         "2": "Reparaciones Generales del Hogar",
         "3": "Mantenimiento Exterior y Estacional"
+      }
+    },
+    "smart_home": {
+      "title": "Hogar Inteligente y",
+      "highlightText": "Bajo Voltaje",
+      "description": "Soluciones personalizadas de hogar inteligente e instalaciones profesionales de bajo voltaje para la vida moderna.",
+      "buttonText": "Leer más",
+      "items": {
+        "0": "Esenciales Inteligentes",
+        "1": "Hogar Conectado",
+        "2": "Vida de Lujo",
+        "3": "Residencial Exclusivo"
       }
     }
   },
@@ -281,6 +298,48 @@
     "sitemap": {
       "title": "Mapa del Sitio | Get Service Done",
       "description": "Explore la estructura completa del sitio web de Get Service Done. Encuentre todas las páginas y servicios disponibles."
+    },
+    "smart_home": {
+      "title": "Hogar Inteligente y Bajo Voltaje | Get Service Done",
+      "description": "Automatización profesional del hogar, redes Wi-Fi, cableado de bajo voltaje y soluciones de audio y video en Metro Atlanta."
     }
+  },
+  "SmartHome": {
+    "breadcrumbs": "Hogar Inteligente y Bajo Voltaje",
+    "badge": "Nuestros Servicios",
+    "title_1": "Hogar Inteligente y",
+    "title_highlight": "Bajo Voltaje",
+    "description": "Cimientos de redes profesionales, automatización del hogar y soluciones de bajo voltaje adaptadas a su estilo de vida.",
+    "schedule": "Programar Ahora",
+    "trust_1_title": "Licenciados y Asegurados",
+    "trust_1_desc": "Técnicos certificados en bajo voltaje",
+    "trust_2_title": "Calidad Garantizada",
+    "trust_2_desc": "Atención a cada detalle",
+    "trust_3_title": "Rápido y Confiable",
+    "trust_3_desc": "Soluciones bien hechas y a tiempo",
+    "main_title": "Lo que Ofrecemos",
+    "main_desc": "Desde conectividad esencial hasta sistemas de automatización a medida.",
+    "cat_1_title": "Esenciales Inteligentes",
+    "cat_1_desc": "Una base sencilla para propietarios que desean conectividad confiable y comodidad diaria.",
+    "cat_1_item_1": "Base de red profesional y configuración de Wi-Fi.",
+    "cat_1_item_2": "Timbre con video, cerradura inteligente y termostatos conectados.",
+    "cat_1_item_3": "Control de iluminación en habitaciones clave seleccionadas.",
+    "cat_1_item_4": "Configuración de teléfono inteligente y dos escenas personalizadas: Ausente y Buenas Noches.",
+    "cat_1_item_5": "Capacitación práctica para el propietario.",
+    "cat_2_title": "Hogar Conectado",
+    "cat_2_desc": "Un sistema coordinado construido en torno a un controlador de automatización central para una integración más amplia y cobertura de cámaras.",
+    "cat_2_item_1": "Control centralizado de dispositivos compatibles de seguridad, iluminación, clima y acceso.",
+    "cat_2_item_2": "Red profesional de energía a través de Ethernet y rack de equipos dedicado.",
+    "cat_2_item_3": "Cámaras exteriores con almacenamiento de video local.",
+    "cat_2_item_4": "Control de iluminación ampliado y cuatro escenas de estilo de vida personalizadas.",
+    "cat_2_item_5": "Un año de soporte estándar; cobertura a definir en el alcance del proyecto.",
+    "cat_3_title": "Vida de Lujo",
+    "cat_3_desc": "Una plataforma de automatización premium con control de iluminación ampliado, audio arquitectónico multizona, controles remotos o pantallas táctiles inteligentes, cámaras exteriores con grabación local y control de clima multizona.",
+    "cat_3_item_1": "Las escenas de estilo de vida personalizadas y el soporte dedicado se planifican en torno al sistema seleccionado. El alcance del soporte y los términos del servicio se confirman en la propuesta del proyecto.",
+    "cat_4_title": "Residencial Exclusivo",
+    "cat_4_desc": "Nuestra opción de nivel más alto es una solución de automatización a medida diseñada en torno a la propiedad, su distribución y las rutinas del propietario. Las escenas y horarios personalizados coordinan los sistemas seleccionados en las áreas acordadas de la finca.",
+    "cat_4_item_1": "La arquitectura del sistema, el equipo, las interfaces de control, las áreas servidas y los requisitos de soporte se definen a través de un proceso dedicado de diseño y alcance.",
+    "cta_title": "¿Listo para un Hogar más Inteligente?",
+    "cta_desc": "Contáctenos hoy para diseñar el sistema perfecto para su estilo de vida."
   }
 }

@@ -7,6 +7,7 @@ import {
   BatteryIcon,
   ChandelierIcon,
   SmartHomeIcon,
+  SmartHomeCircleIcon,
   HvacIcon,
   // TowerIcon,
   // HvacIcon,
@@ -45,11 +46,28 @@ export const getServicesData = (t: any): ServiceCardProps[] => [
     imagePosition: 'right',
     services: [
       { icon: <HouseIcon />, text: t('electrical.items.0') },
-      { icon: <ShieldIcon />, text: t('electrical.items.1') },
       { icon: <BatteryIcon />, text: t('electrical.items.2') },
-      { icon: <ChandelierIcon />, text: t('electrical.items.3') },
-      { icon: <SmartHomeIcon />, text: t('electrical.items.4') },
       { icon: <HvacIcon />, text: t('electrical.items.5') },
+      // { icon: <ChandelierIcon />, text: t('electrical.items.3') },
+      // { icon: <SmartHomeIcon />, text: t('electrical.items.4') },
+      // { icon: <ShieldIcon />, text: t('electrical.items.1') },
+    ],
+  },
+    {
+    title: t('smart_home.title'),
+    highlightText: t('smart_home.highlightText'),
+    description: t('smart_home.description'),
+    mainIcon: <SmartHomeCircleIcon />,
+    imageSrc: '/smarthome-iconset/smarthome-illustration.jpg',
+    imageAlt: 'Smart Home Installation',
+    linkHref: '/smart_home',
+    buttonText: t('smart_home.buttonText'),
+    imagePosition: 'left',
+    services: [
+      { icon: <HouseIcon />, text: t('smart_home.items.0') },
+      { icon: <ShieldIcon />, text: t('smart_home.items.1') },
+      { icon: <ChandelierIcon />, text: t('smart_home.items.2') },
+      { icon: <SmartHomeIcon />, text: t('smart_home.items.3') },
     ],
   },
   {
@@ -84,5 +102,5 @@ export const getServicesData = (t: any): ServiceCardProps[] => [
   //     { icon: <LaundryIcon />, text: t('appliance.items.1') },
   //     { icon: <ComfortIcon />, text: t('appliance.items.2') },
   //   ],
-  // }
+  // },
 ];

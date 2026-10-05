@@ -6,18 +6,19 @@ import { Link } from '@/i18n/routing';
 import { createCounter } from '@/utils/counter';
 import Button from '@/components/button/Button';
 import ServiceCTA from '@/components/common/ServiceCTA/ServiceCTA';
-import styles from './handymanWork.module.scss';
+import styles from './smartHome.module.scss';
 import {
-    HandymanCircleIcon,
-    MountingIcon,
-    CarpentryIcon,
-    RepairIcon,
-    MaintenanceIcon,
+    SmartHomeCircleIcon,
+    SmartHomeIcon,
+    HouseIcon,
+    ShieldIcon,
+    ChandelierIcon,
+    TowerIcon,
     ChevronRight,
     ShieldCheckIcon,
     AwardIcon,
-    ClockIcon
-} from '../../../../public/handyman-iconset/handyman_icons';
+    ClockIcon,
+} from '../../../../public/electrical-iconset/electrical_icons';
 
 export async function generateMetadata({
   params,
@@ -25,23 +26,23 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
   const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: 'Metadata.handyman' });
+  const t = await getTranslations({ locale, namespace: 'Metadata.smart_home' });
 
   return {
     title: t('title'),
     description: t('description'),
     alternates: {
-      canonical: '/handyman_work',
+      canonical: '/smart_home',
       languages: {
-        en: '/en/handyman_work',
-        es: '/es/handyman_work',
+        en: '/en/smart_home',
+        es: '/es/smart_home',
       },
     },
   };
 }
 
-export default function HandymanWorkPage() {
-    const t = useTranslations('HandymanWork');
+export default function SmartHomePage() {
+    const t = useTranslations('SmartHome');
     const tBreadcrumbs = useTranslations('Breadcrumbs');
     const { next } = createCounter();
 
@@ -61,7 +62,7 @@ export default function HandymanWorkPage() {
                             </nav>
 
                             <div className={styles.badge}>
-                                <HandymanCircleIcon />
+                                <SmartHomeCircleIcon />
                                 <span className={styles.badgeText}>{t('badge')}</span>
                             </div>
 
@@ -106,8 +107,8 @@ export default function HandymanWorkPage() {
 
                         <div className={styles.heroImageWrapper}>
                             <Image
-                                src="/handyman-iconset/handyman-illustration.jpeg"
-                                alt="Handyman and Home Maintenance"
+                                src="/smarthome-iconset/smarthome-illustration.jpg"
+                                alt="Smart Home & Low Voltage"
                                 width={500}
                                 height={600}
                                 className={styles.heroImage}
@@ -127,47 +128,47 @@ export default function HandymanWorkPage() {
                     </div>
 
                     <div className={styles.servicesGrid}>
-                        {/* Category 1 */}
+                        {/* Category 1: Smart Essentials */}
                         <div className={styles.serviceCategory}>
-                            <h3><span className={styles.categoryNum}>{next()}</span> <MountingIcon /> {t('cat_1_title')}</h3>
+                            <h3><span className={styles.categoryNum}>{next()}</span> <HouseIcon /> {t('cat_1_title')}</h3>
+                            <p className={styles.categoryDesc}>{t('cat_1_desc')}</p>
                             <ul>
-                                <li>{t.rich('cat_1_item_1', { strong: (c) => <strong>{c}</strong>, span: (c) => <span>{c}</span> })}</li>
-                                <li>{t.rich('cat_1_item_2', { strong: (c) => <strong>{c}</strong>, span: (c) => <span>{c}</span> })}</li>
-                                <li>{t.rich('cat_1_item_3', { strong: (c) => <strong>{c}</strong>, span: (c) => <span>{c}</span> })}</li>
-                                <li>{t.rich('cat_1_item_4', { strong: (c) => <strong>{c}</strong>, span: (c) => <span>{c}</span> })}</li>
+                                <li>{t('cat_1_item_1')}</li>
+                                <li>{t('cat_1_item_2')}</li>
+                                <li>{t('cat_1_item_3')}</li>
+                                <li>{t('cat_1_item_4')}</li>
+                                <li>{t('cat_1_item_5')}</li>
                             </ul>
                         </div>
 
-                        {/* Category 2 */}
+                        {/* Category 2: Connected Home */}
                         <div className={styles.serviceCategory}>
-                            <h3><span className={styles.categoryNum}>{next()}</span> <CarpentryIcon /> {t('cat_2_title')}</h3>
+                            <h3><span className={styles.categoryNum}>{next()}</span> <ShieldIcon /> {t('cat_2_title')}</h3>
+                            <p className={styles.categoryDesc}>{t('cat_2_desc')}</p>
                             <ul>
-                                <li>{t.rich('cat_2_item_1', { strong: (c) => <strong>{c}</strong>, span: (c) => <span>{c}</span> })}</li>
-                                <li>{t.rich('cat_2_item_2', { strong: (c) => <strong>{c}</strong>, span: (c) => <span>{c}</span> })}</li>
-                                <li>{t.rich('cat_2_item_3', { strong: (c) => <strong>{c}</strong>, span: (c) => <span>{c}</span> })}</li>
-                                <li>{t.rich('cat_2_item_4', { strong: (c) => <strong>{c}</strong>, span: (c) => <span>{c}</span> })}</li>
+                                <li>{t('cat_2_item_1')}</li>
+                                <li>{t('cat_2_item_2')}</li>
+                                <li>{t('cat_2_item_3')}</li>
+                                <li>{t('cat_2_item_4')}</li>
+                                <li>{t('cat_2_item_5')}</li>
                             </ul>
                         </div>
 
-                        {/* Category 3 */}
+                        {/* Category 3: Luxury Living */}
                         <div className={styles.serviceCategory}>
-                            <h3><span className={styles.categoryNum}>{next()}</span> <RepairIcon /> {t('cat_3_title')}</h3>
+                            <h3><span className={styles.categoryNum}>{next()}</span> <ChandelierIcon /> {t('cat_3_title')}</h3>
+                            <p className={styles.categoryDesc}>{t('cat_3_desc')}</p>
                             <ul>
-                                <li>{t.rich('cat_3_item_1', { strong: (c) => <strong>{c}</strong>, span: (c) => <span>{c}</span> })}</li>
-                                <li>{t.rich('cat_3_item_2', { strong: (c) => <strong>{c}</strong>, span: (c) => <span>{c}</span> })}</li>
-                                <li>{t.rich('cat_3_item_3', { strong: (c) => <strong>{c}</strong>, span: (c) => <span>{c}</span> })}</li>
-                                <li>{t.rich('cat_3_item_4', { strong: (c) => <strong>{c}</strong>, span: (c) => <span>{c}</span> })}</li>
+                                <li>{t('cat_3_item_1')}</li>
                             </ul>
                         </div>
 
-                        {/* Category 4 */}
+                        {/* Category 4: Estate Living */}
                         <div className={styles.serviceCategory}>
-                            <h3><span className={styles.categoryNum}>{next()}</span> <MaintenanceIcon /> {t('cat_4_title')}</h3>
+                            <h3><span className={styles.categoryNum}>{next()}</span> <TowerIcon /> {t('cat_4_title')}</h3>
+                            <p className={styles.categoryDesc}>{t('cat_4_desc')}</p>
                             <ul>
-                                <li>{t.rich('cat_4_item_1', { strong: (c) => <strong>{c}</strong>, span: (c) => <span>{c}</span> })}</li>
-                                <li>{t.rich('cat_4_item_2', { strong: (c) => <strong>{c}</strong>, span: (c) => <span>{c}</span> })}</li>
-                                <li>{t.rich('cat_4_item_3', { strong: (c) => <strong>{c}</strong>, span: (c) => <span>{c}</span> })}</li>
-                                <li>{t.rich('cat_4_item_4', { strong: (c) => <strong>{c}</strong>, span: (c) => <span>{c}</span> })}</li>
+                                <li>{t('cat_4_item_1')}</li>
                             </ul>
                         </div>
                     </div>
@@ -176,8 +177,8 @@ export default function HandymanWorkPage() {
 
             {/* Bottom CTA Section */}
             <ServiceCTA
-                title="Need Handyman Assistance?"
-                description="We're ready to help with your next project. Get in touch today!"
+                title={t('cta_title')}
+                description={t('cta_desc')}
             />
         </main>
     );
