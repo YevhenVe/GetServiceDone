@@ -17,10 +17,19 @@ const HERO_BACKGROUNDS = [
 
 const SLIDE_INTERVAL_MS = 6000;
 
-export default function HeroBackground() {
+interface HeroBackgroundProps {
+  paused?: boolean;
+}
+
+export default function HeroBackground({ paused = false }: HeroBackgroundProps) {
   const [activeIndex, setActiveIndex] = useState(0);
 
   useEffect(() => {
+    // Don't autoplay while the user is hovering the hero.
+    if (paused) {
+      return;
+    }
+
     // Respect the user's reduced-motion preference: never autoplay.
     if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
       return;
@@ -31,7 +40,7 @@ export default function HeroBackground() {
     }, SLIDE_INTERVAL_MS);
 
     return () => clearInterval(interval);
-  }, []);
+  }, [paused]);
 
   return (
     <>
